@@ -1,0 +1,82 @@
+new entry "MAG_Legendary_Chromatic_NoxiousFumes_Passive"
+type "PassiveData"
+// using "MAG_Acid_NoxiousFumes_Gloves_Passive"
+using "MAG_Legendary_Chromatic_NoxiousFumes_Passive"
+// Sizzling Cataclysm
+// data "DisplayName" "hfc4fdb3fg2283g4ad2gbbc1g5f22018f0f64;3"
+// When you deal damage with a spell, possibly inflict &lt;LSTag Type="Status" Tooltip="MAG_ACID_NOXIOUS_FUMES"&gt;Noxious Fumes&lt;/LSTag&gt; upon the target(s).
+// data "Description" "h11d05e2dg942dg41e7ga730g653d8103e005;2"
+data "Icon" "GenericIcon_DamageType_Acid"
+// data "Properties" "OncePerAttack;IsHidden"
+data "Properties" "OncePerAttack;Highlighted"
+// data "Conditions" "IsSpell() and not Self()"
+
+new entry "MAG_Thunder_ReverberationOnStatusApply_Boots_Passive"
+type "PassiveData"
+using "MAG_Thunder_ReverberationOnStatusApply_Boots_Passive"
+// Arcane Echomalefaction
+// data "DisplayName" "hdb19f00ag6138g4bc6gb174g1dff84d45a57;2"
+// When the wearer inflicts a condition upon a hostile creature, they also inflict [1] turns of &lt;LSTag Type="Status" Tooltip="MAG_THUNDER_REVERBERATION"&gt;Reverberation&lt;/LSTag&gt;.
+// data "Description" "hdec25ee2gb8b0g4e21ga3f4g181253f20364;4"
+// data "DescriptionParams" "2"
+// data "Properties" "OncePerAttack"
+// data "StatsFunctorContext" "OnStatusApply"
+// data "Conditions" "Enemy() and not Self() and not StatusId('MAG_THUNDER_REVERBERATION') and not StatusDoesNotInvokeOnStatusApply()"
+data "Conditions" "Enemy() and not Self() and not StatusId('MAG_THUNDER_REVERBERATION') and not StatusDoesNotInvokeOnStatusApply() and not HasStatus('MOD_SANCTIFIED', context.Target) and not HasStatus('MOD_REVERB_RECURSOR_FIX', context.Source)"
+// data "StatsFunctors" "ApplyStatus(MAG_THUNDER_REVERBERATION, 100, 2);ApplyStatus(MAG_THUNDER_REVERBERATION_DURATION_TECHNICAL, 100, 1)"
+data "StatsFunctors" "ApplyStatus(MAG_THUNDER_REVERBERATION, 100, 2);ApplyStatus(MAG_THUNDER_REVERBERATION_DURATION_TECHNICAL, 100, 1);ApplyStatus(SELF, MOD_REVERB_RECURSOR_FIX, 100, 1)"
+
+new entry "MAG_Gish_ArcaneSynergy_Circlet_Passive"
+type "PassiveData"
+using "MAG_Gish_ArcaneSynergy_Circlet_Passive"
+// Synergetic Moments
+// data "DisplayName" "hc7a585eeg200dg4f49g8ed2gd1fefb07ef1d;4"
+// When you inflict a condition, gain &lt;LSTag Type="Status" Tooltip="MAG_GISH_ARCANE_SYNERGY"&gt;Arcane Synergy&lt;/LSTag&gt; for 2 rounds.
+// data "Description" "hb9bb6767g50edg445dga2e2g87e805289220;6"
+// data "Properties" "OncePerAttack"
+// data "StatsFunctorContext" "OnStatusApply"
+// data "Conditions" "not StatusId('MAG_GISH_ARCANE_SYNERGY') and not StatusDoesNotInvokeOnStatusApply() and Enemy()"
+data "Conditions" "not StatusId('MAG_GISH_ARCANE_SYNERGY') and not StatusDoesNotInvokeOnStatusApply() and not HasStatus('MOD_ARCANE_SYNERGY_RECURSOR_FIX', context.Source) and Enemy()"
+// data "StatsFunctors" "ApplyStatus(SELF, MAG_GISH_ARCANE_SYNERGY, 100, 2)"
+data "StatsFunctors" "ApplyStatus(SELF, MAG_GISH_ARCANE_SYNERGY, 100, 2);ApplyStatus(SELF,MOD_ARCANE_SYNERGY_RECURSOR_FIX, 100, 1)"
+
+new entry "UND_BlessingOfBOOOAL"
+type "PassiveData"
+using "UND_BlessingOfBOOOAL"
+// BOOOAL's Benediction
+// data "DisplayName" "h3dcfa8a6ge92ag43cfgb42eg8fa3fb0c66c3;3"
+// BOOOAL, God of Murder, smiles upon you. &lt;br&gt;&lt;br&gt;&lt;LSTag Tooltip="Advantage"&gt;Advantage&lt;/LSTag&gt; on &lt;LSTag Tooltip="AttackRoll"&gt;Attack Rolls&lt;/LSTag&gt; against &lt;LSTag Type="Status" Tooltip="BLEEDING"&gt;Bleeding&lt;/LSTag&gt; creatures, as long as there are kuo-toa to worship BOOOAL and give him strength.
+// data "Description" "hca21b790g0094g4e18ga99dg2f6c6b555e47;2"
+data "Properties" "IsHidden"
+// data "Boosts" "IF(HasStatus('BLEEDING',context.Target)):Advantage(AttackRoll)"
+// data "StatsFunctorContext" "OnAttack"
+
+new entry "MAG_ZOC_ForceConduit_EnergyConversionBlast_Passive"
+type "PassiveData"
+using "MAG_ZOC_ForceConduit_EnergyConversionBlast_Passive"
+// Force Conduit
+// data "DisplayName" "h19df58dcgd283g4783g99e5g21b06ff74f98;2"
+// Deal [1] in a [2] radius when you take damage while having 5 or more charges. 
+// data "Description" "h2b39c540gc2c5g4708ga0eag202eac601613;3"
+// data "DescriptionParams" "DealDamage(1d4,Force);Distance(6)"
+// data "Properties" "OncePerAttack"
+data "Properties" "OncePerAttack;IsHidden"
+// data "StatsFunctorContext" "OnDamaged"
+// data "Conditions" "IsMeleeAttack() and ForceConduitBlastRequirement(context.Target) and not HasStatus('MAG_ZOC_FORCE_CONDUIT_ONCE_TECHNICAL')"
+// data "StatsFunctors" "ApplyStatus(MAG_ZOC_FORCE_CONDUIT_EXPLOSION_TECHNICAL, 100, 0);SetStatusDuration(MAG_ZOC_FORCE_CONDUIT,-5,Add);ApplyStatus(MAG_ZOC_FORCE_CONDUIT_ONCE_TECHNICAL, 100, 0)"
+
+new entry "HORDE_BREAKER"
+type "StatusData"
+data "StatusType" "BOOST"
+using "HORDE_BREAKER"
+// Horde Breaker
+// data "DisplayName" "h053c56f6g4d3bg4255g9ab8g393f0c7f1909;1"
+// Can attack a second creature close to its first target.
+// data "Description" "h1cef374fg6317g4077g947bg637166669daa;1"
+// data "Icon" "Action_HordeBreaker_Melee"
+// data "StackId" "HORDE_BREAKER"
+// data "TickType" "EndTurn"
+// data "Boosts" "UnlockSpell(Target_HordeBreaker_Free);UnlockSpell(Projectile_HordeBreaker_Free);"
+data "Boosts" "UnlockSpell(Target_HordeBreaker_Free);UnlockSpell(Projectile_HordeBreaker_Free);UnlockSpell(Mod_Target_HordeBreaker_Unarmed_Free)"
+// data "StatusPropertyFlags" "NonExtendable"
+// data "StatusGroups" "SG_RemoveOnRespec"

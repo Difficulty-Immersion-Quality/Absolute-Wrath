@@ -3222,12 +3222,6 @@ data "OnTickRoll" "not SavingThrow(Ability.Constitution, SourceSpellDC(), Advant
 data "OnTickSuccess" "ApplyStatus(FRIGHTENED,100,1)"
 data "StatusGroups" "SG_Frightened"
 
-new entry "HORDE_BREAKER"
-type "StatusData"
-data "StatusType" "BOOST"
-using "HORDE_BREAKER"
-data "Boosts" "UnlockSpell(Target_HordeBreaker_Free);UnlockSpell(Projectile_HordeBreaker_Free);UnlockSpell(Mod_Target_HordeBreaker_Unarmed_Free)"
-
 new entry "MOD_GNOLL_RAMPAGE"
 type "StatusData"
 data "StatusType" "BOOST"
