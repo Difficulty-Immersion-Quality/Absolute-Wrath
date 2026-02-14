@@ -4,3 +4,11 @@ add equipmentgroup
 add equipment entry "WPN_Elyndris_Greatsword"
 add equipmentgroup
 add equipment entry "ARM_RingMail_Body"
+
+new equipment "EQP_Gnoll_Boss_Equipment"
+add initialweaponset "Melee"
+add equipmentgroup
+add equipment entry "WPN_Gnoll_Boss_Shortsword"
+add equipmentgroup
+add equipment entry "WPN_Gnoll_Boss_Shortsword"
+

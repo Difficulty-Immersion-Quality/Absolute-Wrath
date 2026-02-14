@@ -256,6 +256,113 @@
 						<node id="Tags" />
 					</children>
 				</node>
+				<node id="GameObjects">
+					<attribute id="Description" type="TranslatedString" handle="h9836c60ag8993g46d8gb2e0g5c9ddf49303b" version="1" />
+					<attribute id="DisplayName" type="TranslatedString" handle="h788d91f4g6dfeg4e40g9ed0gd19b1519ccfe" version="2" />
+					<attribute id="LevelName" type="FixedString" value="" />
+					<attribute id="MapKey" type="FixedString" value="44aa96b3-4db1-4938-932d-238931c0e1f2" />
+					<attribute id="Name" type="LSString" value="WPN_Gnoll_Boss_Shortsword" />
+					<attribute id="ParentTemplateId" type="FixedString" value="3af0f251-36b5-425f-8d2a-f81559a70967" />
+					<attribute id="Stats" type="FixedString" value="WPN_Gnoll_Boss_Shortsword" />
+					<attribute id="Type" type="FixedString" value="item" />
+					<attribute id="_OriginalFileVersion_" type="int64" value="144115207403209023" />
+					<children>
+						<node id="StatusList">
+							<children>
+								<node id="Status">
+									<attribute id="Object" type="FixedString" value="" />
+								</node>
+								<node id="Status">
+									<attribute id="Object" type="FixedString" value="" />
+								</node>
+								<node id="Status">
+									<attribute id="Object" type="FixedString" value="" />
+								</node>
+							</children>
+						</node>
+						<node id="Tags" />
+					</children>
+				</node>
+				<node id="GameObjects">
+					<attribute id="MapKey" type="FixedString" value="22a0dda3-822a-402b-9c7d-6e5e43257bf2" />
+					<attribute id="ParentTemplateId" type="FixedString" value="37dc494c-43fe-4341-bda2-8d9c11ba0ffd" />
+					<attribute id="Type" type="FixedString" value="character" />
+					<attribute id="Name" type="LSString" value="Mod_Zhurakul_the_Packless" />
+					<attribute id="DisplayName" type="TranslatedString" handle="c5d20d09-6354-4f3e-bb1b-dfd60c231005" version="1" />
+					<attribute id="Race" type="guid" value="4f2fd01e-fa57-4c3f-81e2-408d6fd4fdd0" />
+					<attribute id="Equipment" type="FixedString" value="EQP_Gnoll_Boss_Equipment" />
+					<attribute id="Stats" type="FixedString" value="Mod_Zhurakul_the_Packless" />
+					<attribute id="LevelOverride" type="int32" value="12" />
+					<children>
+						<node id="SkillList">
+							<children>
+								<node id="Skill">
+									<attribute id="Skill" type="FixedString" value="Target_Gnoll_Zone_Test" />
+									<attribute id="SpellCastingAbility" type="uint8" value="0" />
+									<attribute id="LearningStrategy" type="uint8" value="0" />
+									<attribute id="ScoreModifier" type="float" value="5" />
+									<attribute id="StartRound" type="int32" value="0" />
+									<attribute id="FallbackStartRound" type="int32" value="-1" />
+									<attribute id="MinimumImpact" type="int32" value="0" />
+									<attribute id="OnlyCastOnSelf" type="bool" value="False" />
+									<attribute id="AIFlags" type="uint16" value="0" />
+								</node>
+								<node id="Skill">
+									<attribute id="AIFlags" type="uint16" value="0" />
+									<attribute id="FallbackStartRound" type="int32" value="-1" />
+									<attribute id="LearningStrategy" type="uint8" value="0" />
+									<attribute id="MinimumImpact" type="int32" value="0" />
+									<attribute id="OnlyCastOnSelf" type="bool" value="False" />
+									<attribute id="ScoreModifier" type="float" value="1" />
+									<attribute id="Skill" type="FixedString" value="Projectile_Jump_Gnoll" />
+									<attribute id="SpellCastingAbility" type="uint8" value="0" />
+									<attribute id="StartRound" type="int32" value="0" />
+								</node>
+								<node id="Skill">
+									<attribute id="Skill" type="FixedString" value="Projectile_Gnoll_Jump_Boss" />
+									<attribute id="SpellCastingAbility" type="uint8" value="0" />
+									<attribute id="LearningStrategy" type="uint8" value="0" />
+									<attribute id="ScoreModifier" type="float" value="5" />
+									<attribute id="StartRound" type="int32" value="0" />
+									<attribute id="FallbackStartRound" type="int32" value="-1" />
+									<attribute id="MinimumImpact" type="int32" value="0" />
+									<attribute id="OnlyCastOnSelf" type="bool" value="False" />
+									<attribute id="AIFlags" type="uint16" value="0" />
+								</node>
+								<node id="Skill">
+									<attribute id="Skill" type="FixedString" value="Target_Multiattack_Gnoll_Boss" />
+									<attribute id="SpellCastingAbility" type="uint8" value="0" />
+									<attribute id="LearningStrategy" type="uint8" value="0" />
+									<attribute id="ScoreModifier" type="float" value="3" />
+									<attribute id="StartRound" type="int32" value="0" />
+									<attribute id="FallbackStartRound" type="int32" value="-1" />
+									<attribute id="MinimumImpact" type="int32" value="0" />
+									<attribute id="OnlyCastOnSelf" type="bool" value="False" />
+									<attribute id="AIFlags" type="uint16" value="0" />
+								</node>
+							</children>
+						</node>
+						<node id="StatusList">
+							<children>
+								<node id="Status">
+									<attribute id="Object" type="FixedString" value="MOD_SKIP_PROCESSING" />
+								</node>
+								<node id="Status">
+									<attribute id="Object" type="FixedString" value="MOD_GNOLL_FERAL_FOOTING" />
+								</node>
+								<node id="Status">
+									<attribute id="Object" type="FixedString" value="MOD_GNOLL_BOSS_EFFECT" />
+								</node>
+								<node id="Status">
+									<attribute id="Object" type="FixedString" value="MOD_GNOLL_BOSS_EFFECT_SECONDARY" />
+								</node>
+								<node id="Status">
+									<attribute id="Object" type="FixedString" value="MOD_GNOLL_PREDATOR_AURA" />
+								</node>
+							</children>
+						</node>
+					</children>
+				</node>
 			</children>
 		</node>
 	</region>
