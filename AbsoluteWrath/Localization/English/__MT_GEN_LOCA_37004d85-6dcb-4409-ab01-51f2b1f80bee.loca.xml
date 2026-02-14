@@ -198,8 +198,7 @@
 	<content contentuid="8c9bdb9d-f815-4505-a4a3-769d5e043951" version="2">As a reaction, when a creature walks within 5m of you, you can conjure a &lt;LSTag Type="Spell" Tooltip="Mod_Zone_LOW_Cazador_BatSwarm"&gt;Vampiric Swarm&lt;/LSTag&gt;.</content>
 	<content contentuid="68dbe96f-0472-49d2-be7d-419931445ccc" version="1">%%% Technical: Stops Bat Swarm from happening on creature's turn</content>
 	<content contentuid="10be3e4c-603c-4215-9a4b-9fc4db012b1f" version="2">%%% EMPTY</content>
-	<content contentuid="b628ff22-465b-403e-892c-623a5ef67a1b" version="1">Vampiric Swarm</content>
-	<content contentuid="578906cc-4e81-4459-8b5f-a9ef79a1cc9e" version="2">As a reaction, call forth a swarm of vampire bats whenever an enemy walks within [1] of you. Targets are pushed backwards and may become &lt;LSTag Type="Status" Tooltip="MOD_LOW_CAZADOR_VAMPIREBAT"&gt;Swarmed&lt;/LSTag&gt;. </content>
+	<content contentuid="578906cc-4e81-4459-8b5f-a9ef79a1cc9e" version="2">As a &lt;LSTag Type="ActionResource" Tooltip="ReactionActionPoint"&gt;Reaction&lt;/LSTag&gt;, call forth a swarm of vampire bats whenever an enemy walks within [1] of you. Targets are pushed backwards and may become &lt;LSTag Type="Status" Tooltip="MOD_LOW_CAZADOR_VAMPIREBAT"&gt;Swarmed&lt;/LSTag&gt;.</content>
 	<content contentuid="b1e3e49e-80f1-42f7-93dd-3745a1ace1ff" version="1">Spectral Aspect</content>
 	<content contentuid="831c868f-c3df-4e84-a9ad-82842f612a5b" version="2">Once per round, you can adopt a &lt;LSTag Type="Status" Tooltip="MOD_SHA_NECROMANCER_SPECTRALFORM"&gt;Spectral Aspect&lt;/LSTag&gt; after being struck.</content>
 	<content contentuid="117e4260-a3f4-49b5-ba0a-df14e23f2593" version="1">Spectral Aspect</content>
@@ -208,10 +207,6 @@
 	<content contentuid="eefc2964-3290-4b78-9fe1-74b1213f6171" version="2">The creature uses one of its Legendary Action.</content>
 	<content contentuid="271abf85-f33e-431d-9523-3c0557eb5461" version="1">Hordestrike</content>
 	<content contentuid="4339263e-4d71-4be0-a0da-9afd91d2c527" version="2">Once per round, you can use &lt;LSTag Type="Spell" Tooltip="Mod_Projectile_MOO_Ketheric_GeneralsWrath"&gt;Hordestrike&lt;/LSTag&gt; to an enemy when it is attacked by one of your minions following &lt;LSTag Type="Status" Tooltip="MOO_COMMANDTROOPS"&gt;Deadly Orders&lt;/LSTag&gt;.</content>
-	<content contentuid="250a076e-4aac-474f-8e25-754b290fda71" version="1">%%% EMPTY</content>
-	<content contentuid="37983a55-6437-462e-acd1-f38b2a17e70a" version="2">%%% EMPTY</content>
-	<content contentuid="d04b507e-2f56-4d6f-8b00-84c3c27a33af" version="1">Hordestrike</content>
-	<content contentuid="87d7eb1a-b7c0-4ee5-8f9e-ccfb50cd88dd" version="2">Launch a spectral hammer that inflicts &lt;LSTag Type="Status" Tooltip="BANE"&gt;Bane&lt;/LSTag&gt; and deals [1] when one of your minions attack on your command.</content>
 	<content contentuid="f76f7369-bc3e-46fb-b99e-a810242653dd" version="1">Hordestrike</content>
 	<content contentuid="d7437fa6-2467-4194-8d7d-68d06821a627" version="2">Launch a hammer of spectral force at a creature one of your minions are attacking. </content>
 	<content contentuid="e3ceba9d-ff2a-4807-b6f5-8a793e40096f" version="1">%%% Technical: allows creature to be attacked by your LA</content>
@@ -1066,11 +1061,7 @@
 	<content contentuid="c30fab5a-af1c-4cae-a17f-efc60b9ecf23" version="1">Deflect Missiles</content>
 	<content contentuid="efdd9cbe-e4eb-4b54-bd79-24dde83fd9b8" version="2">Entity can use its reaction to reduce the damage from a ranged weapon attack by 1d4 + its level before &lt;LSTag Type="Spell" Tooltip="Mod_Projectile_Deflect_Missiles"&gt;Deflecting the Missile&lt;/LSTag&gt;.</content>
 	<content contentuid="c1eda3ff-88a8-4c79-8acc-c4422de8515b" version="3">You can only reduce damage from the attack - any additional effects can't be negated.</content>
-	<content contentuid="75af3235-0c3e-4849-aa0d-1ee2ede1418c" version="1">Deflect Missiles</content>
 	<content contentuid="69cafaeb-1334-46df-9dc8-e290fde40047" version="2">Entity can use its reaction to reduce the damage from a ranged weapon attack by 1d4 + its level before &lt;LSTag Type="Spell" Tooltip="Mod_Projectile_Deflect_Missiles"&gt;Deflecting the Missile&lt;/LSTag&gt;.</content>
-	<content contentuid="54074d69-1d8b-4812-ad3e-7e1e4ebc4f19" version="3">You can only reduce damage from the attack - any additional effects can't be negated.</content>
-	<content contentuid="cde268b9-3477-46fd-9a89-6dabfbe7ef0f" version="1">Deflect Missile</content>
-	<content contentuid="57377514-ceab-46e5-96d6-1e1f54430ad1" version="2">Catch a projectile from a ranged weapon attack and shoot it back at your attacker.</content>
 	<content contentuid="825fd534-3119-494e-86cc-f97df6278686" version="1">Deflect Missiles</content>
 	<content contentuid="b6d398dd-152f-4203-9773-82e278cfa2fc" version="2">Use your reflexes to catch a projectile from a ranged weapon attack and shoot it back at your attacker.</content>
 	<content contentuid="29c9f0c7-c9a1-4c4d-b955-ee5dce061075" version="1">Missile Deflection</content>
@@ -1449,8 +1440,7 @@
 	<content contentuid="0ff50e0b-33b7-47ac-a422-ea3f6cf29a05" version="2">This entity can't be &lt;LSTag Type="Status" Tooltip="SILENCED"&gt;Silenced&lt;/LSTag&gt;.</content>
 	<content contentuid="29aaf863-f449-4b4a-8f49-72eb88398de4" version="1">Aspect of the Elk</content>
 	<content contentuid="fdad66fe-3caa-454e-918d-295e0304747b" version="2">&lt;LSTag Tooltip="MovementSpeed"&gt;Movement speed&lt;/LSTag&gt; increased by [1], as long as the affected entity stays near the source.</content>
-	<content contentuid="fb9e3948-d585-44eb-8257-bf0b0de6ad19" version="1">Withering Cut</content>
-	<content contentuid="29e54828-eae8-4514-b243-a9f94b79e754" version="2">When you hit a creature, you can spend a reaction to deal additional Necrotic damage equal to your &lt;LSTag Tooltip="ProficiencyBonus"&gt;Proficiency Bonus&lt;/LSTag&gt;.</content>
+	<content contentuid="29e54828-eae8-4514-b243-a9f94b79e754" version="2">When you hit a creature, you can spend a &lt;LSTag Type="ActionResource" Tooltip="ReactionActionPoint"&gt;Reaction&lt;/LSTag&gt; to deal additional[1] equal to your &lt;LSTag Tooltip="ProficiencyBonus"&gt;Proficiency Bonus&lt;/LSTag&gt;.</content>
 	<content contentuid="32c18634-8b4a-48f0-ac48-a8dcd96de9ac" version="1">Critical Reprieve</content>
 	<content contentuid="3a9a58b4-ca2f-43e1-a47d-504e69ed2bf6" version="2">&lt;LSTag Tooltip="CriticalHit"&gt;Critical Hits&lt;/LSTag&gt; against this entity are reduced. This effect scales with your level.</content>
 	<content contentuid="115f107b-7a02-4dac-b2c6-62960c4be67e" version="1">Grave Currents</content>
@@ -1953,7 +1943,6 @@
 	<content contentuid="17180c85-715b-4336-82c1-d78eca67daa2" version="2">A nearby ally's energy flows through you, restoring [1] at the start of your turns.</content>
 	<content contentuid="2d08eb6b-1855-43b5-8d27-27908bb24af8" version="1">Prismatic Shell</content>
 	<content contentuid="bc752fff-009e-4e35-a64d-df3ef87f8308" version="2">Protected by a weave of arcane shielding. While active, you have &lt;LSTag Tooltip="Resistant"&gt;Resistance&lt;/LSTag&gt; to elemental damage. When you take damage, reduce the value by your current number of stacks, then lose 1 stack.</content>
-	<content contentuid="230a0d34-6eb7-493e-acec-b8894762ed56" version="1">Elemental Retort</content>
 	<content contentuid="9fb1bd43-467b-4776-bc0d-5ac515fcefe8" version="2">Once per turn, you can retaliate, blasting your attacker with elemental damage depending on your current affinities.</content>
 	<content contentuid="da5bb63f-8b5d-4155-8190-ac02c6491996" version="1">Earthen Affinity</content>
 	<content contentuid="32c04ab4-a4c5-4d59-bdf5-2c819005397a" version="2">Entity has &lt;LSTag Tooltip="Immune"&gt;Immunity&lt;/LSTag&gt; to Poison damage and can use &lt;LSTag Type="Spell" Tooltip="Mod_Target_LOW_RamazithsTower_Dummy"&gt;Elemental Retort&lt;/LSTag&gt; when attacked.&lt;br&gt;&lt;br&gt;The affected entity also gains access to &lt;LSTag Type="Spell" Tooltip="Mod_Retort_Projectile_ChromaticOrb_Poison"&gt;Chromatic Orb: Poison&lt;/LSTag&gt; and an additional &lt;LSTag Type="ActionResource" Tooltip="ReactionActionPoint"&gt;reaction&lt;/LSTag&gt; per turn.</content>
