@@ -1,0 +1,11 @@
+{
+  "RequiredVersion": 5,
+  "ModTable": "AbsoluteWrath",
+  "FeatureFlags": ["Lua"],
+  "ScriptExtender": {
+    "Lua": {
+      "EnableDebugger": false,
+      "BootstrapFile": "Server/AbsoluteWrath.lua"
+    }
+  }
+}

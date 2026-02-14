@@ -1,0 +1,6 @@
+new equipment "EQP_Elyndris_Equipment"
+add initialweaponset "Melee"
+add equipmentgroup
+add equipment entry "WPN_Elyndris_Greatsword"
+add equipmentgroup
+add equipment entry "ARM_RingMail_Body"

@@ -1,0 +1,262 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<save>
+	<version major="4" minor="0" revision="9" build="328" lslib_meta="v1,bswap_guids" />
+	<region id="Templates">
+		<node id="Templates">
+			<children>
+				<node id="GameObjects">
+					<attribute id="MapKey" type="FixedString" value="0ef1236d-0beb-42a1-afaa-3f42d8edeffa" />
+					<attribute id="ParentTemplateId" type="FixedString" value="6597824a-fc73-474a-b594-b3bbd8591016" />
+					<attribute id="Type" type="FixedString" value="character" />
+					<attribute id="DisplayName" type="TranslatedString" handle="8f22bbfa-846a-4b28-b229-6f54daf23306" version="1" />
+					<attribute id="Stats" type="FixedString" value="Mod_Nightmare_Terror" />
+					<attribute id="LevelOverride" type="int32" value="12" />
+					<children>
+						<node id="Tags">
+							<children>
+								<node id="Tag">
+									<attribute id="Object" type="guid" value="33c625aa-6982-4c27-904f-e47029a9b140" />
+								</node>
+							</children>
+						</node>
+						<node id="StatusList">
+							<children>
+								<node id="Status">
+									<attribute id="Object" type="FixedString" value="MOD_TERROR_SUMMON_LINK" />
+								</node>
+								<node id="Status">
+									<attribute id="Object" type="FixedString" value="MOD_TERROR_SUMMON_LINK_SUMMONER_NEARBY_TECHNICAL_INCUBATOR_TURN_ONE" />
+								</node>
+								<node id="Status">
+									<attribute id="Object" type="FixedString" value="MOD_LEGENDARY_STATUS_UNTETHERED_FURY" />
+								</node>
+								<node id="Status">
+									<attribute id="Object" type="FixedString" value="MOD_SKIP_PROCESSING" />
+								</node>
+							</children>
+						</node>
+						<node id="SkillList">
+							<children>
+								<node id="Skill">
+									<attribute id="Skill" type="FixedString" value="Projectile_Zerker_Jump" />
+									<attribute id="SpellCastingAbility" type="uint8" value="0" />
+									<attribute id="LearningStrategy" type="uint8" value="0" />
+									<attribute id="ScoreModifier" type="float" value="1" />
+									<attribute id="StartRound" type="int32" value="0" />
+									<attribute id="FallbackStartRound" type="int32" value="-1" />
+									<attribute id="MinimumImpact" type="int32" value="0" />
+									<attribute id="OnlyCastOnSelf" type="bool" value="False" />
+									<attribute id="AIFlags" type="uint16" value="0" />
+								</node>
+							</children>
+						</node>
+					</children>
+				</node>
+				<node id="GameObjects">
+					<attribute id="MapKey" type="FixedString" value="8d1730a6-8cb4-4f9d-8b65-d15300b56e2a" />
+					<attribute id="ParentTemplateId" type="FixedString" value="89419ac3-95d1-4c90-9a29-7b6445acb270" />
+					<attribute id="Type" type="FixedString" value="character" />
+					<attribute id="DisplayName" type="TranslatedString" handle="4e9a9355-6753-42a2-b9b1-cd9f7dd1058a" version="4" />
+					<attribute id="Race" type="guid" value="0eb594cb-8820-4be6-a58d-8be7a1a98fba" />
+					<attribute id="Equipment" type="FixedString" value="EQP_Elyndris_Equipment" />
+					<attribute id="Stats" type="FixedString" value="Mod_Elyndris_Boss" />
+					<attribute id="LevelOverride" type="int32" value="12" />
+					<children>
+						<node id="SkillList">
+							<children>
+								<node id="Skill">
+									<attribute id="Skill" type="FixedString" value="Mod_Shout_Corrupting_cleave" />
+									<attribute id="SpellCastingAbility" type="uint8" value="0" />
+									<attribute id="LearningStrategy" type="uint8" value="0" />
+									<attribute id="ScoreModifier" type="float" value="5" />
+									<attribute id="StartRound" type="int32" value="0" />
+									<attribute id="FallbackStartRound" type="int32" value="-1" />
+									<attribute id="MinimumImpact" type="int32" value="0" />
+									<attribute id="OnlyCastOnSelf" type="bool" value="False" />
+									<attribute id="AIFlags" type="uint16" value="0" />
+								</node>
+								<node id="Skill">
+									<attribute id="Skill" type="FixedString" value="Mod_Elyndris_Teleport" />
+									<attribute id="SpellCastingAbility" type="uint8" value="0" />
+									<attribute id="LearningStrategy" type="uint8" value="0" />
+									<attribute id="ScoreModifier" type="float" value="5" />
+									<attribute id="StartRound" type="int32" value="0" />
+									<attribute id="FallbackStartRound" type="int32" value="-1" />
+									<attribute id="MinimumImpact" type="int32" value="0" />
+									<attribute id="OnlyCastOnSelf" type="bool" value="False" />
+									<attribute id="AIFlags" type="uint16" value="0" />
+								</node>
+								<node id="Skill">
+									<attribute id="Skill" type="FixedString" value="Target_Elyndris_Exalted_Sentencing" />
+									<attribute id="SpellCastingAbility" type="uint8" value="0" />
+									<attribute id="LearningStrategy" type="uint8" value="0" />
+									<attribute id="ScoreModifier" type="float" value="4" />
+									<attribute id="StartRound" type="int32" value="0" />
+									<attribute id="FallbackStartRound" type="int32" value="-1" />
+									<attribute id="MinimumImpact" type="int32" value="0" />
+									<attribute id="OnlyCastOnSelf" type="bool" value="False" />
+									<attribute id="AIFlags" type="uint16" value="0" />
+								</node>
+								<node id="Skill">
+									<attribute id="Skill" type="FixedString" value="Mod_Zone_Elyndris_Beam" />
+									<attribute id="SpellCastingAbility" type="uint8" value="0" />
+									<attribute id="LearningStrategy" type="uint8" value="0" />
+									<attribute id="ScoreModifier" type="float" value="4" />
+									<attribute id="StartRound" type="int32" value="0" />
+									<attribute id="FallbackStartRound" type="int32" value="-1" />
+									<attribute id="MinimumImpact" type="int32" value="0" />
+									<attribute id="OnlyCastOnSelf" type="bool" value="False" />
+									<attribute id="AIFlags" type="uint16" value="0" />
+								</node>
+							</children>
+						</node>
+						<node id="StatusList">
+							<children>
+								<node id="Status">
+									<attribute id="Object" type="FixedString" value="MOD_ELYNDRIS_RADIANT_VFX" />
+								</node>
+								<node id="Status">
+									<attribute id="Object" type="FixedString" value="MOD_ELYNDRIS_RADIANT_VFX_2" />
+								</node>
+								<node id="Status">
+									<attribute id="Object" type="FixedString" value="MOD_ELYNDRIS_RADIANT_VFX_3" />
+								</node>
+								<node id="Status">
+									<attribute id="Object" type="FixedString" value="MOD_ELYNDRIS_RADIANT_VFX_4" />
+								</node>
+								<node id="Status">
+									<attribute id="Object" type="FixedString" value="MOD_ELYNDRIS_START" />
+								</node>
+								<node id="Status">
+									<attribute id="Object" type="FixedString" value="MOD_SKIP_PROCESSING" />
+								</node>
+							</children>
+						</node>
+					</children>
+				</node>
+				<node id="GameObjects">
+					<attribute id="Description" type="TranslatedString" handle="h4928317bg96b0g4937gbeb2gb64e83f8ddf6" version="1" />
+					<attribute id="DisplayName" type="TranslatedString" handle="hc7d5ea47gc81eg4937g8f72g551de8954362" version="2" />
+					<attribute id="Icon" type="FixedString" value="Item_MAG_Giantslayer_Greatsword" />
+					<attribute id="LevelName" type="FixedString" value="" />
+					<attribute id="MapKey" type="FixedString" value="dcc47868-56c3-40ce-8606-393192fa3980" />
+					<attribute id="Name" type="LSString" value="WPN_Elyndris_Greatsword" />
+					<attribute id="ParentTemplateId" type="FixedString" value="7219fca3-5f41-43a0-8253-f4c09d8b6308" />
+					<attribute id="Stats" type="FixedString" value="WPN_Elyndris_Greatsword" />
+					<attribute id="Type" type="FixedString" value="item" />
+					<attribute id="_OriginalFileVersion_" type="int64" value="144115207403209024" />
+					<children>
+						<node id="StatusList">
+							<children>
+								<node id="Status">
+									<attribute id="Object" type="FixedString" value="MOD_SOLANETH_HEAVENSEDGE_VFX1" />
+								</node>
+								<node id="Status">
+									<attribute id="Object" type="FixedString" value="MOD_SOLANETH_HEAVENSEDGE_VFX2" />
+								</node>
+							</children>
+						</node>
+						<node id="Tags" />
+					</children>
+				</node>
+				<node id="GameObjects">
+					<attribute id="Description" type="TranslatedString" handle="6813aea3-3c5e-4f68-8929-26b76bf58c6b" version="1" />
+					<attribute id="DisplayName" type="TranslatedString" handle="b9617a50-d127-43fb-852a-a6182a15b2bc" version="2" />
+					<attribute id="Icon" type="FixedString" value="Item_MAG_Giantslayer_Greatsword" />
+					<attribute id="LevelName" type="FixedString" value="" />
+					<attribute id="MapKey" type="FixedString" value="14c9b87e-f898-4edf-b4f4-feaaa50a211e" />
+					<attribute id="Name" type="LSString" value="WPN_Solaneth_HeavensEdge" />
+					<attribute id="ParentTemplateId" type="FixedString" value="7219fca3-5f41-43a0-8253-f4c09d8b6308" />
+					<attribute id="Stats" type="FixedString" value="WPN_Solaneth_HeavensEdge" />
+					<attribute id="Type" type="FixedString" value="item" />
+					<attribute id="_OriginalFileVersion_" type="int64" value="144115207403209024" />
+					<children>
+						<node id="StatusList">
+							<children>
+								<node id="Status">
+									<attribute id="Object" type="FixedString" value="MOD_SOLANETH_HEAVENSEDGE_VFX1" />
+								</node>
+								<node id="Status">
+									<attribute id="Object" type="FixedString" value="MOD_SOLANETH_HEAVENSEDGE_VFX2" />
+								</node>
+							</children>
+						</node>
+						<node id="Tags" />
+					</children>
+				</node>
+				<node id="GameObjects">
+					<attribute id="Description" type="TranslatedString" handle="cf80afe5-c980-4ced-91c4-8ff5c6d09ae4" version="1" />
+					<attribute id="DisplayName" type="TranslatedString" handle="d235c07b-22af-4313-977d-0341f761bd2b" version="2" />
+					<attribute id="Icon" type="FixedString" value="Item_MAG_Giantslayer_Greatsword" />
+					<attribute id="LevelName" type="FixedString" value="" />
+					<attribute id="MapKey" type="FixedString" value="67da167c-5804-4f1b-95be-d3a204c3f788" />
+					<attribute id="Name" type="LSString" value="WPN_Solaneth_Radiant" />
+					<attribute id="ParentTemplateId" type="FixedString" value="7219fca3-5f41-43a0-8253-f4c09d8b6308" />
+					<attribute id="Stats" type="FixedString" value="WPN_Solaneth_Radiant" />
+					<attribute id="Type" type="FixedString" value="item" />
+					<attribute id="_OriginalFileVersion_" type="int64" value="144115207403209024" />
+					<children>
+						<node id="StatusList">
+							<children>
+								<node id="Status">
+									<attribute id="Object" type="FixedString" value="MOD_SOLANETH_HEAVENSEDGE_VFX2" />
+								</node>
+							</children>
+						</node>
+						<node id="Tags" />
+					</children>
+				</node>
+				<node id="GameObjects">
+					<attribute id="Description" type="TranslatedString" handle="f38dbfc2-dc0b-4222-b34b-7f2f394d4c33" version="1" />
+					<attribute id="DisplayName" type="TranslatedString" handle="992dddd3-ac14-4afb-9a6d-68d69b03e59d" version="2" />
+					<attribute id="Icon" type="FixedString" value="Item_MAG_Giantslayer_Greatsword" />
+					<attribute id="LevelName" type="FixedString" value="" />
+					<attribute id="MapKey" type="FixedString" value="c7bd5cbd-e054-4068-939d-9891e8ccade5" />
+					<attribute id="Name" type="LSString" value="WPN_Solaneth_Necrotic" />
+					<attribute id="ParentTemplateId" type="FixedString" value="7219fca3-5f41-43a0-8253-f4c09d8b6308" />
+					<attribute id="Stats" type="FixedString" value="WPN_Solaneth_Necrotic" />
+					<attribute id="Type" type="FixedString" value="item" />
+					<attribute id="_OriginalFileVersion_" type="int64" value="144115207403209024" />
+					<children>
+						<node id="StatusList">
+							<children>
+								<node id="Status">
+									<attribute id="Object" type="FixedString" value="MOD_SOLANETH_HEAVENSEDGE_VFX1" />
+								</node>
+							</children>
+						</node>
+						<node id="Tags" />
+					</children>
+				</node>
+				<node id="GameObjects">
+					<attribute id="Description" type="TranslatedString" handle="86d784db-ea61-4d81-9635-9dabf4ba8f54" version="1" />
+					<attribute id="DisplayName" type="TranslatedString" handle="555b37da-e0da-47fd-b7a0-bd7ceee7b9ee" version="2" />
+					<attribute id="Icon" type="FixedString" value="Item_DEC_GEN_Corpse_Body_Part_Torso_A" />
+					<attribute id="LevelName" type="FixedString" value="" />
+					<attribute id="MapKey" type="FixedString" value="e165c2e2-bf21-42a4-b71d-15aad19378f9" />
+					<attribute id="Name" type="LSString" value="Mod_Terror_Armor" />
+					<attribute id="ParentTemplateId" type="FixedString" value="443b2caf-8d36-42cf-b389-d774229ed18c" />
+					<attribute id="Stats" type="FixedString" value="Mod_Terror_Armor" />
+					<attribute id="Type" type="FixedString" value="item" />
+					<attribute id="_OriginalFileVersion_" type="int64" value="144115207403209024" />
+					<children>
+						<node id="StatusList">
+							<children>
+								<node id="Status">
+									<attribute id="Object" type="FixedString" value="MOD_TERROR_ARMOR_VFX" />
+								</node>
+								<node id="Status">
+									<attribute id="Object" type="FixedString" value="MOD_TERROR_ARMOR_VFX2" />
+								</node>
+								<node id="Status">
+									<attribute id="Object" type="FixedString" value="MOD_TERROR_ARMOR_VFX3" />
+								</node>
+							</children>
+						</node>
+						<node id="Tags" />
+					</children>
+				</node>
+			</children>
+		</node>
+	</region>
+</save>
