@@ -178,10 +178,9 @@
 	<content contentuid="2e8af4c2-242d-41f9-866e-455e2d7dec80" version="2">Emitting a rancid, evil stench, dealing [1] to all non-undead enemies in range.</content>
 	<content contentuid="3430d136-7b11-462a-8e12-3c527e72630a" version="1">Brew Sick</content>
 	<content contentuid="5c1cc619-078a-459c-bae9-273c4f493dcd" version="2">While in the vicinity of Spoiling Brew, this creature takes [1] every turn.</content>
-	<content contentuid="eda779b4-d927-4371-b181-9c7f843b407b" version="1">Wasting Quiet</content>
-	<content contentuid="28f759c8-fe26-4a73-a13c-8c88193e373a" version="2">Any creature within this miasma of childlike terror are &lt;LSTag Type="Status" Tooltip="SILENCED"&gt;Silenced&lt;/LSTag&gt; and take [1] every time they enter or start their turn inside. </content>
+	<content contentuid="28f759c8-fe26-4a73-a13c-8c88193e373a" version="2">Any creatures within this miasma of terror are &lt;LSTag Type="Status" Tooltip="SILENCED"&gt;Silenced&lt;/LSTag&gt; and take [1] every time they enter or start their turn inside. </content>
 	<content contentuid="ebd357aa-4f60-41ea-aace-558d9704cad0" version="1">Wasting Quiet</content>
-	<content contentuid="bd6531b5-4367-4d06-b81a-17892217d99e" version="2">This creature is &lt;LSTag Type="Status" Tooltip="SILENCED"&gt;Silenced&lt;/LSTag&gt; and will take [1] every time they enter or start their turn inside this miasma of terror. </content>
+	<content contentuid="bd6531b5-4367-4d06-b81a-17892217d99e" version="2">This creature is &lt;LSTag Type="Status" Tooltip="SILENCED"&gt;Silenced&lt;/LSTag&gt; and takes [1] every time they enter or start their turn inside this miasma of terror. </content>
 	<content contentuid="a6b13b5c-d516-4c1b-ba35-3a74d0e64357" version="1">Cascade of Souls</content>
 	<content contentuid="035ed95f-4d39-42b3-9a7b-f93f5f971319" version="2">Countless Souls emmanate in an ominous aura around this creature, dealing [1] to all enemies who would seek to enter the area.</content>
 	<content contentuid="b7714929-be5f-4948-a871-417a0cd0d992" version="1">Writhing Soul</content>
@@ -1257,7 +1256,7 @@
 	<content contentuid="bbe475c7-d0f0-4b24-9f2f-208eed777cca" version="1">Warlord's Riposte</content>
 	<content contentuid="37c7cf6f-2fe8-4def-909d-f3ca04247ddf" version="1">Quickstrike</content>
 	<content contentuid="99ea917d-f9bf-4277-bdf9-71d64a5fc8e6" version="1">Commander's Strike</content>
-	<content contentuid="f46445cd-b672-4524-924a-bc67e41e91d7" version="2">Can use your reaction to make an attack which deals an additional [1] damage.</content>
+	<content contentuid="f46445cd-b672-4524-924a-bc67e41e91d7" version="2">Use your &lt;LSTag Type="ActionResource" Tooltip="ReactionActionPoint"&gt;Reaction&lt;/LSTag&gt; to make an &lt;LSTag Tooltip="AttackRoll"&gt;Attack&lt;/LSTag&gt; dealing an additional [1] damage.</content>
 	<content contentuid="a32ab015-618b-4454-be20-26010dc1bf67" version="1">Fear Aura</content>
 	<content contentuid="3f0c2d43-3221-4d55-91e4-45be1231023d" version="2">Can possibly &lt;LSTag Type="Status" Tooltip="FRIGHTENED"&gt;Frighten&lt;/LSTag&gt; nearby beasts and humanoids with its menacing presence.</content>
 	<content contentuid="d48e9c70-1f77-43b6-91bb-83041ad4f264" version="1">Enchanted Resilience</content>
