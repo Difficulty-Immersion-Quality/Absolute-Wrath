@@ -3,14 +3,13 @@
 local affixesByTier = {
 		Minor = {
 			{name = "ALCH_ELIXIR_BARKSKIN", type = "Status", category = "Defense", tier = "Minor", tags = {"Druid", "Wiz", "Sorc", "Lock", "Ranger", "Rogue"}, duration = -1},
-			{name = "ALCH_ELIXIR_CRITICALS", type = "Status", category = "Damage", tier = "Minor", tags = {"Gen"}, duration = -1},
 			{name = "ALCH_POTION_JUMP", type = "Status", category = "Utility", tier = "Minor", tags = {"Gen"}, duration = -1},
 			{name = "ARMOR_OF_AGATHYS", type = "Status", category = "Utility", tier = "Minor", tags = {"Sorc", "Wiz", "Lock"}, duration = -1},
 			{name = "ASPECT_OF_THE_WOLF_AURA", type = "Status", category = "Utility", tier = "Minor", tags = {"Rogue", "Ranger", "Druid", "Wiz"}, duration = -1},
 			{name = "ASTRAL_KNOWLEDGE_DEXTERITY", type = "Status", category = "Utility", tier = "Minor", tags = {"Gen"}, duration = -1},
 			{name = "AURA_MARSHAL_UNDEAD_DEATHKNIGHT_BUFF", type = "Status", category = "Utility", tier = "Minor", tags = {"Wiz", "Lock", "Rogue"}, duration = -1},
 			{name = "ArmyArcana", type = "Passive", category = "Utility", tier = "Minor", tags = {"Sorc", "Wiz", "Lock"}, duration = -1},
-			{name = "AspectOfTheBeast_Wolverine", type = "Passive", category = "Utility", tier = "Minor", tags = {"Barb", "Monk", "Fighter", "Druid", "Rogue"}, duration = -1},
+			{name = "AspectOfTheBeast_Wolverine", type = "Passive", category = "Utility", tier = "Minor", tags = {"Phys"}, duration = -1},
 			{name = "Athlete_StandUp", type = "Passive", category = "Utility", tier = "Minor", tags = {"Gen"}, duration = -1},
 			{name = "BEND_LUCK_ATTACK_BONUS", type = "Status", category = "Damage", tier = "Minor", tags = {"Gen"}, duration = -1},
 			{name = "BEND_LUCK_SAVE_BONUS", type = "Status", category = "Defense", tier = "Minor", tags = {"Gen"}, duration = -1},
@@ -22,7 +21,7 @@ local affixesByTier = {
 			{name = "COUNTERCHARM", type = "Status", category = "Defense", tier = "Minor", tags = {"Gen"}, duration = -1},
 			{name = "CRE_BREWERYKOBOLDS_FIREWINEBELLY", type = "Status", category = "Utility", tier = "Minor", tags = {"Gen"}, duration = -1},
 			{name = "DARKVISION_THIRD_EYE", type = "Status", category = "Utility", tier = "Minor", tags = {"Gen"}, duration = -1},
-			{name = "DIVINE_FAVOR", type = "Status", category = "Damage", tier = "Minor", tags = {"Gen"}, duration = -1},
+			{name = "MOD_DIVINE_FAVOR", type = "Status", category = "Damage", tier = "Minor", tags = {"Gen"}, duration = -1},
 			{name = "DarkOnesBlessing", type = "Passive", category = "Utility", tier = "Minor", tags = {"Lock"}, duration = -1},
 			{name = "DraconicResilience", type = "Passive", category = "Defense", tier = "Minor", tags = {"Sorc", "Wiz", "Druid", "Ranger", "Rogue"}, duration = -1},
 			{name = "Duergar_DuergarResilience", type = "Passive", category = "Defense", tier = "Minor", tags = {"Gen"}, duration = -1},
@@ -39,7 +38,7 @@ local affixesByTier = {
 			{name = "FIENDISH_RESILIENCE_RADIANT", type = "Status", category = "Defense", tier = "Minor", tags = {"Gen"}, duration = -1},
 			{name = "FIENDISH_RESILIENCE_SLASHING", type = "Status", category = "Defense", tier = "Minor", tags = {"Gen"}, duration = -1},
 			{name = "FightingStyle_Defense", type = "Passive", category = "Defense", tier = "Minor", tags = {"Pala", "Fighter", "Gish", "Cleric", "Ranger", "Rogue"}, duration = -1},
-			{name = "GOBLINWARCRY", type = "Status", category = "Utility", tier = "Minor", tags = {"Barb", "Monk", "Fighter", "Pala", "Gish"}, duration = -1},
+			{name = "GOBLINWARCRY", type = "Status", category = "Utility", tier = "Minor", tags = {"Phys"}, duration = -1},
 			{name = "GOBLIN_HARDCORE", type = "Status", category = "Damage", tier = "Minor", tags = {"Phys"}, duration = -1},
 			{name = "GREMISHKA_ENLARGE", type = "Status", category = "Damage", tier = "Minor", tags = {"Phys"}, duration = -1},
 			{name = "HAV_PSYCHIC_BOON", type = "Status", category = "Damage", tier = "Minor", tags = {"Phys"}, duration = -1},
@@ -56,11 +55,11 @@ local affixesByTier = {
 			{name = "MAG_MOMENTUM", type = "Status", category = "Utility", tier = "Minor", tags = {"Gen"}, duration = 24},
 			{name = "MAG_PHB_CLOAK_OF_DISPLACEMENT", type = "Status", category = "Defense", tier = "Minor", tags = {"Gen"}, duration = -1},
 			{name = "MAG_SecondChance_Resource_Passive", type = "Passive", category = "Utility", tier = "Minor", tags = {"Gen"}, duration = -1},
-			{name = "MAG_VIOLENCE", type = "Status", category = "Damage", tier = "Minor", tags = {"Phys"}, duration = -1},
+			{name = "MOD_MAG_VIOLENCE", type = "Status", category = "Damage", tier = "Minor", tags = {"Gen"}, duration = -1},
 			{name = "MAG_WEAPON_PROFICIENCY_BONUS_DAMAGE", type = "Status", category = "Damage", tier = "Minor", tags = {"Phys"}, duration = -1},
 			{name = "MAG_ZOC_FORCE_CONDUIT", type = "Status", category = "Defense", tier = "Minor", tags = {"Gen"}, duration = 12},
 			{name = "MIRROR_IMAGE_1", type = "Status", category = "Defense", tier = "Minor", tags = {"Gen"}, duration = -1},
-			{name = "MOD_AC_REDUCTION_AURA", type = "Status", category = "Defense", tier = "Minor", tags = {"Gen"}, duration = -1},
+			{name = "MOD_AC_REDUCTION_AURA", type = "Status", category = "Utility", tier = "Minor", tags = {"Gen"}, duration = -1},
 			{name = "MOD_ADRENALINE_GUARD", type = "Status", category = "Defense", tier = "Minor", tags = {"Gen"}, duration = -1},
 			{name = "MOD_ASPECT_OF_THE_ELK_AURA", type = "Status", category = "Utility", tier = "Minor", tags = {"Gen"}, duration = -1},
 			{name = "MOD_DEBRIS_THRESHOLD_LEAST", type = "Status", category = "Defense", tier = "Minor", tags = {"Gen"}, duration = -1},
@@ -77,18 +76,17 @@ local affixesByTier = {
 			{name = "MOD_FULL_SWING", type = "Status", category = "Damage", tier = "Minor", tags = {"Phys"}, duration = -1},
 			{name = "MOD_GLO_FROZEN_SHOCKWAVE", type = "Status", category = "Utility", tier = "Minor", tags = {"Gen"}, duration = -1},
 			{name = "MOD_GLO_POISONCLOUD", type = "Status", category = "Utility", tier = "Minor", tags = {"Gen"}, duration = -1},
-			{name = "MOD_GLO_WEB_SURGE", type = "Status", category = "Utility", tier = "Minor", tags = {"Gen"}, duration = -1},
+			{name = "MOD_GLO_WEB_SURGE", type = "Status", category = "Utility", tier = "Minor", tags = {"Phys"}, duration = -1},
 			{name = "MOD_GRAVE_WHISPER", type = "Status", category = "Utility", tier = "Minor", tags = {"Gen", "Undead"}, duration = -1},
-			{name = "MOD_HERALD_OF_MISFORTUNE", type = "Status", category = "Damage", tier = "Minor", tags = {"Gen"}, duration = -1},
 			{name = "MOD_LESSER_FORTIFIED_SPIRIT", type = "Status", category = "Utility", tier = "Minor", tags = {"Gen"}, duration = -1},
 			{name = "MOD_MAG_GITHBORN_FLYING_STRIKE", type = "Status", category = "Damage", tier = "Minor", tags = {"Phys"}, duration = 18},
-			{name = "MOD_MAG_RAGE_LOWHP_VIOLENCE", type = "Status", category = "Damage", tier = "Minor", tags = {"Phys"}, duration = -1},
+			{name = "MOD_MAG_RAGE_LOWHP_VIOLENCE", type = "Status", category = "Damage", tier = "Minor", tags = {"Gen"}, duration = -1},
 			{name = "MOD_MAG_SPELLBLADE_ACID_ENERGY", type = "Status", category = "Damage", tier = "Minor", tags = {"Phys"}, duration = -1},
 			{name = "MOD_MAG_SPELLBLADE_COLD_ENERGY", type = "Status", category = "Damage", tier = "Minor", tags = {"Phys"}, duration = -1},
 			{name = "MOD_MAG_SPELLBLADE_FIRE_ENERGY", type = "Status", category = "Damage", tier = "Minor", tags = {"Phys"}, duration = -1},
 			{name = "MOD_MAG_SPELLBLADE_LIGHTNING_ENERGY", type = "Status", category = "Damage", tier = "Minor", tags = {"Phys"}, duration = -1},
 			{name = "MOD_MAG_SPELLBLADE_THUNDER_ENERGY", type = "Status", category = "Damage", tier = "Minor", tags = {"Phys"}, duration = -1},
-			{name = "MOD_MAG_TWN_BREWERY_CLUB_ACID", type = "Status", category = "Damage", tier = "Minor", tags = {"Phys"}, duration = -1},
+			{name = "MOD_MAG_TWN_BREWERY_CLUB_ACID", type = "Status", category = "Utility", tier = "Minor", tags = {"Phys"}, duration = -1},
 			{name = "MOD_MAG_TWN_BREWERY_CLUB_COLD", type = "Status", category = "Utility", tier = "Minor", tags = {"Phys"}, duration = -1},
 			{name = "MOD_MAG_TWN_BREWERY_CLUB_FIRE", type = "Status", category = "Damage", tier = "Minor", tags = {"Phys"}, duration = -1},
 			{name = "MOD_MAG_TWN_BREWERY_CLUB_PHYS_FORCE_THUNDER", type = "Status", category = "Utility", tier = "Minor", tags = {"Phys"}, duration = -1},
@@ -164,7 +162,7 @@ local affixesByTier = {
 			{name = "Mod_MAG_CQCaster_CloseRangedSpellMastery_Gloves_Passive", type = "Passive", category = "Damage", tier = "Minor", tags = {"Mag"}, duration = -1},
 			{name = "Mod_MAG_CQCaster_GainArcaneChargeOnDamaged_Robe_Passive", type = "Passive", category = "Damage", tier = "Minor", tags = {"Mag"}, duration = -1},
 			{name = "Mod_MAG_CQCaster_SpellDCBonusWhileThreatened_Circlet_Passive", type = "Passive", category = "Damage", tier = "Minor", tags = {"Mag"}, duration = -1},
-			{name = "Mod_MAG_ChargedLightning_ChargeOnTakeDamage_Cloak_Passive", type = "Passive", category = "Utility", tier = "Minor", tags = {"Gen"}, duration = -1},
+			{name = "Mod_MAG_ChargedLightning_ChargeOnTakeDamage_Cloak_Passive", type = "Passive", category = "Damage", tier = "Minor", tags = {"Gen"}, duration = -1},
 			{name = "Mod_MAG_ChargedLightning_Charge_OnSpellDamage_Passive", type = "Passive", category = "Damage", tier = "Minor", tags = {"Mag"}, duration = -1},
 			{name = "Mod_MAG_ChargedLightning_Dash_Boots_Passive", type = "Passive", category = "Damage", tier = "Minor", tags = {"Gen"}, duration = -1},
 			{name = "Mod_MAG_ChargedLightning_LightningDamage_Passive", type = "Passive", category = "Damage", tier = "Minor", tags = {"Gen"}, duration = -1},
@@ -193,7 +191,7 @@ local affixesByTier = {
 			{name = "Mod_MAG_LowHP_IncreaseDamagePsychic_Passive", type = "Passive", category = "Damage", tier = "Minor", tags = {"Gen"}, duration = -1},
 			{name = "Mod_MAG_LowHP_IncreaseDamage_Passive", type = "Passive", category = "Damage", tier = "Minor", tags = {"Phys"}, duration = -1},
 			{name = "Mod_MAG_LowHP_IncreaseSpeed_Passive", type = "Passive", category = "Utility", tier = "Minor", tags = {"Gen"}, duration = -1},
-			{name = "Mod_MAG_LowHP_IncreasedSpellDamage_Passive", type = "Passive", category = "Damage", tier = "Minor", tags = {"Mag"}, duration = -1},
+			{name = "Mod_MAG_LowHP_IncreasedSpellDamage_Passive", type = "Passive", category = "Damage", tier = "Minor", tags = {"Wiz", "Sorc", "Lock", "Druid", "Bard", "Cleric"}, duration = -1},
 			{name = "Mod_MAG_LowHP_ResistanceFire_Passive", type = "Passive", category = "Defense", tier = "Minor", tags = {"Gen"}, duration = -1},
 			{name = "Mod_MAG_LowHP_TemporaryHP_Passive", type = "Passive", category = "Utility", tier = "Minor", tags = {"Gen"}, duration = -1},	
 			{name = "Mod_MAG_Marksmanship_Passive", type = "Passive", category = "Damage", tier = "Minor", tags = {"Fighter", "Gish", "Rogue", "Ranger"}, duration = -1},
@@ -226,13 +224,13 @@ local affixesByTier = {
 			{name = "Mod_MAG_Thunder_ReverberationOnStatusApply_Boots_Passive", type = "Passive", category = "Damage", tier = "Minor", tags = {"Gen"}, duration = -1},
 			{name = "Mod_MAG_Thunder_UnarmedAttack_Passive", type = "Passive", category = "Damage", tier = "Minor", tags = {"Monk", "Barb", "Fighter", "Gish"}, duration = -1},
 			{name = "Mod_MAG_UnarmedEnchantment_1_Passive", type = "Passive", category = "Damage", tier = "Minor", tags = {"Monk", "Fighter", "Barb", "Gish"}, duration = -1},
-			{name = "Mod_MAG_Violence_LowHP_Violence_Passive", type = "Passive", category = "Damage", tier = "Minor", tags = {"Phys"}, duration = -1},
-			{name = "Mod_MAG_Violence_ViolenceOnDamaged_Passive", type = "Passive", category = "Damage", tier = "Minor", tags = {"Phys"}, duration = -1},
+			{name = "Mod_MAG_Violence_LowHP_Violence_Passive", type = "Passive", category = "Damage", tier = "Minor", tags = {"Gen"}, duration = -1},
+			{name = "Mod_MAG_Violence_ViolenceOnDamaged_Passive", type = "Passive", category = "Damage", tier = "Minor", tags = {"Gen"}, duration = -1},
 			{name = "Mod_MAG_ZOC_AdvantageOnMeleeAttackWhileSurounded_Gloves_Passive", type = "Passive", category = "Damage", tier = "Minor", tags = {"Phys"}, duration = -1},
 			{name = "Mod_Moo_KethericArmor", type = "Passive", category = "Utility", tier = "Minor", tags = {"Gen"}, duration = -1},
-			{name = "Mod_Metamagic_Distant", type = "Passive", category = "Utility", tier = "Minor", tags = {"Mag"}, duration = -1},
+			{name = "Mod_Metamagic_Distant", type = "Passive", category = "Utility", tier = "Minor", tags = {"Wiz", "Lock", "Sorc", "Pala", "Druid", "Bard", "Cleric", "Gish"}, duration = -1},
 			{name = "Mod_Mistweaver", type = "Passive", category = "Utility", tier = "Minor", tags = {"Gen"}, duration = -1},
-			{name = "Mod_MAG_Violence_ViolenceOnDash_Passive", type = "Passive", category = "Damage", tier = "Minor", tags = {"Phys"}, duration = -1},
+			{name = "Mod_MAG_Violence_ViolenceOnDash_Passive", type = "Passive", category = "Damage", tier = "Minor", tags = {"Gen"}, duration = -1},
 			{name = "Mod_Necrosis_Attacks_Passive", type = "Passive", category = "Utility", tier = "Minor", tags = {"Gen", "Undead"}, duration = -1},
 			{name = "Mod_Necrotic_Thrower", type = "Passive", category = "Damage", tier = "Minor", tags = {"Monk", "Barb", "Fighter", "Gish", "Pala"}, duration = -1},
 			{name = "Mod_PhalanxFormation_Duergar", type = "Passive", category = "Damage", tier = "Minor", tags = {"Gen"}, duration = -1},
@@ -252,8 +250,8 @@ local affixesByTier = {
 			{name = "Mod_Wet_Attacks_Passive", type = "Passive", category = "Utility", tier = "Minor", tags = {"Sorc", "Druid"}, duration = -1},
 			{name = "NaturalExplorer_ExpertClimber", type = "Passive", category = "Utility", tier = "Minor", tags = {"Gen"}, duration = -1},
 			{name = "MOD_ORI_GALE_MYSTRABLESSING_1", type = "Status", category = "Utility", tier = "Minor", tags = {"Mag"}, duration = -1},
-			{name = "ORI_GALE_STAFFNECROTICAURA_ALLY_BUFF", type = "Status", category = "Damage", tier = "Minor", tags = {"Phys"}, duration = -1},
-			{name = "PASS_WITHOUT_TRACE_AURA", type = "Status", category = "Utility", tier = "Minor", tags = {"Gen"}, duration = -1},
+			{name = "MOD_ORI_GALE_STAFFNECROTICAURA_ALLY_BUFF", type = "Status", category = "Damage", tier = "Minor", tags = {"Gen"}, duration = -1},
+			{name = "MOD_PASS_WITHOUT_TRACE_SPECIAL", type = "Status", category = "Utility", tier = "Minor", tags = {"Gen"}, duration = -1},
 			{name = "POISON_SIMPLE_IMMUNE", type = "Status", category = "Utility", tier = "Minor", tags = {"Gen"}, duration = -1},
 			{name = "PROTECTION_FROM_ENERGY_ACID", type = "Status", category = "Defense", tier = "Minor", tags = {"Gen"}, duration = -1},
 			{name = "PROTECTION_FROM_ENERGY_COLD", type = "Status", category = "Defense", tier = "Minor", tags = {"Gen"}, duration = -1},
@@ -269,12 +267,12 @@ local affixesByTier = {
 			{name = "ReliableTalent", type = "Passive", category = "Utility", tier = "Minor", tags = {"Gen"}, duration = -1},
 			{name = "RemarkableAthlete_Jump", type = "Passive", category = "Utility", tier = "Minor", tags = {"Gen"}, duration = -1},
 			{name = "RemarkableAthlete_Proficiency", type = "Passive", category = "Utility", tier = "Minor", tags = {"Gen"}, duration = -1},
-			{name = "SHA_SKELETON_CRUELTY", type = "Status", category = "Damage", tier = "Minor", tags = {"Barb", "Fighter", "Monk", "Gish", "Pala"}, duration = -1},
+			{name = "MOD_SHA_SKELETON_CRUELTY", type = "Status", category = "Damage", tier = "Minor", tags = {"Gen"}, duration = -1},
 			{name = "SORCERYPOINT_2", type = "Status", category = "Utility", tier = "Minor", tags = {"Druid", "Sorc", "Lock", "Wiz", "Bard"}, duration = -1},
 			{name = "STEADY_RANGED", type = "Status", category = "Damage", tier = "Minor", tags = {"Ranger", "Rogue"}, duration = -1},
 			{name = "STENCH", type = "Status", category = "Utility", tier = "Minor", tags = {"Gen"}, duration = -1},
 			{name = "ShadowStealth", type = "Passive", category = "Utility", tier = "Minor", tags = {"Gen"}, duration = -1},
-			{name = "Shout_Aid", type = "Ability", category = "Utility", tier = "Minor", tags = {"Bard", "Pala", "Druid", "Cleric"}, duration = -1},	
+			{name = "Shout_Aid", type = "Ability", category = "Utility", tier = "Minor", tags = {"Mag", "Pala"}, duration = -1},	
 			{name = "Shout_Hide", type = "Ability", category = "Utility", tier = "Minor", tags = {"Gen"}, duration = -1},
 			{name = "Shout_WeaponBond", type = "Ability", category = "Utility", tier = "Minor", tags = {"Phys"}, duration = -1},
 			{name = "Shout_WildShape_Combat_Heal_1", type = "Ability", category = "Utility", tier = "Minor", tags = {"Mag"}, duration = -1},
@@ -286,22 +284,26 @@ local affixesByTier = {
 			{name = "Mod_Target_Healer_Heal", type = "Ability", category = "Utility", tier = "Minor", tags = {"Gen"}, duration = -1},
 			{name = "Target_PactOfTheChain_Imp", type = "Ability", category = "Damage", tier = "Minor", tags = {"Lock", "Wiz"}, duration = -1},
 			{name = "Target_PactOfTheChain_Quasit", type = "Ability", category = "Damage", tier = "Minor", tags = {"Lock", "Wiz"}, duration = -1},
-			{name = "UND_BOOOALSERVANT", type = "Status", category = "Damage", tier = "Minor", tags = {"Barb", "Monk", "Fighter", "Druid", "Rogue"}, duration = -1},
+			{name = "UND_BOOOALSERVANT", type = "Status", category = "Damage", tier = "Minor", tags = {"Phys"}, duration = -1},
 			{name = "UND_INVIGORATINGSPORES", type = "Status", category = "Utility", tier = "Minor", tags = {"Gen"}, duration = -1},
-			{name = "WEAPON_COATED_WITH_POISON", type = "Status", category = "Damage", tier = "Minor", tags = {"Barb", "Monk", "Fighter", "Druid", "Rogue", "Gish"}, duration = -1},
+			{name = "WEAPON_COATED_WITH_POISON", type = "Status", category = "Damage", tier = "Minor", tags = {"Phys"}, duration = -1},
 			{name = "WYR_GORTASH_MANIFESTATION_AURA_BUFF", type = "Status", category = "Utility", tier = "Minor", tags = {"Phys"}, duration = -1},
 			{name = "Mod_Wild_Instinct_Passive", type = "Passive", category = "Damage", tier = "Minor", tags = {"Gen"}, duration = -1},
 			{name = "Mod_Illusory_Edge_Passive", type = "Passive", category = "Utility", tier = "Minor", tags = {"Gen"}, duration = -1},
+			{name = "MOD_EAGLE_EYE_STATUS", type = "Status", category = "Damage", tier = "Minor", tags = {"Gen"}, duration = -1},
+			{name = "MOD_HEAVY_HAND_STATUS", type = "Status", category = "Damage", tier = "Minor", tags = {"Gen"}, duration = -1},
+			{name = "MOD_BATTLE_REFLEXES_STATUS", type = "Status", category = "Utility", tier = "Minor", tags = {"Gen"}, duration = -1},
+			{name = "MOD_COMBAT_TRAINING_STATUS", type = "Status", category = "Damage", tier = "Minor", tags = {"Gen"}, duration = -1},
     -- Add more minor affixes here
 },
 
 		Medium = {
-			{name = "ABSORB_ELEMENTS_ACID_DAMAGE", type = "Status", category = "Damage", tier = "Medium", tags = {"Phys"}, duration = -1},			
-			{name = "ABSORB_ELEMENTS_COLD_DAMAGE", type = "Status", category = "Damage", tier = "Medium", tags = {"Phys"}, duration = -1},			
-			{name = "ABSORB_ELEMENTS_FIRE_DAMAGE", type = "Status", category = "Damage", tier = "Medium", tags = {"Phys"}, duration = -1},			
-			{name = "ABSORB_ELEMENTS_LIGHTNING_DAMAGE", type = "Status", category = "Damage", tier = "Medium", tags = {"Phys"}, duration = -1},			
-			{name = "ABSORB_ELEMENTS_THUNDER_DAMAGE", type = "Status", category = "Damage", tier = "Medium", tags = {"Phys"}, duration = -1},			
-			{name = "ACTION_SURGE", type = "Status", category = "Damage", tier = "Medium", tags = {"Fighter", "Rogue", "Ranger", "Monk"}, duration = 6},			
+			{name = "MOD_ABSORB_ELEMENTS_ACID_DAMAGE", type = "Status", category = "Damage", tier = "Medium", tags = {"Phys"}, duration = -1},			
+			{name = "MOD_ABSORB_ELEMENTS_COLD_DAMAGE", type = "Status", category = "Damage", tier = "Medium", tags = {"Phys"}, duration = -1},			
+			{name = "MOD_ABSORB_ELEMENTS_FIRE_DAMAGE", type = "Status", category = "Damage", tier = "Medium", tags = {"Phys"}, duration = -1},			
+			{name = "MOD_ABSORB_ELEMENTS_LIGHTNING_DAMAGE", type = "Status", category = "Damage", tier = "Medium", tags = {"Phys"}, duration = -1},			
+			{name = "MOD_ABSORB_ELEMENTS_THUNDER_DAMAGE", type = "Status", category = "Damage", tier = "Medium", tags = {"Phys"}, duration = -1},			
+			{name = "ACTION_SURGE", type = "Status", category = "Damage", tier = "Medium", tags = {"Phys"}, duration = 6},			
 			{name = "ALCH_ELIXIR_ALERTNESS", type = "Status", category = "Utility", tier = "Medium", tags = {"Gen"}, duration = -1},			
 			{name = "ALCH_ELIXIR_ARCANE_ACUITY", type = "Status", category = "Damage", tier = "Medium", tags = {"Mag"}, duration = -1},			
 			{name = "ALCH_ELIXIR_BLOODLUST", type = "Status", category = "Utility", tier = "Medium", tags = {"Gen"}, duration = -1},
@@ -336,7 +338,7 @@ local affixesByTier = {
 			{name = "DEATH_WARD", type = "Status", category = "Defense", tier = "Medium", tags = {"Gen"}, duration = -1},			
 			{name = "DEN_Rolan_DefaultSpells", type = "Passive", category = "Damage", tier = "Medium", tags = {"Sorc", "Wiz", "Druid"}, duration = -1},			
 			{name = "DEN_SHADOWDRUIDBOSS_HARDCORE", type = "Status", category = "Utility", tier = "Medium", tags = {"Gen"}, duration = -1},			
-			{name = "DISENGAGE", type = "Status", category = "Utility", tier = "Medium", tags = {"Gen"}, duration = -1},
+			{name = "MOD_DISENGAGE", type = "Status", category = "Utility", tier = "Medium", tags = {"Gen"}, duration = -1},
 			{name = "DIVINE_SENSE", type = "Status", category = "Utility", tier = "Medium", tags = {"Pala", "Cleric", "Bard"}, duration = -1},			
 			{name = "DevilsSight", type = "Passive", category = "Utility", tier = "Medium", tags = {"Gen"}, duration = -1},			
 			{name = "DiscipleOfLife", type = "Passive", category = "Utility", tier = "Medium", tags = {"Cleric", "Pala", "Bard", "Druid"}, duration = -1},			
@@ -368,16 +370,16 @@ local affixesByTier = {
 			{name = "FastHands", type = "Passive", category = "Utility", tier = "Medium", tags = {"Gen"}, duration = -1},		
 			{name = "GITHYANKI_PSYCHICSTRIKES_HARDCORE", type = "Status", category = "Damage", tier = "Medium", tags = {"Phys"}, duration = -1},			
 			{name = "GNOLL_AURABLOODTHIRST", type = "Status", category = "Utility", tier = "Medium", tags = {"Barb", "Druid", "Monk"}, duration = -1},	
-			{name = "GOB_DROWCOM_BUFF", type = "Status", category = "Damage", tier = "Medium", tags = {"Phys"}, duration = -1},			
+			{name = "MOD_GOB_DROWCOM_BUFF", type = "Status", category = "Damage", tier = "Medium", tags = {"Gen"}, duration = -1},			
 			{name = "GOB_PRIESTESS_ABSOLUTEWORD_SHIELD", type = "Status", category = "Defense", tier = "Medium", tags = {"Gen"}, duration = -1},			
-			{name = "GREAT_WEAPON_MASTER_BONUS_ATTACK", type = "Status", category = "Damage", tier = "Medium", tags = {"Phys"}, duration = -1},			
+			{name = "GREAT_WEAPON_MASTER_BONUS_ATTACK", type = "Status", category = "Damage", tier = "Medium", tags = {"Barb", "Fighter", "Gish", "Pala", "Cleric", "Rogue"}, duration = -1},			
 			{name = "GiantKiller", type = "Passive", category = "Damage", tier = "Medium", tags = {"Phys"}, duration = -1},			
 			{name = "Gnome_Cunning", type = "Passive", category = "Defense", tier = "Medium", tags = {"Gen"}, duration = -1},			
 			{name = "HALF_MOVEMENT", type = "Status", category = "Utility", tier = "Medium", tags = {"Gen"}, duration = 18},			
 			{name = "HEROISM", type = "Status", category = "Utility", tier = "Medium", tags = {"Gen"}, duration = 18},			
 			{name = "HEX_REAPPLY", type = "Status", category = "Damage", tier = "Medium", tags = {"Lock", "Rogue", "Wiz"}, duration = -1},			
 			{name = "HUNTERS_MARK_REAPPLY", type = "Status", category = "Damage", tier = "Medium", tags = {"Rogue", "Ranger", "Monk", "Fighter", "Gish"}, duration = -1},			
-			{name = "HeartOfTheStorm", type = "Passive", category = "Damage", tier = "Medium", tags = {"Sorc"}, duration = -1},			
+			{name = "HeartOfTheStorm", type = "Passive", category = "Damage", tier = "Medium", tags = {"Wiz"}, duration = -1},			
 			{name = "HeartOfTheStorm_Resistance", type = "Passive", category = "Defense", tier = "Medium", tags = {"Gen"}, duration = -1},			
 			{name = "ILLUSORYSELF", type = "Status", category = "Defense", tier = "Medium", tags = {"Gen"}, duration = -1},		
 			{name = "INSPIRING_LEADER", type = "Status", category = "Utility", tier = "Medium", tags = {"Pala", "Lock", "Bard", "Sorc"}, duration = -1},			
@@ -402,7 +404,7 @@ local affixesByTier = {
 			{name = "MAG_ZOC_FORCE_CONDUIT", type = "Status", category = "Defense", tier = "Medium", tags = {"Gen"}, duration = 18},	
 			{name = "MAG_ZOC_FORCE_CONDUIT_IMMOVABLE", type = "Status", category = "Utility", tier = "Medium", tags = {"Gen"}, duration = -1},	
 			{name = "MARTIAL_ARTS_BONUS_UNARMED_STRIKE", type = "Status", category = "Damage", tier = "Medium", tags = {"Barb", "Fighter", "Gish"}, duration = -1},			
-			{name = "MERREGON_HARDCORE", type = "Status", category = "Damage", tier = "Medium", tags = {"Phys"}, duration = -1},			
+			{name = "MOD_SENTINEL_LEADER_STATUS", type = "Status", category = "Damage", tier = "Medium", tags = {"Phys"}, duration = -1},			
 			{name = "MOD_ACID_HOBGOBLIN_LEADERSHIP_AURA", type = "Status", category = "Damage", tier = "Medium", tags = {"Druid", "Phys", "Lock", "Wiz", "Sorc"}, duration = -1},			
 			{name = "MOD_ASPECT_OF_THE_ELK", type = "Status", category = "Utility", tier = "Medium", tags = {"Gen"}, duration = -1},		
 			{name = "MOD_ASPECT_OF_THE_STALLION", type = "Status", category = "Utility", tier = "Medium", tags = {"Barb", "Fighter", "Pala"}, duration = -1},			
@@ -416,14 +418,14 @@ local affixesByTier = {
 			{name = "MOD_CRITICAL_REPRIEVE", type = "Status", category = "Defense", tier = "Medium", tags = {"Gen"}, duration = -1},			
 			{name = "MOD_CRYPT_EMBRACE", type = "Status", category = "Utility", tier = "Medium", tags = {"Gen", "Undead"}, duration = -1},
 			{name = "MOD_DAMPENELEMENTS_RESISTANCE", type = "Status", category = "Defense", tier = "Medium", tags = {"Gen"}, duration = -1},			
-			{name = "MOD_DAREDEVIL_BLUFF_TECHNICAL", type = "Status", category = "Utility", tier = "Medium", tags = {"Gen"}, duration = -1},							
+			{name = "MOD_DAREDEVIL_BLUFF_TECHNICAL", type = "Status", category = "Damage", tier = "Medium", tags = {"Gen"}, duration = -1},							
 			{name = "MOD_DEATHSHEAD_UNSTOPPABLE_1", type = "Status", category = "Defense", tier = "Medium", tags = {"Gen"}, duration = -1},				
 			{name = "MOD_DEFLECT_MISSILES", type = "Status", category = "Defense", tier = "Medium", tags = {"Phys", "Bard", "Cleric"}, duration = -1},			
 			{name = "MOD_FORCE_LEADERSHIP_AURA", type = "Status", category = "Damage", tier = "Medium", tags = {"Gen"}, duration = -1},			
 			{name = "MOD_FORMATIONTACTICS", type = "Status", category = "Defense", tier = "Medium", tags = {"Phys"}, duration = -1},	
 			{name = "MOD_FORTIFIED_SPIRIT", type = "Status", category = "Utility", tier = "Medium", tags = {"Gen"}, duration = -1},			
 			{name = "MOD_GLO_ACIDIC_BRINE", type = "Status", category = "Utility", tier = "Medium", tags = {"Gen"}, duration = -1},			
-			{name = "MOD_GLO_LIGHTNING_SURGE", type = "Status", category = "Utility", tier = "Medium", tags = {"Gen"}, duration = -1},			
+			{name = "MOD_GLO_LIGHTNING_SURGE", type = "Status", category = "Utility", tier = "Medium", tags = {"Mag"}, duration = -1},			
 			{name = "MOD_GLO_RADIANT_BLINDING", type = "Status", category = "Utility", tier = "Medium", tags = {"Gen"}, duration = -1},			
 			{name = "MOD_GNOLL_RAMPAGE", type = "Status", category = "Utility", tier = "Medium", tags = {"Phys"}, duration = -1},			
 			{name = "MOD_GRAVEBORN_VEIL", type = "Status", category = "Defense", tier = "Medium", tags = {"Gen", "Undead"}, duration = -1},			
@@ -436,8 +438,8 @@ local affixesByTier = {
 			{name = "MOD_MAGIC_AWARENESS_AURA", type = "Status", category = "Defense", tier = "Medium", tags = {"Gen"}, duration = -1},			
 			{name = "MOD_MAG_PHB_RING_OF_REGENERATION_TECHNICAL", type = "Status", category = "Utility", tier = "Medium", tags = {"Gen"}, duration = -1},			
 			{name = "MOD_MARTYRS_REQUIEM", type = "Status", category = "Utility", tier = "Medium", tags = {"Gen"}, duration = -1},	
-			{name = "MOD_MOD_UND_SPORECLOUD", type = "Status", category = "Utility", tier = "Medium", tags = {"Gen"}, duration = -1},			
-			{name = "MOD_ORI_GALE_NECROTICAURA", type = "Status", category = "Damage", tier = "Medium", tags = {"Lock", "Rogue", "Wiz", "Sorc"}, duration = -1},			
+			{name = "MOD_UND_SPORECLOUD", type = "Status", category = "Utility", tier = "Medium", tags = {"Gen"}, duration = -1},			
+			{name = "MOD_ORI_GALE_NECROTICAURA", type = "Status", category = "Damage", tier = "Medium", tags = {"Mag", "Pala"}, duration = -1},			
 			{name = "MOD_PESTILENT_SHROUD_AURA", type = "Status", category = "Damage", tier = "Medium", tags = {"Gen", "Undead"}, duration = -1},				
 			{name = "MOD_POISON_HOBGOBLIN_LEADERSHIP_AURA", type = "Status", category = "Damage", tier = "Medium", tags = {"Druid", "Phys", "Lock", "Wiz", "Sorc"}, duration = -1},			
 			{name = "MOD_REGENERATION_ELEMENTAL_LAVA", type = "Status", category = "Utility", tier = "Medium", tags = {"Gen"}, duration = -1},					
@@ -452,10 +454,10 @@ local affixesByTier = {
 			{name = "MOD_WILD_MAGIC_BARBARIAN_VINE_GROWTH", type = "Status", category = "Utility", tier = "Medium", tags = {"Barb", "Druid", "Ranger"}, duration = -1},			
 			{name = "MOD_WYR_GORTASH_MANIFESTATION_AURA", type = "Status", category = "Utility", tier = "Medium", tags = {"Fighter", "Barb", "Gish", "Monk", "Pala"}, duration = -1},			
 			{name = "MOD_WYR_GORTASH_MANIFESTATION_AURA_BUFF", type = "Status", category = "Utility", tier = "Medium", tags = {"Fighter", "Barb", "Gish", "Monk", "Pala"}, duration = -1},			
-			{name = "MOO_BLOODPOTION_ELF", type = "Status", category = "Utility", tier = "Medium", tags = {"Gen"}, duration = -1},			
+			{name = "MOD_MOO_BLOODPOTION_ELF", type = "Status", category = "Utility", tier = "Medium", tags = {"Gen"}, duration = -1},			
 			{name = "MOO_BLOODPOTION_GITHYANKI", type = "Status", category = "Utility", tier = "Medium", tags = {"Gen"}, duration = -1},			
 			{name = "MOO_BLOODPOTION_HALFELF", type = "Status", category = "Utility", tier = "Medium", tags = {"Gen"}, duration = -1},			
-			{name = "MartialAdept", type = "Passive", category = "Damage", tier = "Medium", tags = {"Phys"}, duration = -1},			
+			{name = "Mod_MartialAdept", type = "Passive", category = "Damage", tier = "Medium", tags = {"Phys"}, duration = -1},			
 			{name = "Mobile_CounterAttackOfOpportunity", type = "Passive", category = "Utility", tier = "Medium", tags = {"Phys"}, duration = -1},			
 			{name = "Mod_ARM_Ambusher_2_Passive", type = "Passive", category = "Utility", tier = "Medium", tags = {"Monk", "Rogue", "Ranger"}, duration = -1},			
 			{name = "Mod_ARM_Balance_2_Passive", type = "Passive", category = "Defense", tier = "Medium", tags = {"Gen"}, duration = -1},			
@@ -470,7 +472,7 @@ local affixesByTier = {
 			{name = "Mod_Aimed_Redemption_Passive", type = "Passive", category = "Damage", tier = "Medium", tags = {"Gen"}, duration = -1},				
 			{name = "Mod_AspectOfTheBeast_HoneyBadger", type = "Passive", category = "Utility", tier = "Medium", tags = {"Barb", "Fighter", "Monk"}, duration = -1},			
 			{name = "Mod_Bastion_Pulse", type = "Passive", category = "Utility", tier = "Medium", tags = {"Gen"}, duration = -1},
-			{name = "Mod_Battleforge_Resilience_Damage_Taken_Tracking", type = "Passive", category = "Utility", tier = "Medium", tags = {"Gen"}, duration = -1},
+			{name = "Mod_Battleforge_Resilience_Damage_Taken_Tracking", type = "Passive", category = "Damage", tier = "Medium", tags = {"Gen"}, duration = -1},
 			{name = "Mod_Bleed_OnDamageTaken_Passive", type = "Passive", category = "Damage", tier = "Medium", tags = {"Barb", "Druid", "Fighter", "Ranger", "Rogue", "Gish"}, duration = -1},			
 			{name = "Mod_Blind_OnDamageTaken_Passive", type = "Passive", category = "Utility", tier = "Medium", tags = {"Cleric", "Bard", "Pala", "Druid"}, duration = -1},			
 			{name = "Mod_BloodLetter", type = "Passive", category = "Damage", tier = "Medium", tags = {"Druid", "Rogue", "Fighter", "Gish", "Barb", "Ranger"}, duration = -1},				
@@ -488,7 +490,7 @@ local affixesByTier = {
 			{name = "Mod_Crescendoing_Agony_Attacks", type = "Passive", category = "Damage", tier = "Medium", tags = {"Gen"}, duration = -1},			
 			{name = "Mod_DEN_TunnelStaff_Passive", type = "Passive", category = "Utility", tier = "Medium", tags = {"Phys"}, duration = -1},			
 			{name = "Mod_DamageReduction_Dragon", type = "Passive", category = "Defense", tier = "Medium", tags = {"Gen"}, duration = -1},			
-			{name = "Mod_Daredevil_Damage_Taken_Tracking", type = "Passive", category = "Utility", tier = "Medium", tags = {"Gen"}, duration = -1},	
+			{name = "Mod_Daredevil_Damage_Taken_Tracking", type = "Passive", category = "Damage", tier = "Medium", tags = {"Gen"}, duration = -1},	
 			{name = "Mod_DazedImmunity_Passive", type = "Passive", category = "Defense", tier = "Medium", tags = {"Gen"}, duration = -1},			
 			{name = "Mod_Dexterity_Drain_Attack_Passive", type = "Passive", category = "Utility", tier = "Medium", tags = {"Phys"}, duration = -1},			
 			{name = "Mod_DistractingStrike", type = "Passive", category = "Damage", tier = "Medium", tags = {"Phys"}, duration = -1},			
@@ -581,7 +583,7 @@ local affixesByTier = {
 			{name = "Mod_MAG_MeleeDebuff_AttackDebuff1_OnDamaged_Passive", type = "Passive", category = "Defense", tier = "Medium", tags = {"Gen"}, duration = -1},			
 			{name = "Mod_MAG_Mobility_ExplosionOnJump_Passive", type = "Passive", category = "Damage", tier = "Medium", tags = {"Barb", "Fighter", "Gish", "Monk", "Pala"}, duration = -1},			
 			{name = "Mod_MAG_Mobility_MomentumOnDamage_Passive", type = "Passive", category = "Utility", tier = "Medium", tags = {"Gen"}, duration = -1},			
-			{name = "Mod_MAG_Monk_Magic_Gloves_Passive", type = "Passive", category = "Damage", tier = "Medium", tags = {"Phys"}, duration = -1},			
+			{name = "Mod_MAG_Monk_Magic_Gloves_Passive", type = "Passive", category = "Damage", tier = "Medium", tags = {"Barb", "Fighter", "Monk", "Gish", "Pala"}, duration = -1},			
 			{name = "Mod_MAG_OfSharpCaster_Hat_Passive", type = "Passive", category = "Damage", tier = "Medium", tags = {"Mag"}, duration = -1},	
 			{name = "Mod_MAG_PHB_OfRegeneration_Ring_Passive", type = "Passive", category = "Utility", tier = "Medium", tags = {"Gen"}, duration = -1},			
 			{name = "Mod_MAG_PHB_PeriaptofWoundClosure_Amulet_Maximize_Passive", type = "Passive", category = "Utility", tier = "Medium", tags = {"Gen"}, duration = -1},			
@@ -614,8 +616,8 @@ local affixesByTier = {
 			{name = "Mod_MageSlayer_Advantage", type = "Passive", category = "Defense", tier = "Medium", tags = {"Phys"}, duration = -1},			
 			{name = "Mod_MageSlayer_BreakConcentration", type = "Passive", category = "Utility", tier = "Medium", tags = {"Phys"}, duration = -1},			
 			{name = "Mod_ManeuveringAttack", type = "Passive", category = "Damage", tier = "Medium", tags = {"Phys"}, duration = -1},			
-			{name = "Mod_Metamagic_Extended", type = "Passive", category = "Utility", tier = "Medium", tags = {"Mag"}, duration = -1},			
-			{name = "Mod_Metamagic_Heightened", type = "Passive", category = "Utility", tier = "Medium", tags = {"Mag"}, duration = -1},			
+			{name = "Mod_Metamagic_Extended", type = "Passive", category = "Utility", tier = "Medium", tags = {"Wiz", "Lock", "Sorc", "Pala", "Druid", "Bard", "Cleric", "Gish"}, duration = -1},			
+			{name = "Mod_Metamagic_Heightened", type = "Passive", category = "Utility", tier = "Medium", tags = {"Wiz", "Lock", "Sorc", "Pala", "Druid", "Bard", "Cleric", "Gish"}, duration = -1},			
 			{name = "Mod_Mistwalker_Passive", type = "Passive", category = "Utility", tier = "Medium", tags = {"Gen"}, duration = -1},		
 			{name = "Mod_Mod_MAG_HelmOfBalduran_Protection_Passive", type = "Passive", category = "Defense", tier = "Medium", tags = {"Gen"}, duration = -1},			
 			{name = "Mod_Momentums_Edge", type = "Passive", category = "Damage", tier = "Medium", tags = {"Phys"}, duration = -1},		
@@ -668,8 +670,8 @@ local affixesByTier = {
 			{name = "Mod_WIS_2_Passive", type = "Passive", category = "Defense", tier = "Medium", tags = {"Gen"}, duration = -1},
 			{name = "Mod_Warders_Empathy", type = "Passive", category = "Defense", tier = "Medium", tags = {"Mag"}, duration = -1},			
 			{name = "Mod_WildMagicBarbarian_MagicRetribution_Passive", type = "Passive", category = "Damage", tier = "Medium", tags = {"Gen"}, duration = -1},
-			{name = "OWLBEAR_WILDSHAPE_ENRAGE", type = "Status", category = "Utility", tier = "Medium", tags = {"Monk", "Fighter", "Gish", "Pala", "Barb", "Druid"}, duration = -1},			
-			{name = "PATIENT_DEFENCE", type = "Status", category = "Defense", tier = "Medium", tags = {"Gen"}, duration = 12},	
+			{name = "MOD_OWLBEAR_WILDSHAPE_ENRAGE", type = "Status", category = "Utility", tier = "Medium", tags = {"Phys"}, duration = -1},			
+			{name = "PATIENT_DEFENCE", type = "Status", category = "Defense", tier = "Medium", tags = {"Gen"}, duration = 18},	
 			{name = "PHASESPIDER_HARDCORE", type = "Status", category = "Utility", tier = "Medium", tags = {"Gen"}, duration = -1},			
 			{name = "PLAQUEPUZZLE_PALADIN_HARDCORE", type = "Status", category = "Utility", tier = "Medium", tags = {"Phys"}, duration = -1},			
 			{name = "PLAQUEPUZZLE_WIZARD_HARDCORE", type = "Status", category = "Damage", tier = "Medium", tags = {"Wiz", "Lock", "Sorc"}, duration = -1},			
@@ -686,7 +688,7 @@ local affixesByTier = {
 			{name = "Projectile_PLA_FakeAlchemistFire", type = "Targeted", category = "Damage", tier = "Medium", tags = {"Sorc", "Wiz", "Lock", "Druid"}, duration = -1, range = 18},			
 			{name = "Projectile_SCL_FishermansHut_KuoToaNet", type = "Targeted", category = "Utility", tier = "Medium", tags = {"Ranger", "Fighter", "Rogue", "Gish"}, duration = -1, range= 9},			
 			{name = "PurityOfBody", type = "Passive", category = "Utility", tier = "Medium", tags = {"Gen"}, duration = -1},			
-			{name = "RAGE_SAHUAGIN", type = "Status", category = "Utility", tier = "Medium", tags = {"Barb", "Fighter", "Monk", "Rogue"}, duration = -1},			
+			{name = "RAGE_SAHUAGIN", type = "Status", category = "Utility", tier = "Medium", tags = {"Phys"}, duration = -1},			
 			{name = "RepellingBlast", type = "Passive", category = "Utility", tier = "Medium", tags = {"Lock"}, duration = -1},			
 			{name = "Resilient_Charisma", type = "Passive", category = "Defense", tier = "Medium", tags = {"Gen"}, duration = -1},			
 			{name = "Resilient_Constitution", type = "Passive", category = "Defense", tier = "Medium", tags = {"Gen"}, duration = -1},			
@@ -694,7 +696,7 @@ local affixesByTier = {
 			{name = "Resilient_Intelligence", type = "Passive", category = "Defense", tier = "Medium", tags = {"Gen"}, duration = -1},			
 			{name = "Resilient_Strength", type = "Passive", category = "Defense", tier = "Medium", tags = {"Gen"}, duration = -1},			
 			{name = "Resilient_Wisdom", type = "Passive", category = "Defense", tier = "Medium", tags = {"Gen"}, duration = -1},			
-			{name = "SANCTUARY", type = "Status", category = "Utility", tier = "Medium", tags = {"Cleric", "Bard", "Druid", "Pala"}, duration = -1},	
+			{name = "SANCTUARY", type = "Status", category = "Utility", tier = "Medium", tags = {"Cleric", "Bard", "Druid", "Pala"}, duration = 12},	
 			{name = "SEE_INVISIBILITY", type = "Status", category = "Utility", tier = "Medium", tags = {"Gen"}, duration = -1},					
 			{name = "SHIELD", type = "Status", category = "Defense", tier = "Medium", tags = {"Gen"}, duration = 6},			
 			{name = "SORCERYPOINT_4", type = "Status", category = "Utility", tier = "Medium", tags = {"Mag"}, duration = -1},			
@@ -715,7 +717,7 @@ local affixesByTier = {
 			{name = "Shout_MAG_Self_ElementalWeapon_Fire", type = "Ability", category = "Damage", tier = "Medium", tags = {"Phys"}, duration = -1},			
 			{name = "Shout_MAG_SpellBlade_Augmentation", type = "Ability", category = "Utility", tier = "Medium", tags = {"Gish", "Sorc", "Wiz", "Lock", "Pala", "Cleric", "Bard", "Druid"}, duration = -1},			
 			{name = "Shout_PactOfTheBlade_Bind", type = "Ability", category = "Damage", tier = "Medium", tags = {"Mag"}, duration = -1},			
-			{name = "Shout_Rage", type = "Ability", category = "Utility", tier = "Medium", tags = {"Barb", "Fighter", "Monk", "Rogue"}, duration = -1},			
+			{name = "Shout_Rage", type = "Ability", category = "Utility", tier = "Medium", tags = {"Phys"}, duration = -1},			
 			{name = "Shout_SacredWeapon", type = "Ability", category = "Damage", tier = "Medium", tags = {"Pala", "Bard"}, duration = -1},			
 			{name = "Shout_SecondWind", type = "Ability", category = "Utility", tier = "Medium", tags = {"Phys"}, duration = -1},			
 			{name = "Shout_SeeInvisibility", type = "Ability", category = "Utility", tier = "Medium", tags = {"Gen"}, duration = -1},
@@ -725,8 +727,7 @@ local affixesByTier = {
 			{name = "Shout_WildShape_Badger", type = "Ability", category = "Damage", tier = "Medium", tags = {"Druid"}, duration = -1},			
 			{name = "Shout_WildShape_DeepRothe", type = "Ability", category = "Damage", tier = "Medium", tags = {"Druid"}, duration = -1},			
 			{name = "Shout_WildShape_Spider", type = "Ability", category = "Damage", tier = "Medium", tags = {"Druid"}, duration = -1},			
-			{name = "Shout_WildShape_Wolf_Dire", type = "Ability", category = "Damage", tier = "Medium", tags = {"Druid"}, duration = -1},			
-			{name = "StalkersFlurry", type = "Passive", category = "Damage", tier = "Medium", tags = {"Phys"}, duration = -1},			
+			{name = "Shout_WildShape_Wolf_Dire", type = "Ability", category = "Damage", tier = "Medium", tags = {"Druid"}, duration = -1},					
 			{name = "TAD_CullTheWeak", type = "Passive", category = "Damage", tier = "Medium", tags = {"Gen"}, duration = -1},			
 			{name = "TAD_Freecast", type = "Passive", category = "Utility", tier = "Medium", tags = {"Mag", "Pala", "Gish", "Ranger"}, duration = -1},			
 			{name = "TAD_IMPERIL_TECHNICAL", type = "Status", category = "Utility", tier = "Medium", tags = {"Wiz", "Sorc", "Lock", "Bard"}, duration = -1},			
@@ -768,7 +769,7 @@ local affixesByTier = {
 			{name = "ThirdEye", type = "Passive", category = "Utility", tier = "Medium", tags = {"Gen"}, duration = -1},			
 			{name = "Tough", type = "Passive", category = "Defense", tier = "Medium", tags = {"Gen"}, duration = -1},			
 			{name = "VOSS_HARDCORE", type = "Status", category = "Utility", tier = "Medium", tags = {"Phys"}, duration = -1},			
-			{name = "WEB_BUFF_SPIDER_ACTIVE", type = "Status", category = "Utility", tier = "Medium", tags = {"Gen"}, duration = -1},			
+			{name = "MOD_WEB_BUFF_SPIDER_ACTIVE", type = "Status", category = "Utility", tier = "Medium", tags = {"Gen"}, duration = -1},			
 			{name = "WILD_MAGIC_HEAL", type = "Status", category = "Utility", tier = "Medium", tags = {"Cleric", "Druid", "Pala", "Bard"}, duration = -1},			
 			{name = "WILD_MAGIC_SWAP", type = "Status", category = "Utility", tier = "Medium", tags = {"Sorc", "Wiz", "Lock", "Bard"}, duration = -1},			
 			{name = "WILD_MAGIC_TELEKINESIS", type = "Status", category = "Utility", tier = "Medium", tags = {"Wiz", "Sorc", "Bard"}, duration = -1},					
@@ -777,41 +778,51 @@ local affixesByTier = {
 			{name = "Mod_Composed_Assault_Passive", type = "Passive", category = "Damage", tier = "Medium", tags = {"Gen"}, duration = -1},
 			{name = "Mod_Measured_Precision_Passive", type = "Passive", category = "Damage", tier = "Medium", tags = {"Gen"}, duration = -1},
 			{name = "MOD_ARCANE_ECHO", type = "Status", category = "Damage", tier = "Medium", tags = {"Mag"}, duration = -1},
+			{name = "Shout_MAG_DevoteesMace_Healing_Aura", type = "Ability", category = "Utility", tier = "Medium", tags = {"Gen"}, duration = -1},	
+			{name = "AdditionalSuperiorityDie_Level_1", type = "Passive", category = "Utility", tier = "Medium", tags = {"Cleric", "Phys"}, duration = -1},
+			{name = "MOD_SUPER_ALCH_ELIXIR_CRITICALS", type = "Status", category = "Damage", tier = "Medium", tags = {"Gen"}, duration = -1},
+			{name = "MOD_HERALD_OF_MISFORTUNE", type = "Status", category = "Damage", tier = "Medium", tags = {"Gen"}, duration = -1},
+			{name = "MOD_HAG_WARRIORS_BARGAIN", type = "Status", category = "Utility", tier = "Medium", tags = {"Phys", "Cleric"}, duration = -1},
+			{name = "MOD_HAG_SCHOLARS_BARGAIN", type = "Status", category = "Utility", tier = "Medium", tags = {"Mag", "Pala"}, duration = -1},
+			{name = "MOD_PASS_WITHOUT_TRACE_AURA", type = "Status", category = "Utility", tier = "Medium", tags = {"Gen"}, duration = -1},
+			{name = "MOD_AGAINST_THE_ODDS", type = "Status", category = "Damage", tier = "Medium", tags = {"Gen"}, duration = -1},
+			{name = "MOD_INNER_RESOLVE_STATUS", type = "Status", category = "Utility", tier = "Medium", tags = {"Gen"}, duration = -1},
+			{name = "MOD_NIMBLE_RECOVERY_STATUS", type = "Status", category = "Utility", tier = "Medium", tags = {"Gen"}, duration = -1},
+			{name = "MOD_GALE_BARRIER", type = "Status", category = "Defense", tier = "Medium", tags = {"Gen"}, duration = -1},
 		-- Add more medium affixes here
 },
 
 		Major = {
-			{name = "ACTION_SURGE", type = "Status", category = "Damage", tier = "Major", tags = {"Fighter", "Rogue", "Ranger", "Monk"}, duration = 18},						
+			{name = "ACTION_SURGE", type = "Status", category = "Damage", tier = "Major", tags = {"Phys"}, duration = 18},						
 			{name = "ALCH_OIL_ATTACKBUFF", type = "Status", category = "Damage", tier = "Major", tags = {"Rogue", "Fighter", "Ranger", "Gish"}, duration = -1},			
 			{name = "ALCH_OIL_COMBUSTION", type = "Status", category = "Damage", tier = "Major", tags = {"Rogue", "Fighter", "Ranger", "Gish"}, duration = -1},			
 			{name = "ALCH_OIL_REDUCE", type = "Status", category = "Utility", tier = "Major", tags = {"Rogue", "Fighter", "Ranger", "Gish"}, duration = -1},			
 			{name = "ARMOR_OF_AGATHYS_3", type = "Status", category = "Utility", tier = "Major", tags = {"Sorc", "Wiz", "Lock"}, duration = -1},			
 			{name = "ASTRAL_PLANE", type = "Status", category = "Utility", tier = "Major", tags = {"Gen"}, duration = -1},			
-			{name = "AURA_OF_COURAGE", type = "Status", category = "Defense", tier = "Major", tags = {"Pala", "Cleric", "Bard"}, duration = -1},			
-			{name = "AURA_OF_DEVOTION", type = "Status", category = "Defense", tier = "Major", tags = {"Pala", "Cleric", "Bard"}, duration = -1},			
+			{name = "AURA_OF_COURAGE", type = "Status", category = "Defense", tier = "Major", tags = {"Pala", "Cleric", "Bard", "Wiz"}, duration = -1},			
+			{name = "AURA_OF_DEVOTION", type = "Status", category = "Defense", tier = "Major", tags = {"Pala", "Cleric", "Bard", "Wiz"}, duration = -1},			
 			{name = "AURA_OF_MURDER", type = "Status", category = "Damage", tier = "Major", tags = {"Phys"}, duration = -1},	
-			{name = "AURA_OF_WARDING", type = "Status", category = "Defense", tier = "Major", tags = {"Pala", "Cleric", "Bard"}, duration = -1},			
-			{name = "AdditionalSuperiorityDie_Level_1", type = "Passive", category = "Utility", tier = "Major", tags = {"Cleric", "Fighter", "Monk", "Rogue", "Ranger"}, duration = -1},			
+			{name = "AURA_OF_WARDING", type = "Status", category = "Defense", tier = "Major", tags = {"Pala", "Cleric", "Bard", "Wiz"}, duration = -1},						
 			{name = "AgonizingBlast", type = "Passive", category = "Damage", tier = "Major", tags = {"Lock"}, duration = -1},			
 			{name = "Alert", type = "Passive", category = "Utility", tier = "Major", tags = {"Gen"}, duration = -1},
 			{name = "ARCANE_WARD", type = "Status", category = "Defense", tier = "Major", tags = {"Sorc", "Wiz", "Lock", "Bard"}, duration = 30},			
-			{name = "AspectOfTheBeast_Tiger", type = "Passive", category = "Damage", tier = "Major", tags = {"Barb", "Monk", "Fighter", "Rogue", "Druid"}, duration = -1},			
-			{name = "BANITES_FIST_HARD", type = "Status", category = "Utility", tier = "Major", tags = {"Gish", "Fighter", "Rogue", "Ranger"}, duration = -1},			
+			{name = "AspectOfTheBeast_Tiger", type = "Passive", category = "Damage", tier = "Major", tags = {"Phys"}, duration = -1},			
+			{name = "BANITES_FIST_HARD", type = "Status", category = "Utility", tier = "Major", tags = {"Phys"}, duration = -1},			
 			{name = "BARDIC_INSPIRATION_COMBAT_D8", type = "Status", category = "Damage", tier = "Major", tags = {"Gen"}, duration = -1},			
 			{name = "BARDIC_INSPIRATION_D10", type = "Status", category = "Utility", tier = "Major", tags = {"Gen"}, duration = -1},			
-			{name = "BEACON_OF_HOPE", type = "Status", category = "Defense", tier = "Major", tags = {"Barb", "Pala", "Fighter", "Monk", "Gish", "Cleric", "Bard", "Druid"}, duration = -1},			
+			{name = "BEACON_OF_HOPE", type = "Status", category = "Defense", tier = "Major", tags = {"Barb", "Pala", "Fighter", "Monk", "Gish", "Cleric", "Bard", "Druid", "Wiz"}, duration = -1},			
 			{name = "BLESS", type = "Status", category = "Utility", tier = "Major", tags = {"Gen"}, duration = -1},			
 			{name = "BLUR", type = "Status", category = "Defense", tier = "Major", tags = {"Gen"}, duration = -1},			
 			{name = "BookOfAncientSecrets", type = "Passive", category = "Utility", tier = "Major", tags = {"Druid", "Wiz", "Sorc", "Lock"}, duration = -1},			
 			{name = "Brittled_Attacks_Passive", type = "Passive", category = "Damage", tier = "Major", tags = {"Wiz", "Lock", "Sorc"}, duration = -1},			
 			{name = "CHA_SKELETONMELEE_HARDCORE", type = "Status", category = "Utility", tier = "Major", tags = {"Phys"}, duration = -1},			
-			{name = "CIRCLE_OF_RENEWAL_AURA", type = "Status", category = "Utility", tier = "Major", tags = {"Cleric", "Pala", "Druid", "Bard"}, duration = -1},			
+			{name = "CIRCLE_OF_RENEWAL_AURA", type = "Status", category = "Utility", tier = "Major", tags = {"Cleric", "Pala", "Druid", "Bard", "Wiz"}, duration = -1},			
 			{name = "CONS_DRUG_STIMULANT", type = "Status", category = "Utility", tier = "Major", tags = {"Gen"}, duration = -1},	
 			{name = "CRE_ASTRALPRISON_GRAVITY", type = "Status", category = "Utility", tier = "Major", tags = {"Gen"}, duration = -1},			
 			{name = "CRE_GIANTEAGLE_CHIEF_HARDCORE", type = "Status", category = "Utility", tier = "Major", tags = {"Gen"}, duration = -1},			
 			{name = "ClarifiedMortality", type = "Passive", category = "Utility", tier = "Major", tags = {"Phys"}, duration = -1},			
 			{name = "DOPPELGANGER_HARDCORE", type = "Status", category = "Defense", tier = "Major", tags = {"Gen"}, duration = -1},			
-			{name = "DREAD_AMBUSHER", type = "Status", category = "Damage", tier = "Major", tags = {"Rogue", "Ranger", "Fighter"}, duration = 6},			
+			{name = "DREAD_AMBUSHER", type = "Status", category = "Damage", tier = "Major", tags = {"Phys"}, duration = 6},			
 			{name = "DRIDER_HARDCORE", type = "Status", category = "Damage", tier = "Major", tags = {"Phys"}, duration = -1},
 			{name = "MOD_DEATHBURST_ICEMEPHIT", type = "Status", category = "Utility", tier = "Major", tags = {"Gen"}, duration = -1},	
 			{name = "MOD_DEATHBURST_MAGMAMEPHIT", type = "Status", category = "Utility", tier = "Major", tags = {"Gen"}, duration = -1},			
@@ -831,7 +842,7 @@ local affixesByTier = {
 			{name = "Frostbite_Attacks_Passive", type = "Passive", category = "Utility", tier = "Major", tags = {"Wiz", "Lock", "Sorc"}, duration = -1},	
 			{name = "GITHYANKI_ARDENT_HARDCORE", type = "Status", category = "Damage", tier = "Major", tags = {"Phys"}, duration = -1},	
 			{name = "GITHYANKI_CAPTAIN_HARDCORE", type = "Status", category = "Damage", tier = "Major", tags = {"Phys"}, duration = -1},			
-			{name = "GLO_BLACKPOWDERKEG", type = "Status", category = "Utility", tier = "Major", tags = {"Gen"}, duration = -1},					
+			{name = "MOD_GLO_BLACKPOWDERKEG", type = "Status", category = "Utility", tier = "Major", tags = {"Gen"}, duration = -1},					
 			{name = "GNOLL_SUDDENRUSH", type = "Status", category = "Utility", tier = "Major", tags = {"Gen"}, duration = -1},			
 			{name = "GOB_CALMNESS_IN_PAIN", type = "Status", category = "Defense", tier = "Major", tags = {"Gen"}, duration = -1},			
 			{name = "GUIDED_STRIKE_BONUS", type = "Status", category = "Damage", tier = "Major", tags = {"Phys"}, duration = -1},			
@@ -851,7 +862,7 @@ local affixesByTier = {
 			{name = "LEGENDARY_RESISTANCE_DEXTERITY", type = "Status", category = "Defense", tier = "Major", tags = {"Gen"}, duration = -1},			
 			{name = "LEGENDARY_RESISTANCE_INTELLIGENCE", type = "Status", category = "Defense", tier = "Major", tags = {"Gen"}, duration = -1},			
 			{name = "LEGENDARY_RESISTANCE_WISDOM", type = "Status", category = "Defense", tier = "Major", tags = {"Gen"}, duration = -1},			
-			{name = "LIVING_SHADOW", type = "Status", category = "Defense", tier = "Major", tags = {"Rogue", "Druid", "Lock", "Ranger", "Monk"}, duration = -1},			
+			{name = "LIVING_SHADOW", type = "Status", category = "Defense", tier = "Major", tags = {"Gen"}, duration = -1},			
 			{name = "MOD_LOW_BLOOMRIDGEPARK_DISGUISEDCULTIST_TECHNICAL", type = "Status", category = "Defense", tier = "Major", tags = {"Gen"}, duration = -1},			
 			{name = "LOW_GithProdigy_PsionicSkin", type = "Passive", category = "Defense", tier = "Major", tags = {"Gen"}, duration = -1},			
 			{name = "LOW_Houndmaster_HuntersCamouflage_Hardcore", type = "Passive", category = "Defense", tier = "Major", tags = {"Gen"}, duration = -1},			
@@ -873,7 +884,7 @@ local affixesByTier = {
 			{name = "MAGICAL_AMBUSH", type = "Status", category = "Damage", tier = "Major", tags = {"Ranger", "Lock", "Wiz", "Sorc"}, duration = -1},						
 			{name = "MAG_AUTOMATON_SUNBEAM_SHOT_OWNER", type = "Status", category = "Damage", tier = "Major", tags = {"Ranger", "Gish", "Fighter", "Pala"}, duration = -1},			
 			{name = "MAG_CHARGED_LIGHTNING_AC_BONUS", type = "Status", category = "Defense", tier = "Major", tags = {"Gen"}, duration = -1},			
-			{name = "MAG_CQ_CASTER_DISRUPTION_AURA", type = "Status", category = "Utility", tier = "Major", tags = {"Gen"}, duration = -1},			
+			{name = "MOD_MAG_CQ_CASTER_DISRUPTION_AURA", type = "Status", category = "Defense", tier = "Major", tags = {"Gen"}, duration = -1},			
 			{name = "MAG_CRITICAL_ARCANIC_CRITICAL", type = "Status", category = "Damage", tier = "Major", tags = {"Mag"}, duration = -1},			
 			{name = "MAG_DEFENDER_WEAPON_ENCHANTMENT_TECHNICAL", type = "Status", category = "Damage", tier = "Major", tags = {"Phys"}, duration = -1},			
 			{name = "MAG_DRUID_EXTRA_SPORES", type = "Status", category = "Utility", tier = "Major", tags = {"Druid", "Ranger", "Rogue"}, duration = -1},			
@@ -898,8 +909,7 @@ local affixesByTier = {
 			{name = "MOD_AURA_OF_FEROCITY", type = "Status", category = "Damage", tier = "Major", tags = {"Barb", "Fighter", "Gish", "Pala"}, duration = -1},			
 			{name = "MOD_AURA_OF_FINESSE", type = "Status", category = "Damage", tier = "Major", tags = {"Barb", "Fighter", "Gish", "Pala", "Rogue", "Bard", "Ranger"}, duration = -1},			
 			{name = "MOD_CAUSTIC_AURA", type = "Status", category = "Utility", tier = "Major", tags = {"Lock", "Druid", "Sorc", "Wiz", "Barb", "Ranger", "Rogue"}, duration = -1},
-			{name = "MOD_COMMANDERS_STRIKE_D10", type = "Status", category = "Damage", tier = "Major", tags = {"Phys"}, duration = -1},				
-			{name = "MOD_COMMANDERS_STRIKE_D8", type = "Status", category = "Damage", tier = "Major", tags = {"Phys"}, duration = -1},			
+			{name = "MOD_COMMANDERS_STRIKE_D10", type = "Status", category = "Damage", tier = "Major", tags = {"Phys"}, duration = -1},						
 			{name = "MOD_CRUSADERS_MANTLE", type = "Status", category = "Damage", tier = "Major", tags = {"Gen"}, duration = -1},	
 			{name = "MOD_DAMPENELEMENTS_AURA", type = "Status", category = "Defense", tier = "Major", tags = {"Gen"}, duration = -1},			
 			{name = "MOD_DEATHSHEAD_UNSTOPPABLE_3", type = "Status", category = "Defense", tier = "Major", tags = {"Gen"}, duration = -1},			
@@ -929,9 +939,8 @@ local affixesByTier = {
 			{name = "MOD_Luminous_Reflection_Passive", type = "Passive", category = "Utility", tier = "Major", tags = {"Mag"}, duration = -1},				
 			{name = "MOD_MAGIC_AWARENESS", type = "Status", category = "Defense", tier = "Major", tags = {"Gen"}, duration = -1},			
 			{name = "MOD_MAG_CELESTIAL_HASTE", type = "Status", category = "Utility", tier = "Major", tags = {"Gen"}, duration = 18},			
-			{name = "MOD_MAG_CONSTRUCT_MODE", type = "Status", category = "Utility", tier = "Major", tags = {"Gen"}, duration = -1},			
-			{name = "MOD_MAG_DEATH_DO_SHADOW_POSSESION_DOWNED_OVERRIDE", type = "Status", category = "Utility", tier = "Major", tags = {"Lock", "Wiz", "Rogue", "Sorc", "Fighter", "Monk", "Ranger", "Barb", "Cleric", "Druid", "Bard"}, duration = -1},			
-			{name = "MOD_MAG_FLAMING_FIST_BLAZING_RETALIATION", type = "Status", category = "Defense", tier = "Major", tags = {"Gen"}, duration = -1},			
+			{name = "MOD_MAG_CONSTRUCT_MODE", type = "Status", category = "Utility", tier = "Major", tags = {"Gen"}, duration = -1},						
+			{name = "MOD_MAG_FLAMING_FIST_BLAZING_RETALIATION", type = "Status", category = "Damage", tier = "Major", tags = {"Gen"}, duration = -1},			
 			{name = "MOD_MAG_RAMPART_AURA", type = "Status", category = "Utility", tier = "Major", tags = {"Gen"}, duration = -1},
 			{name = "MOD_MAG_TWN_BREWERY_CLUB_LIGHTNING", type = "Status", category = "Utility", tier = "Major", tags = {"Phys"}, duration = -1},					
 			{name = "MOD_MANTLE_OF_LUMINESCENCE", type = "Status", category = "Utility", tier = "Major", tags = {"Gen"}, duration = -1},	
@@ -948,11 +957,10 @@ local affixesByTier = {
 			{name = "MOD_MIXCHANGE_NECROTIC_BUFF_BREWER", type = "Status", category = "Damage", tier = "Major", tags = {"Phys", "Lock", "Wiz", "Sorc"}, duration = -1},			
 			{name = "MOD_MIXCHANGE_PHYSICAL_BUFF_BREWER", type = "Status", category = "Utility", tier = "Major", tags = {"Barb", "Fighter", "Monk", "Gish", "Pala"}, duration = -1},			
 			{name = "MOD_MIXCHANGE_POISON_BUFF_BREWER", type = "Status", category = "Damage", tier = "Major", tags = {"Phys", "Lock", "Druid", "Wiz", "Sorc"}, duration = -1},			
-			{name = "MOD_MOONBEAM_OWNER", type = "Status", category = "Damage", tier = "Major", tags = {"Druid", "Cleric", "Bard"}, duration = -1},			
-			{name = "MOD_MOO_KETHERIC_DEATHBLOOMSPAWNONDEATH", type = "Status", category = "Utility", tier = "Major", tags = {"Wiz", "Lock", "Pala", "Rogue"}, duration = -1},			
-			{name = "MOD_MOO_KETHERIC_DEATHBLOOMSPAWNONDEATH_AURA", type = "Status", category = "Utility", tier = "Major", tags = {"Wiz", "Lock", "Pala", "Rogue"}, duration = -1},			
+			{name = "MOD_MOONBEAM_OWNER", type = "Status", category = "Damage", tier = "Major", tags = {"Druid", "Cleric", "Bard", "Wiz"}, duration = -1},			
+			{name = "MOD_MOO_KETHERIC_DEATHBLOOMSPAWNONDEATH", type = "Status", category = "Utility", tier = "Major", tags = {"Gen"}, duration = -1},					
 			{name = "MOD_MOO_NIGHTSONG_MOONBEAM", type = "Status", category = "Damage", tier = "Major", tags = {"Cleric", "Pala", "Druid", "Bard"}, duration = -1},			
-			{name = "MOD_NECROTIC_AURA_BREWER", type = "Status", category = "Damage", tier = "Major", tags = {"Lock", "Rogue", "Wiz", "Sorc"}, duration = -1},			
+			{name = "MOD_NECROTIC_AURA_BREWER", type = "Status", category = "Damage", tier = "Major", tags = {"Mag", "Rogue", "Pala"}, duration = -1},			
 			{name = "MOD_POISONED_EDGE", type = "Status", category = "Damage", tier = "Major", tags = {"Phys"}, duration = -1},
 			{name = "MOD_PREDATOR_PHASING", type = "Status", category = "Damage", tier = "Major", tags = {"Phys"}, duration = -1},
 			{name = "MOD_RADIANT_DEFLECTOR", type = "Status", category = "Damage", tier = "Major", tags = {"Gen"}, duration = -1},	
@@ -982,7 +990,7 @@ local affixesByTier = {
 			{name = "MOD_UNI_MERREGONMASK_AURA", type = "Status", category = "Utility", tier = "Major", tags = {"Fighter", "Barb", "Gish", "Monk", "Pala"}, duration = -1},			
 			{name = "MOD_VALKRANAS_VOGUE_VISAGE", type = "Status", category = "Utility", tier = "Major", tags = {"Gen"}, duration = -1},			
 			{name = "MOD_WILD_MAGIC_BARBARIAN_PROTECTIVE_LIGHTS", type = "Status", category = "Defense", tier = "Major", tags = {"Gen"}, duration = -1},			
-			{name = "MOD_WOOD_WOAD_REGENERATION", type = "Status", category = "Utility", tier = "Major", tags = {"Barb", "Druid", "Ranger"}, duration = -1},			
+			{name = "MOD_WOOD_WOAD_REGENERATION", type = "Status", category = "Utility", tier = "Major", tags = {"Gen"}, duration = -1},			
 			{name = "MOO_BLOODPOTION_DRAGONBORN_ACID", type = "Status", category = "Utility", tier = "Major", tags = {"Sorc", "Wiz", "Druid", "Ranger", "Lock"}, duration = -1},			
 			{name = "MOO_BLOODPOTION_DRAGONBORN_POISON", type = "Status", category = "Utility", tier = "Major", tags = {"Sorc", "Wiz", "Druid", "Ranger", "Lock"}, duration = -1},			
 			{name = "MOO_BLOODPOTION_DWARF", type = "Status", category = "Defense", tier = "Major", tags = {"Gen"}, duration = -1},			
@@ -1001,7 +1009,7 @@ local affixesByTier = {
 			{name = "Mod_Badwell_Attack_Passive", type = "Passive", category = "Damage", tier = "Major", tags = {"Phys", "Druid", "Lock", "Sorc", "Wiz"}, duration = -1},			
 			{name = "Mod_Bane_OnDamageTaken_Passive", type = "Passive", category = "Utility", tier = "Major", tags = {"Rogue", "Ranger", "Lock", "Wiz", "Bard", "Sorc"}, duration = -1},
 			{name = "BEDWARMER_AURA", type = "Status", category = "Damage", tier = "Major", tags = {"Gen"}, duration = -1},			
-			{name = "Mod_Blight_Caller_Passive", type = "Passive", category = "Damage", tier = "Major", tags = {"Lock", "Sorc", "Wiz", "Druid"}, duration = -1},			
+			{name = "Mod_Blight_Caller_Passive", type = "Passive", category = "Damage", tier = "Major", tags = {"Lock", "Sorc", "Wiz", "Druid", "Cleric", "Pala"}, duration = -1},			
 			{name = "Mod_Breacher_Major", type = "Passive", category = "Utility", tier = "Major", tags = {"Gen"}, duration = -1},			
 			{name = "Mod_Brute_Bugbear", type = "Passive", category = "Damage", tier = "Major", tags = {"Phys"}, duration = -1},			
 			{name = "Mod_CombatInspiration", type = "Passive", category = "Utility", tier = "Major", tags = {"Bard"}, duration = -1},	
@@ -1020,13 +1028,13 @@ local affixesByTier = {
 			{name = "Mod_EntropicWard", type = "Passive", category = "Utility", tier = "Major", tags = {"Gen"}, duration = -1},			
 			{name = "Mod_Faeriefire_OnDamageTaken_Passive", type = "Passive", category = "Defense", tier = "Major", tags = {"Gen"}, duration = -1},	
 			{name = "Mod_Frostharrow_Legacy", type = "Passive", category = "Damage", tier = "Major", tags = {"Lock", "Sorc", "Wiz"}, duration = -1},							
-			{name = "Mod_Frosty_Grip_Passive", type = "Passive", category = "Utility", tier = "Major", tags = {"Wiz", "Lock", "Sorc", "Undead"}, duration = -1},			
+			{name = "MOD_SUB_ZERO_STATUS", type = "Status", category = "Utility", tier = "Major", tags = {"Wiz", "Lock", "Sorc", "Undead"}, duration = -1},			
 			{name = "Mod_GOB_DrowCommander_Mace_Passive", type = "Passive", category = "Utility", tier = "Major", tags = {"Phys", "Druid"}, duration = -1},			
 			{name = "Mod_GOB_PainPriest_Axe_Passive", type = "Passive", category = "Utility", tier = "Major", tags = {"Phys", "Lock", "Wiz", "Sorc", "Bard"}, duration = -1},			
 			{name = "Mod_GOB_PainPriest_Dagger_Passive", type = "Passive", category = "Utility", tier = "Major", tags = {"Gen"}, duration = -1},			
 			{name = "Mod_GraveMagic", type = "Passive", category = "Damage", tier = "Major", tags = {"Mag"}, duration = -1},
-			{name = "Mod_Grave_Currents", type = "Passive", category = "Damage", tier = "Major", tags = {"Wiz", "Lock"}, duration = -1},
-			{name = "Mod_HAG_KillerFrogReaction", type = "Passive", category = "Utility", tier = "Major", tags = {"Gen"}, duration = -1},			
+			{name = "Mod_Grave_Currents", type = "Passive", category = "Damage", tier = "Major", tags = {"Wiz", "Lock", "Cleric", "Pala"}, duration = -1},
+			{name = "MOD_KILLER_FROG_STATUS", type = "Status", category = "Utility", tier = "Major", tags = {"Gen"}, duration = -1},			
 			{name = "Mod_HellCrawler_Passive", type = "Passive", category = "Damage", tier = "Major", tags = {"Fighter", "Barb", "Gith", "Lock", "Rogue", "Monk", "Pala"}, duration = -1},			
 			{name = "Mod_HellfireDamagePierce_Technical", type = "Passive", category = "Utility", tier = "Major", tags = {"Lock", "Druid", "Sorc", "Wiz"}, duration = -1},
 			{name = "Mod_Hindered_Attack_Passive", type = "Passive", category = "Utility", tier = "Major", tags = {"Ranger", "Rogue", "Fighter", "Gish"}, duration = -1},			
@@ -1093,8 +1101,8 @@ local affixesByTier = {
 			{name = "Mod_MageSlayer_AttackCaster", type = "Passive", category = "Damage", tier = "Major", tags = {"Phys"}, duration = -1},			
 			{name = "Mod_MartialArts_BonusUnarmedStrike", type = "Passive", category = "Damage", tier = "Major", tags = {"Barb", "Fighter", "Gish"}, duration = -1},			
 			{name = "Mod_MenacingAttack", type = "Passive", category = "Damage", tier = "Major", tags = {"Phys"}, duration = -1},			
-			{name = "Mod_Metamagic_Empowered", type = "Passive", category = "Damage", tier = "Major", tags = {"Mag"}, duration = -1},			
-			{name = "Mod_Metamagic_Quickened", type = "Passive", category = "Utility", tier = "Major", tags = {"Mag"}, duration = -1},					
+			{name = "Mod_Metamagic_Empowered", type = "Passive", category = "Damage", tier = "Major", tags = {"Wiz", "Lock", "Sorc", "Pala", "Druid", "Bard", "Cleric", "Gish"}, duration = -1},			
+			{name = "Mod_Metamagic_Quickened", type = "Passive", category = "Utility", tier = "Major", tags = {"Wiz", "Lock", "Sorc", "Pala", "Druid", "Bard", "Cleric", "Gish"}, duration = -1},					
 			{name = "Mod_MireTheMind", type = "Passive", category = "Utility", tier = "Major", tags = {"Lock", "Wiz", "Rogue", "Bard"}, duration = -1},			
 			{name = "Mod_Mod_MAG_Monk_Healed_TempHP_Passive", type = "Passive", category = "Utility", tier = "Major", tags = {"Monk"}, duration = -1},			
 			{name = "Mod_Offbalance_Attack_Passive", type = "Passive", category = "Damage", tier = "Major", tags = {"Monk", "Rogue", "Ranger", "Bard"}, duration = -1},			
@@ -1104,7 +1112,7 @@ local affixesByTier = {
 			{name = "Mod_PsionicRebuke_Netherbrain", type = "Passive", category = "Damage", tier = "Major", tags = {"Wiz", "Gish", "Sorc", "Lock", "Bard"}, duration = -1},
 			{name = "Mod_Rally", type = "Passive", category = "Utility", tier = "Major", tags = {"Cleric", "Fighter", "Monk", "Rogue", "Ranger"}, duration = -1},				
 			{name = "Mod_Razor_Tempest", type = "Passive", category = "Damage", tier = "Major", tags = {"Phys"}, duration = -1},
-			{name = "Mod_Reapers_Hand", type = "Passive", category = "Damage", tier = "Major", tags = {"Phys", "NotRogue", "NotRanger", "NotMonk", "Undead"}, duration = -1},					
+			{name = "MOD_REAPERS_HAND_STATUS", type = "Status", category = "Damage", tier = "Major", tags = {"Phys", "NotRogue", "NotRanger", "NotMonk", "Undead"}, duration = -1},					
 			{name = "Mod_Reckless_Aim", type = "Passive", category = "Damage", tier = "Major", tags = {"Gen"}, duration = -1},			
 			{name = "Mod_Regeneration_WoodWoad_Cooldown_Technical", type = "Passive", category = "Utility", tier = "Major", tags = {"Barb", "Druid", "Ranger"}, duration = -1},			
 			{name = "Mod_Regretful_Attacks_Passive", type = "Passive", category = "Damage", tier = "Major", tags = {"Phys", "Bard"}, duration = -1},			
@@ -1118,7 +1126,7 @@ local affixesByTier = {
 			{name = "Mod_Shout_MAG_Critical_ArcanicCritical", type = "Ability", category = "Damage", tier = "Major", tags = {"Lock", "Sorc", "Wiz", "Bard", "Druid"}, duration = -1},			
 			{name = "Mod_Shout_MAG_Martial_Exertion", type = "Ability", category = "Damage", tier = "Major", tags = {"Fighter", "Barb", "Gish", "Pala"}, duration = -1},			
 			{name = "Mod_Shout_Rite_of_the_Graftbound_Protector", type = "Ability", category = "Utility", tier = "Major", tags = {"Lock", "Wiz", "Sorc", "Undead"}, duration = -1},				
-			{name = "Mod_Shout_SHA_Skeleton_DarkCelebration", type = "Ability", category = "Damage", tier = "Major", tags = {"Lock", "Wiz", "Rogue", "Cleric", "Bard", "Druid", "Pala"}, duration = -1},			
+			{name = "Mod_Shout_SHA_Skeleton_DarkCelebration", type = "Ability", category = "Damage", tier = "Major", tags = {"Mag", "Rogue", "Pala"}, duration = -1},			
 			{name = "Mod_Shout_Shadow_Meld", type = "Ability", category = "Utility", tier = "Major", tags = {"Phys"}, duration = -1},				
 			{name = "Mod_Shout_Whirlwind", type = "Targeted", category = "Damage", tier = "Major", tags = {"Fighter", "Ranger", "Rogue", "Pala", "Barb", "Gish"}, duration = -1, range= 4},			
 			{name = "Mod_SignOfIllOmen", type = "Passive", category = "Utility", tier = "Major", tags = {"Wiz", "Lock", "Rogue"}, duration = -1},			
@@ -1132,7 +1140,7 @@ local affixesByTier = {
 			{name = "Mod_Target_ShadowSummon", type = "Ability", category = "Damage", tier = "Major", tags = {"Wiz", "Lock", "Sorc"}, duration = -1},	
 			{name = "Mod_Target_UND_Nere_Coercion", type = "Targeted", category = "Damage", tier = "Major", tags = {"Bard", "Wiz", "Sorc"}, duration = -1, range= 17},			
 			{name = "Mod_ThiefOfFiveFates", type = "Passive", category = "Utility", tier = "Major", tags = {"Lock", "Wiz", "Rogue", "Bard"}, duration = -1},			
-			{name = "Mod_ThunderShield", type = "Passive", category = "Damage", tier = "Major", tags = {"Wiz", "Gish", "Druid", "Sorc", "Lock", "Bard", "Cleric"}, duration = -1},
+			{name = "Mod_ThunderShield", type = "Passive", category = "Damage", tier = "Major", tags = {"Wiz", "Gish", "Druid", "Sorc", "Lock", "Bard", "Cleric", "Pala"}, duration = -1},
 			{name = "Mod_UND_DuergarRaft_Hammer_Passive", type = "Passive", category = "Damage", tier = "Major", tags = {"Phys"}, duration = -1},			
 			{name = "Mod_UND_SocietyOfBrilliance_MagicMissileNecklace_Passive", type = "Passive", category = "Damage", tier = "Major", tags = {"Sorc", "Wiz", "Bard"}, duration = -1},			
 			{name = "Mod_UND_SocietyOfBrilliance_PullingRing_Passive", type = "Passive", category = "Utility", tier = "Major", tags = {"Cleric", "Pala", "Druid", "Bard"}, duration = -1},						
@@ -1145,7 +1153,7 @@ local affixesByTier = {
 			{name = "NARCOLEPTIC_BURST", type = "Status", category = "Utility", tier = "Major", tags = {"Gen"}, duration = -1},			
 			{name = "NATURES_STEP_AURA_DRYAD", type = "Status", category = "Utility", tier = "Major", tags = {"Ranger", "Druid", "Barb"}, duration = -1},			
 			{name = "NaturesWard", type = "Passive", category = "Defense", tier = "Major", tags = {"Gen"}, duration = -1},			
-			{name = "ORI_GALE_STAFFNECROTICAURA", type = "Status", category = "Damage", tier = "Major", tags = {"Phys"}, duration = -1},			
+			{name = "MOD_ORI_GALE_STAFFNECROTICAURA", type = "Status", category = "Damage", tier = "Major", tags = {"Gen"}, duration = -1},			
 			{name = "PLA_BLOODFEST", type = "Status", category = "Utility", tier = "Major", tags = {"Gen"}, duration = -1},			
 			{name = "POISON_CRAWLER_MUCUS", type = "Status", category = "Utility", tier = "Major", tags = {"Barb", "Monk", "Fighter", "Druid", "Rogue", "Gish"}, duration = -1},			
 			{name = "POISON_DROW", type = "Status", category = "Utility", tier = "Major", tags = {"Barb", "Monk", "Fighter", "Druid", "Rogue", "Gish"}, duration = -1},			
@@ -1179,7 +1187,7 @@ local affixesByTier = {
 			{name = "Projectile_SteelWatcher_Crossbow", type = "Targeted", category = "Damage", tier = "Major", tags = {"Ranger", "Fighter", "Rogue", "Gish"}, duration = -1, range = 18},			
 			{name = "Projectile_ToxicSpit", type = "Targeted", category = "Damage", tier = "Major", tags = {"Ranger", "Druid", "Lock", "Wiz"}, duration = -1, range= 13},			
 			{name = "Projectile_UND_MagicMissile_SocietyOfBrilliance_Amulet", type = "Targeted", category = "Damage", tier = "Major", tags = {"Wiz", "Sorc", "Bard"}, duration = -1, range = 20},			
-			{name = "RAGE_BOAR", type = "Status", category = "Utility", tier = "Major", tags = {"Barb", "Fighter", "Monk", "Rogue"}, duration = -1},			
+			{name = "RAGE_BOAR", type = "Status", category = "Utility", tier = "Major", tags = {"Phys"}, duration = -1},			
 			{name = "REDCAP_CASTER_HARDCORE", type = "Status", category = "Utility", tier = "Major", tags = {"Sorc", "Lock", "Wiz"}, duration = -1},
 			{name = "Rush_ForceTunnel", type = "Targeted", category = "Utility", tier = "Major", tags = {"Barb", "Fighter", "Gish", "Pala", "Monk"}, duration = -1, range = 18},				
 			{name = "SHIELD", type = "Status", category = "Defense", tier = "Major", tags = {"Gen"}, duration = 12},
@@ -1189,26 +1197,25 @@ local affixesByTier = {
 			{name = "Scar_Sirocco_Gur", type = "Passive", category = "Utility", tier = "Major", tags = {"Phys"}, duration = -1},	
 			{name = "Shout_CharmAnimalsAndPlants", type = "Ability", category = "Utility", tier = "Major", tags = {"Druid", "Ranger"}, duration = -1},			
 			{name = "Shout_DEN_Halsin_WildShape_Bear", type = "Ability", category = "Damage", tier = "Major", tags = {"Druid"}, duration = -1},			
-			{name = "Shout_EndlessRage", type = "Ability", category = "Utility", tier = "Major", tags = {"Barb", "Fighter", "Monk", "Rogue"}, duration = -1},			
+			{name = "Shout_EndlessRage", type = "Ability", category = "Utility", tier = "Major", tags = {"Phys"}, duration = -1},			
 			{name = "Shout_Fanning_Flame", type = "Ability", category = "Damage", tier = "Major", tags = {"Gen"}, duration = -1},			
 			{name = "Shout_FeatherFall", type = "Ability", category = "Utility", tier = "Major", tags = {"Gen"}, duration = -1},						
 			{name = "Shout_FlameBlade_MephistophelesTiefling", type = "Ability", category = "Damage", tier = "Major", tags = {"Lock", "Bard", "Sorc"}, duration = -1},			
-			{name = "Shout_GoblinWarcry", type = "Ability", category = "Utility", tier = "Major", tags = {"Barb", "Monk", "Fighter", "Pala", "Gish"}, duration = -1},			
+			{name = "Shout_GoblinWarcry", type = "Ability", category = "Utility", tier = "Major", tags = {"Phys"}, duration = -1},			
 			{name = "Shout_HAG_UseCharm", type = "Ability", category = "Utility", tier = "Major", tags = {"Gen"}, duration = -1},
 			{name = "Shout_HealingWord_Mass", type = "Ability", category = "Utility", tier = "Major", tags = {"Cleric", "Druid", "Pala", "Bard"}, duration = -1},			
-			{name = "Shout_Inkblot", type = "Ability", category = "Utility", tier = "Major", tags = {"Lock", "Rogue", "Wiz"}, duration = -1},			
-			{name = "Shout_MAG_DevoteesMace_Healing_Aura", type = "Ability", category = "Utility", tier = "Major", tags = {"Gen"}, duration = -1},			
+			{name = "Shout_Inkblot", type = "Ability", category = "Utility", tier = "Major", tags = {"Lock", "Rogue", "Wiz"}, duration = -1},					
 			{name = "Shout_MAG_WeaponAction_FlashingBlade", type = "Targeted", category = "Utility", tier = "Major", tags = {"Pala", "Fighter", "Gish", "Cleric"}, duration = -1, range = 6},			
 			{name = "Shout_MOO_MAG_Ketheric_HowlOfTheDead", type = "Targeted", category = "Utility", tier = "Major", tags = {"Phys"}, duration = -1, range = 3},			
 			{name = "Shout_MagicAllergy_SelfHeal", type = "Ability", category = "Utility", tier = "Major", tags = {"Lock", "Wiz", "Sorc"}, duration = -1},			
 			{name = "Shout_MirrorImage", type = "Ability", category = "Defense", tier = "Major", tags = {"Gen"}, duration = -1},
 			{name = "Shout_PreserveLife", type = "Ability", category = "Utility", tier = "Major", tags = {"Cleric", "Pala", "Druid", "Bard"}, duration = -1},
-			{name = "Shout_Rage_Frenzy", type = "Ability", category = "Utility", tier = "Major", tags = {"Barb", "Fighter", "Monk", "Rogue"}, duration = -1},			
-			{name = "Shout_Rage_Totem_Eagle", type = "Ability", category = "Utility", tier = "Major", tags = {"Barb", "Fighter", "Monk", "Rogue"}, duration = -1},			
-			{name = "Shout_Rage_Totem_Elk", type = "Ability", category = "Utility", tier = "Major", tags = {"Barb", "Fighter", "Monk", "Rogue"}, duration = -1},			
-			{name = "Shout_Rage_Totem_Tiger", type = "Ability", category = "Utility", tier = "Major", tags = {"Barb", "Fighter", "Monk", "Rogue"}, duration = -1},			
-			{name = "Shout_Rage_Totem_Wolf", type = "Ability", category = "Utility", tier = "Major", tags = {"Barb", "Fighter", "Monk", "Rogue"}, duration = -1},			
-			{name = "Shout_Rage_WildMagic", type = "Ability", category = "Utility", tier = "Major", tags = {"Barb", "Fighter", "Monk"}, duration = -1},			
+			{name = "Shout_Rage_Frenzy", type = "Ability", category = "Utility", tier = "Major", tags = {"Phys"}, duration = -1},			
+			{name = "Shout_Rage_Totem_Eagle", type = "Ability", category = "Utility", tier = "Major", tags = {"Phys"}, duration = -1},			
+			{name = "Shout_Rage_Totem_Elk", type = "Ability", category = "Utility", tier = "Major", tags = {"Phys"}, duration = -1},			
+			{name = "Shout_Rage_Totem_Tiger", type = "Ability", category = "Utility", tier = "Major", tags = {"Phys"}, duration = -1},			
+			{name = "Shout_Rage_Totem_Wolf", type = "Ability", category = "Utility", tier = "Major", tags = {"Phys"}, duration = -1},			
+			{name = "Shout_Rage_WildMagic", type = "Ability", category = "Utility", tier = "Major", tags = {"Phys"}, duration = -1},			
 			{name = "Shout_Warcry_of_the_Unyielding", type = "Ability", category = "Defense", tier = "Major", tags = {"Phys", "Cleric"}, duration = -1},							
 			{name = "Shout_Watchful_Warden_Initial", type = "Ability", category = "Utility", tier = "Major", tags = {"Phys", "Druid"}, duration = -1},			
 			{name = "Shout_WildMagicBarbarian_LightBolt_Activate", type = "Ability", category = "Damage", tier = "Major", tags = {"Barb", "Fighter", "Monk", "Rogue"}, duration = -1},			
@@ -1345,16 +1352,16 @@ local affixesByTier = {
 			{name = "Target_VowOfEnmity", type = "Targeted", category = "Utility", tier = "Major", tags = {"Pala", "Cleric", "Bard", "Ranger", "Rogue"}, duration = -1, range = 18},			
 			{name = "Thought_Shield_Psychic_Reflection", type = "Passive", category = "Defense", tier = "Major", tags = {"Wiz", "Bard", "Sorc"}, duration = 12},			
 			{name = "ThunderboltStrike", type = "Passive", category = "Utility", tier = "Major", tags = {"Druid", "Sorc", "Lock", "Wiz"}, duration = -1},			
-			{name = "TotemSpirit_Eagle", type = "Passive", category = "Damage", tier = "Major", tags = {"Barb", "Fighter", "Monk", "Rogue"}, duration = -1},			
-			{name = "TotemSpirit_Elk", type = "Passive", category = "Damage", tier = "Major", tags = {"Barb", "Fighter", "Monk", "Rogue"}, duration = -1},			
-			{name = "TotemSpirit_Tiger", type = "Passive", category = "Damage", tier = "Major", tags = {"Barb", "Fighter", "Monk", "Rogue"}, duration = -1},			
-			{name = "TotemSpirit_Wolf", type = "Passive", category = "Damage", tier = "Major", tags = {"Barb", "Fighter", "Monk", "Rogue"}, duration = -1},			
+			{name = "TotemSpirit_Eagle", type = "Passive", category = "Utility", tier = "Major", tags = {"Phys"}, duration = -1},			
+			{name = "TotemSpirit_Elk", type = "Passive", category = "Utility", tier = "Major", tags = {"Phys"}, duration = -1},			
+			{name = "TotemSpirit_Tiger", type = "Passive", category = "Utility", tier = "Major", tags = {"Phys"}, duration = -1},			
+			{name = "TotemSpirit_Wolf", type = "Passive", category = "Utility", tier = "Major", tags = {"Phys"}, duration = -1},			
 			{name = "UND_BLESS_STAFF_MYSTRA", type = "Status", category = "Damage", tier = "Major", tags = {"Mag"}, duration = -1},			
 			{name = "MOD_UND_NERE_SHIELDOFSCREAMS", type = "Status", category = "Defense", tier = "Major", tags = {"Gen"}, duration = -1},			
 			{name = "UNI_POISON_BREWER", type = "Status", category = "Damage", tier = "Major", tags = {"Phys"}, duration = -1},			
 			{name = "VAMPIRIC_TOUCH", type = "Status", category = "Damage", tier = "Major", tags = {"Lock", "Wiz", "Rogue", "Gish"}, duration = -1},			
-			{name = "WARDING_FLARE_IMPROVED_AURA", type = "Status", category = "Defense", tier = "Major", tags = {"Cleric", "Druid", "Bard", "Pala"}, duration = -1},			
-			{name = "WEREWOLF_RAGE", type = "Status", category = "Utility", tier = "Major", tags = {"Barb", "Fighter", "Monk", "Rogue"}, duration = -1},			
+			{name = "MOD_WARDING_FLARE_IMPROVED_AURA", type = "Status", category = "Defense", tier = "Major", tags = {"Cleric", "Druid", "Bard", "Pala", "Wiz"}, duration = -1},			
+			{name = "WEREWOLF_RAGE", type = "Status", category = "Utility", tier = "Major", tags = {"Phys"}, duration = -1},			
 			{name = "WILD_MAGIC_TELEPORT", type = "Status", category = "Utility", tier = "Major", tags = {"Gen"}, duration = -1},			
 			{name = "WILD_MAGIC_TURN_MAGIC", type = "Status", category = "Utility", tier = "Major", tags = {"Gen"}, duration = 12},			
 			{name = "WYR_GORTASH_REFLECTOGUARD_EFFECT", type = "Status", category = "Defense", tier = "Major", tags = {"Gen"}, duration = 12},			
@@ -1368,33 +1375,80 @@ local affixesByTier = {
 			{name = "Mod_Adrenal_Overdrive_Passive", type = "Passive", category = "Damage", tier = "Major", tags = {"Gen"}, duration = -1},	
 			{name = "Mod_Combat_Momentum_Passive", type = "Passive", category = "Damage", tier = "Major", tags = {"Gen"}, duration = -1},
 			{name = "MOD_SAVAGE_CALIBRATION", type = "Status", category = "Damage", tier = "Major", tags = {"Gen"}, duration = -1},	
-			{name = "Mod_Aegis_Resilience", type = "Passive", category = "Defense", tier = "Major", tags = {"Gen"}, duration = -1},			
+			{name = "Mod_Aegis_Resilience", type = "Passive", category = "Defense", tier = "Major", tags = {"Gen"}, duration = -1},	
+			{name = "MOD_PERFECT_OPENING", type = "Status", category = "Damage", tier = "Major", tags = {"Gen"}, duration = -1},
+			{name = "MOD_DISRUPTIVE_FORCE", type = "Status", category = "Damage", tier = "Major", tags = {"Gen"}, duration = -1},	
+			{name = "MOD_IGNITION_POINT", type = "Status", category = "Damage", tier = "Major", tags = {"Gen"}, duration = -1},
+			{name = "MOD_STONEWALL", type = "Status", category = "Defense", tier = "Major", tags = {"Gen"}, duration = -1},		
+			{name = "MOD_BLOOD_FRENZY", type = "Status", category = "Damage", tier = "Major", tags = {"Gen"}, duration = -1},		
+			{name = "MOD_SYNAPTIC_PARASITE", type = "Status", category = "Damage", tier = "Major", tags = {"Gen"}, duration = -1},	
+			{name = "MOD_LAST_LAUGH", type = "Status", category = "Utility", tier = "Major", tags = {"Gen"}, duration = -1},		
+			{name = "MOD_OVERCONFIDENT", type = "Status", category = "Damage", tier = "Major", tags = {"Gen"}, duration = -1},	
+			{name = "MOD_PARAGON_EFFECT", type = "Status", category = "Defense", tier = "Major", tags = {"Gen"}, duration = -1},
+			{name = "MOD_JUGGERNAUT_STATUS", type = "Status", category = "Utility", tier = "Major", tags = {"Gen"}, duration = -1},		
+			{name = "MOD_KILLER_INSTINCT_STATUS", type = "Status", category = "Damage", tier = "Major", tags = {"Gen"}, duration = -1},	
+			{name = "MOD_GLADIATOR_EFFECT", type = "Status", category = "Damage", tier = "Major", tags = {"Gen"}, duration = -1},	
+			{name = "MOD_CORNERED_BEAST", type = "Status", category = "Damage", tier = "Major", tags = {"Gen"}, duration = -1},	
+			{name = "MOD_FLOW_STATE_STATUS", type = "Status", category = "Damage", tier = "Major", tags = {"Gen"}, duration = -1},		
+			{name = "MOD_WILDSHAPE_STARRY_ARCHER", type = "Status", category = "Damage", tier = "Major", tags = {"Mag", "Rogue", "Pala", "Ranger", "Gish", "Fighter"}, duration = -1},	
+			{name = "MOD_WILDSHAPE_STARRY_DRAGON_PLAYER", type = "Status", category = "Damage", tier = "Major", tags = {"Gen"}, duration = -1},
+			{name = "MOD_ARCANE_SEEKER_STATUS", type = "Status", category = "Damage", tier = "Major", tags = {"Mag", "Rogue", "Pala", "Ranger", "Gish", "Fighter"}, duration = -1},
+			{name = "MOD_ARCANE_ENFEEBLE_STATUS", type = "Status", category = "Damage", tier = "Major", tags = {"Mag", "Rogue", "Pala", "Ranger", "Gish", "Fighter"}, duration = -1},
+			{name = "MOD_ARCANE_GRASPING_ARROW_STATUS", type = "Status", category = "Damage", tier = "Major", tags = {"Mag", "Rogue", "Pala", "Ranger", "Gish", "Fighter"}, duration = -1},
+			{name = "MOD_ARCANE_SHADOW_ARROW_STATUS", type = "Status", category = "Damage", tier = "Major", tags = {"Mag", "Rogue", "Pala", "Ranger", "Gish", "Fighter"}, duration = -1},
+			{name = "MOD_PLATE_SPLITTER_STATUS", type = "Status", category = "Damage", tier = "Major", tags = {"Gen"}, duration = -1},
+			{name = "Mod_Shout_Mantle_of_Splendor", type = "Ability", category = "Utility", tier = "Major", tags = {"Gen"}, duration = -1},	
+			{name = "MOD_DEATH_KNELL_STATUS", type = "Status", category = "Damage", tier = "Major", tags = {"Gen"}, duration = -1},		
+			{name = "Shout_Rage_Giant", type = "Ability", category = "Damage", tier = "Major", tags = {"Phys"}, duration = -1},		
+			{name = "MOD_EARTHSHAKER_STATUS", type = "Status", category = "Damage", tier = "Major", tags = {"Phys"}, duration = -1},	
+			{name = "StalkersFlurry", type = "Passive", category = "Damage", tier = "Major", tags = {"Rogue", "Ranger", "Fighter", "Barb", "Bard", "Pala", "Cleric", "Gish"}, duration = -1},	
+			{name = "MOD_RELENTLESS_ATTACK_STATUS", type = "Status", category = "Damage", tier = "Major", tags = {"Gen"}, duration = -1},
+			{name = "MOD_SELFLESS_DEVOTION_STATUS", type = "Status", category = "Utility", tier = "Major", tags = {"Gen"}, duration = -1},	
+			{name = "MOD_OAKSKIN_STATUS", type = "Status", category = "Defense", tier = "Major", tags = {"Mag", "NotCleric", "Barb"}, duration = -1},	
+			{name = "Mod_MAG_ArcaneEnchantment_Passive", type = "Passive", category = "Damage", tier = "Major", tags = {"Lock", "Sorc", "Wiz", "Druid", "Bard"}, duration = -1},
+			{name = "MOD_MIND_OVER_MATTER", type = "Status", category = "Defense", tier = "Major", tags = {"Wiz"}, duration = -1},			
+			{name = "MOD_GUARDIAN_CHALLENGE_STATUS", type = "Status", category = "Utility", tier = "Major", tags = {"Phys"}, duration = -1},	
+			{name = "MOD_ABSORB_SPELLCASTING_STATUS", type = "Status", category = "Damage", tier = "Major", tags = {"Gen"}, duration = -1},	
+			{name = "MOD_EYE_OF_THE_STORM_AURA", type = "Status", category = "Utility", tier = "Major", tags = {"Mag", "Ranger"}, duration = -1},		
+			{name = "MOD_REALLY_GLAD_STATUS", type = "Status", category = "Damage", tier = "Major", tags = {"Phys"}, duration = -1},	
+			{name = "MOD_ADAMANT_RESOLVE", type = "Status", category = "Defense", tier = "Major", tags = {"Gen"}, duration = -1},	
+			{name = "MOD_GRANITE_HIDE_STATUS", type = "Status", category = "Utility", tier = "Major", tags = {"Gen"}, duration = -1},	
+			{name = "MOD_KINECTIC_DRAIN_STATUS", type = "Status", category = "Utility", tier = "Major", tags = {"Gen"}, duration = -1},		
+			{name = "MOD_SOUL_BRANDER_STATUS", type = "Status", category = "Damage", tier = "Major", tags = {"Gen"}, duration = -1},	
+			{name = "MOD_FOCUS_AURA_STATUS", type = "Status", category = "Damage", tier = "Major", tags = {"Gen"}, duration = -1},	
+			{name = "MOD_SHIELDBREAKER_STATUS", type = "Status", category = "Damage", tier = "Major", tags = {"Phys"}, duration = -1},	
+			{name = "MOD_DISENGAGING_AURA_STATUS", type = "Status", category = "Utility", tier = "Major", tags = {"Gen"}, duration = -1},	
+			{name = "MOD_CHITINOUS_CARAPACE_STATUS", type = "Status", category = "Defense", tier = "Major", tags = {"Gen"}, duration = -1},	
+			{name = "MOD_THORN_WHIP_STATUS", type = "Status", category = "Damage", tier = "Major", tags = {"Pala", "Cleric", "Druid", "Fighter", "Gish", "Barb"}, duration = -1},		
+			{name = "MOD_DISSOLVING_STRIKES_STATUS", type = "Status", category = "Damage", tier = "Major", tags = {"Gen"}, duration = -1},		
+			{name = "MOD_ROLLING_THUNDER_STATUS", type = "Status", category = "Damage", tier = "Major", tags = {"Gen"}, duration = -1},	
+			{name = "MOD_RISING_DAWN_STATUS", type = "Status", category = "Damage", tier = "Major", tags = {"Gen"}, duration = -1},				
    -- Add more major affixes here
 },
 
 		Massive = {
-			{name = "ALCH_OIL_WIZARDSBANE", type = "Status", category = "Utility", tier = "Massive", tags = {"Rogue", "Fighter", "Ranger", "Gish"}, duration = -1},	
+			{name = "ALCH_OIL_WIZARDSBANE", type = "Status", category = "Utility", tier = "Massive", tags = {"Phys"}, duration = -1},	
 			{name = "ARCANE_WARD", type = "Status", category = "Defense", tier = "Massive", tags = {"Sorc", "Wiz", "Lock", "Bard"}, duration = 60},			
-			{name = "BANITES_IRONCONSUL_HARD", type = "Status", category = "Damage", tier = "Massive", tags = {"Gish", "Fighter", "Rogue", "Ranger"}, duration = -1},			
+			{name = "BANITES_IRONCONSUL_HARD", type = "Status", category = "Damage", tier = "Massive", tags = {"Phys"}, duration = -1},			
 			{name = "BARDIC_INSPIRATION_COMBAT_D10", type = "Status", category = "Damage", tier = "Massive", tags = {"Gen"}, duration = -1},			
 			{name = "BLOODLUST_REDCAP", type = "Status", category = "Damage", tier = "Massive", tags = {"Phys"}, duration = -1},			
 			{name = "CALL_LIGHTNING_TECHNICAL", type = "Status", category = "Damage", tier = "Massive", tags = {"Sorc", "Druid", "Wiz"}, duration = -1},			
-			{name = "COL_ZEVLOR_LEVEL_8", type = "Status", category = "Utility", tier = "Massive", tags = {"Pala", "Cleric", "Bard"}, duration = -1},			
-			{name = "CRE_COMBAT_INSTRUCTION", type = "Status", category = "Damage", tier = "Massive", tags = {"Phys"}, duration = -1},			
-			{name = "DREAD_AMBUSHER", type = "Status", category = "Damage", tier = "Massive", tags = {"Rogue", "Ranger", "Fighter"}, duration = 18},			
+			{name = "COL_ZEVLOR_LEVEL_8", type = "Status", category = "Utility", tier = "Massive", tags = {"Mag", "Pala"}, duration = -1},			
+			{name = "MOD_CRE_COMBAT_INSTRUCTION", type = "Status", category = "Damage", tier = "Massive", tags = {"Phys"}, duration = -1},			
+			{name = "DREAD_AMBUSHER", type = "Status", category = "Damage", tier = "Massive", tags = {"Phys"}, duration = 18},			
 			{name = "DRIDER_LEADERSHIP_AURA", type = "Status", category = "Damage", tier = "Massive", tags = {"Gen"}, duration = -1},			
 			{name = "END_ALLYABILITIES_BHAALBUFF", type = "Status", category = "Damage", tier = "Massive", tags = {"Phys"}, duration = -1},			
 			{name = "END_ALLYABILITIES_RAVENGARDRALLY", type = "Status", category = "Utility", tier = "Massive", tags = {"Gen"}, duration = -1},			
 			{name = "END_ALLYBUFF_VOLO", type = "Status", category = "Utility", tier = "Massive", tags = {"Gen"}, duration = -1},			
-			{name = "EPI_GALEGOD_BUFF", type = "Status", category = "Utility", tier = "Massive", tags = {"Gen"}, duration = -1},			
+			{name = "MOD_EPI_GALEGOD_BUFF_GLIMPSE", type = "Status", category = "Utility", tier = "Massive", tags = {"Gen"}, duration = -1},			
 			{name = "EYEBITE_SELF", type = "Status", category = "Utility", tier = "Massive", tags = {"Wiz", "Lock", "Bard", "Rogue"}, duration = -1},			
 			{name = "FLAMING_SPHERE_AURA_3", type = "Status", category = "Damage", tier = "Massive", tags = {"Mag", "Monk", "Fighter", "Pala", "Gish"}, duration = -1},			
-			{name = "FOR_OWLBEAR_ENRAGE_HARDCORE", type = "Status", category = "Utility", tier = "Massive", tags = {"Monk", "Fighter", "Gish", "Barb", "Druid"}, duration = -1},			
-			{name = "FOR_SPIDERQUEEN_ENRAGE_HARDCORE", type = "Status", category = "Utility", tier = "Massive", tags = {"Monk", "Fighter", "Gish", "Pala", "Barb", "Druid"}, duration = -1},			
+			{name = "MOD_FOR_OWLBEAR_ENRAGE_HARDCORE", type = "Status", category = "Utility", tier = "Massive", tags = {"Phys", "Druid"}, duration = -1},			
+			{name = "FOR_SPIDERQUEEN_ENRAGE_HARDCORE", type = "Status", category = "Utility", tier = "Massive", tags = {"Phys", "Druid"}, duration = -1},			
 			{name = "GuardianOfFaith_Retaliate", type = "Passive", category = "Damage", tier = "Massive", tags = {"Phys"}, duration = -1},			
 			{name = "ImmutableExistance", type = "Passive", category = "Defense", tier = "Massive", tags = {"Gen"}, duration = -1},			
 			{name = "LEGENDARY_RESISTANCE", type = "Status", category = "Defense", tier = "Massive", tags = {"Gen"}, duration = -1},			
-			{name = "LOW_BHAALTEMPLE_ORINSLAYER_ENRAGE", type = "Status", category = "Utility", tier = "Massive", tags = {"Barb", "Monk", "Pala", "Fighter", "Gish"}, duration = -1},			
+			{name = "MOD_LOW_BHAALTEMPLE_ORINSLAYER_ENRAGE", type = "Status", category = "Utility", tier = "Massive", tags = {"Phys"}, duration = -1},			
 			{name = "LOW_DOLOR_HARDCORE", type = "Status", category = "Utility", tier = "Massive", tags = {"Phys"}, duration = -1},			
 			{name = "LOW_GITHYANKIPALADIN_AURAOFCONQUEST", type = "Status", category = "Damage", tier = "Massive", tags = {"Gen"}, duration = -1},			
 			{name = "LOW_Guildhall_SneakyRiposte", type = "Passive", category = "Damage", tier = "Massive", tags = {"Rogue", "Ranger", "Monk"}, duration = -1},			
@@ -1419,7 +1473,7 @@ local affixesByTier = {
 			{name = "MAG_DRUID_WILDSHAPE_TEMP_HP", type = "Status", category = "Utility", tier = "Massive", tags = {"Gen"}, duration = -1},			
 			{name = "MAG_Force_SoulCatchingDamage_Passive", type = "Passive", category = "Damage", tier = "Massive", tags = {"Monk", "Barb", "Fighter", "Gish"}, duration = -1},			
 			{name = "MAG_Healer_TempHPOnHeal_Passive", type = "Passive", category = "Utility", tier = "Massive", tags = {"Cleric", "Druid", "Pala", "Bard"}, duration = -1},			
-			{name = "MAG_SHA_SELUNE_BLESSING_MOONMOTE_AURA", type = "Status", category = "Utility", tier = "Massive", tags = {"Cleric", "Druid", "Pala", "Bard"}, duration = -1},			
+			{name = "MAG_SHA_SELUNE_BLESSING_MOONMOTE_AURA", type = "Status", category = "Utility", tier = "Massive", tags = {"Mag", "Pala"}, duration = -1},			
 			{name = "MAG_ZOC_FORCE_CONDUIT", type = "Status", category = "Defense", tier = "Massive", tags = {"Gen"}, duration = 42},			
 			{name = "MF_IMPERIL_TECHNICAL", type = "Status", category = "Utility", tier = "Massive", tags = {"Wiz", "Sorc", "Lock", "Bard"}, duration = -1},			
 			{name = "MF_SHIELD_OF_THRALLS", type = "Status", category = "Utility", tier = "Massive", tags = {"Sorc", "Wiz", "Lock", "Bard"}, duration = -1},			
@@ -1434,15 +1488,15 @@ local affixesByTier = {
 			{name = "MOD_GREATER_DAMAGE_REDUCTION_AURA", type = "Status", category = "Defense", tier = "Massive", tags = {"Gen"}, duration = -1},		
 			{name = "MOD_GREATER_FORTIFIED_SPIRIT", type = "Status", category = "Utility", tier = "Massive", tags = {"Gen"}, duration = -1},			
 			{name = "MOD_HEART_OF_LION", type = "Status", category = "Defense", tier = "Massive", tags = {"Gen"}, duration = -1},					
-			{name = "MOD_LEGENDARYACTION_MOO_KETHERIC_GENERALSWRATH", type = "Status", category = "Damage", tier = "Massive", tags = {"Pala", "Fighter", "Gish"}, duration = -1},			
+			{name = "MOD_LEGENDARYACTION_MOO_KETHERIC_GENERALSWRATH", type = "Status", category = "Damage", tier = "Massive", tags = {"Phys"}, duration = -1},			
 			{name = "MOD_LOW_CAZADORSPALACE_ASCENSION_BUFF", type = "Status", category = "Damage", tier = "Massive", tags = {"Lock", "Sorc", "Wiz", "Phys"}, duration = -1},			
 			{name = "MOD_LOW_CAZADORSPALACE_DEADGIRL_AURA", type = "Status", category = "Damage", tier = "Massive", tags = {"Wiz", "Lock", "Rogue", "Sorc"}, duration = -1},			
 			{name = "MOD_LOW_CAZADORSPALACE_SPAWNBUFF_001", type = "Status", category = "Utility", tier = "Massive", tags = {"Gen"}, duration = -1},
 			{name = "MOD_LOW_DEVILSFEE_BUFF", type = "Status", category = "Damage", tier = "Massive", tags = {"Phys"}, duration = -1},	
 			{name = "Mod_LOW_Raphael_Cambions_ExtraDamage", type = "Passive", category = "Damage", tier = "Massive", tags = {"Phys"}, duration = -1},			
-			{name = "MOD_LOW_RAMAZITHSTOWER_DEVA_BLESSING", type = "Status", category = "Damage", tier = "Massive", tags = {"Cleric", "Pala", "Gish", "Druid", "Bard"}, duration = -1},			
+			{name = "MOD_LOW_RAMAZITHSTOWER_DEVA_BLESSING_LESSER", type = "Status", category = "Damage", tier = "Massive", tags = {"Gen"}, duration = -1},			
 			{name = "MOD_LOW_SAREVOK_ESSENCE_AMELYSSAN", type = "Status", category = "Utility", tier = "Massive", tags = {"Phys"}, duration = -1},			
-			{name = "MOD_MAG_CELESTIAL_HASTE", type = "Status", category = "Utility", tier = "Massive", tags = {"Gen"}, duration = 18},	
+			{name = "MOD_MAG_CELESTIAL_HASTE", type = "Status", category = "Utility", tier = "Massive", tags = {"Gen"}, duration = 30},	
 			{name = "MOD_MAG_ZHENTARIM_DEMONSPIRIT", type = "Status", category = "Defense", tier = "Massive", tags = {"Gen"}, duration = 18},			
 			{name = "MOD_ORI_GALE_MYSTRABLESSING_2", type = "Status", category = "Defense", tier = "Massive", tags = {"Gen"}, duration = -1},
 			{name = "MOD_Projectile_SleetStorm_WaterFrozen", type = "Targeted", category = "Utility", tier = "Massive", tags = {"Lock", "Sorc", "Wiz"}, duration = -1, range = 18},			
@@ -1452,19 +1506,19 @@ local affixesByTier = {
 			{name = "MOD_SHA_JUSTICIAR_UMBRAL_FORM", type = "Status", category = "Defense", tier = "Massive", tags = {"Phys", "Lock", "Wiz", "Cleric"}, duration = -1},			
 			{name = "MOD_SHA_NECROMANCER_LANDOFTHEDEAD_AURA", type = "Status", category = "Damage", tier = "Massive", tags = {"Wiz", "Lock", "Rogue"}, duration = -1},			
 			{name = "MOD_SHA_NECROMANCER_SPECTRALFORM", type = "Status", category = "Defense", tier = "Massive", tags = {"Phys", "Lock", "Wiz", "Cleric"}, duration = -1},			
-			{name = "MOD_STATIC_DISCHARGE_AURA", type = "Status", category = "Damage", tier = "Massive", tags = {"Phys", "Sorc", "Druid", "Lock", "Wiz"}, duration = 18},			
+			{name = "MOD_STATIC_DISCHARGE_AURA", type = "Status", category = "Damage", tier = "Massive", tags = {"Phys", "Sorc", "Druid", "Lock", "Wiz"}, duration = 24},			
 			{name = "MOD_STONES_DOMINION", type = "Status", category = "Defense", tier = "Massive", tags = {"Gen"}, duration = 6},
 			{name = "MOD_STORMS_DOMINION", type = "Status", category = "Defense", tier = "Massive", tags = {"Gen"}, duration = 6},
 			{name = "MOD_TAD_PSIONIC_DOMINATION", type = "Status", category = "Defense", tier = "Massive", tags = {"Gen"}, duration = 24},			
-			{name = "MOD_UNI_ELITE_MERREGONMASK_AURA", type = "Status", category = "Utility", tier = "Massive", tags = {"Fighter", "Barb", "Gish", "Monk", "Pala"}, duration = -1},			
+			{name = "MOD_UNI_ELITE_MERREGONMASK_AURA", type = "Status", category = "Utility", tier = "Massive", tags = {"Gen"}, duration = -1},			
 			{name = "MOD_WHIRLWIND_AURA", type = "Status", category = "Utility", tier = "Massive", tags = {"Gen"}, duration = -1},
 			{name = "Mod_Shout_Shattered_Soul", type = "Ability", category = "Defense", tier = "Massive", tags = {"Phys", "Wiz", "Cleric", "Druid"}, duration = -1},			
 			{name = "MOO_BLOODPOTION_DRAGONBORN_FIRE", type = "Status", category = "Utility", tier = "Massive", tags = {"Sorc", "Wiz", "Druid", "Lock"}, duration = -1},			
-			{name = "MOO_BLOODPOTION_DRAGONBORN_ICE", type = "Status", category = "Utility", tier = "Massive", tags = {"Sorc", "Wiz", "Lock"}, duration = -1},			
+			{name = "MOO_BLOODPOTION_DRAGONBORN_ICE", type = "Status", category = "Utility", tier = "Massive", tags = {"Sorc", "Wiz", "Druid", "Lock"}, duration = -1},			
 			{name = "MOO_BLOODPOTION_DRAGONBORN_LIGHTNING", type = "Status", category = "Utility", tier = "Massive", tags = {"Sorc", "Wiz", "Druid", "Lock"}, duration = -1},
 			{name = "MartialAdvantage", type = "Passive", category = "Damage", tier = "Massive", tags = {"Phys"}, duration = -1},	
 			{name = "MistyEscape", type = "Passive", category = "Utility", tier = "Massive", tags = {"Sorc", "Rogue", "Ranger", "Wiz", "Monk"}, duration = -1},			
-			{name = "Mod_DEN_Apprentice_DaggerOfShar_Passive", type = "Passive", category = "Damage", tier = "Massive", tags = {"Rogue", "Monk", "Ranger"}, duration = -1},			
+			{name = "Mod_DEN_Apprentice_DaggerOfShar_Passive", type = "Passive", category = "Damage", tier = "Massive", tags = {"Gen"}, duration = -1},			
 			{name = "Mod_DamageReduction_Dragon_Hardcore", type = "Passive", category = "Defense", tier = "Massive", tags = {"Gen"}, duration = -1},				
 			{name = "Mod_DreadfulWord", type = "Passive", category = "Utility", tier = "Massive", tags = {"Lock", "Bard", "Wiz"}, duration = -1},			
 			{name = "Mod_FOR_SpiderQueen_Robe_Passive", type = "Passive", category = "Damage", tier = "Massive", tags = {"Sorc", "Druid", "Wiz"}, duration = -1},						
@@ -1472,7 +1526,7 @@ local affixesByTier = {
 			{name = "Mod_Fleshrot_Attack_Passive", type = "Passive", category = "Damage", tier = "Massive", tags = {"Phys", "Lock", "Wiz", "Bard"}, duration = -1},			
 			{name = "Mod_HAG_MaskOfVengeance", type = "Passive", category = "Damage", tier = "Massive", tags = {"Phys"}, duration = -1},			
 			{name = "Mod_MAG_AdditionalSpellSlot_Level3_Passive", type = "Passive", category = "Utility", tier = "Massive", tags = {"Mag", "Pala", "Ranger"}, duration = -1},			
-			{name = "Mod_MAG_ArcaneEnchantment_Passive", type = "Passive", category = "Damage", tier = "Massive", tags = {"Lock", "Sorc", "Wiz"}, duration = -1},			
+			{name = "Mod_Supreme_ArcaneEnchantment_Passive", type = "Passive", category = "Damage", tier = "Massive", tags = {"Lock", "Sorc", "Wiz", "Druid", "Bard"}, duration = -1},			
 			{name = "Mod_MAG_Druid_Wildshape_SpellResistance_Passive", type = "Passive", category = "Defense", tier = "Massive", tags = {"Gen"}, duration = -1},			
 			{name = "Mod_MAG_FlamingFist_ProtectionFromMissiles_Passive", type = "Passive", category = "Defense", tier = "Massive", tags = {"Gen"}, duration = -1},			
 			{name = "Mod_MAG_Illithid_Carapace_Gloves_Passive", type = "Passive", category = "Utility", tier = "Massive", tags = {"Gen"}, duration = -1},			
@@ -1487,15 +1541,15 @@ local affixesByTier = {
 			{name = "Mod_Projectile_MOO_Ketheric_GeneralsWrath", type = "Targeted", category = "Damage", tier = "Massive", tags = {"Fighter", "Gish", "Pala", "Lock"}, duration = -1, range= 17},			
 			{name = "Mod_Projectile_SpiderInfestation", type = "Targeted", category = "Damage", tier = "Massive", tags = {"Ranger", "Druid", "Lock", "Wiz", "Sorc", "Rogue"}, duration = -1, range = 18},			
 			{name = "Mod_Projectile_SuperNova_Dragon_Skeletal", type = "Targeted", category = "Damage", tier = "Massive", tags = {"Druid", "Lock", "Sorc", "Wiz"}, duration = -1, range = 18},			
-			{name = "Mod_Shout_CallOfTheDamned_Apostle", type = "Targeted", category = "Damage", tier = "Massive", tags = {"Fighter", "Gish", "Barb", "Pala"}, duration = -1, range = 18},			
+			{name = "Mod_Shout_CallOfTheDamned_Apostle", type = "Targeted", category = "Damage", tier = "Massive", tags = {"Fighter", "Gish", "Barb", "Pala", "Wiz"}, duration = -1, range = 18},			
 			{name = "Mod_Shout_LOW_HouseOfGrief_Howl", type = "Ability", category = "Damage", tier = "Massive", tags = {"Gen"}, duration = -1},			
 			{name = "Mod_TWN_AasimarSurvivor_SpawnShadow", type = "Passive", category = "Damage", tier = "Massive", tags = {"Lock", "Wiz", "Rogue"}, duration = -1},						
-			{name = "Mod_Target_LOW_GreaseWizard_RaiseElemental", type = "Ability", category = "Damage", tier = "Massive", tags = {"Sorc", "Lock", "Wiz"}, duration = -1},				
+			{name = "Mod_Target_LOW_GreaseWizard_RaiseElemental", type = "Ability", category = "Damage", tier = "Massive", tags = {"Mag"}, duration = -1},				
 			{name = "Mod_Target_WYR_CrushingFist_Gortash", type = "Targeted", category = "Damage", tier = "Massive", tags = {"Lock", "Wiz", "Sorc"}, duration = -1, range = 18},			
 			{name = "Mod_UNI_MassHealRing_Passive", type = "Passive", category = "Massive", tier = "Utility", tags = {"Cleric", "Druid", "Pala", "Bard"}, duration = -1},			
 			{name = "Mod_Verybad_Well_Attack_Passive", type = "Passive", category = "Damage", tier = "Massive", tags = {"Phys", "Druid", "Lock", "Sorc", "Wiz"}, duration = -1},			
 			{name = "OIL_OF_SHARPNESS", type = "Status", category = "Damage", tier = "Massive", tags = {"Phys"}, duration = -1},			
-			{name = "POTION_OF_STRENGTH_CLOUD_GIANT", type = "Status", category = "Damage", tier = "Massive", tags = {"Barb", "Fighter", "Gish", "Pala"}, duration = -1},			
+			{name = "POTION_OF_STRENGTH_CLOUD_GIANT", type = "Status", category = "Damage", tier = "Massive", tags = {"Phys"}, duration = -1},			
 			{name = "POTION_OF_THE_GREATARCHER", type = "Status", category = "Damage", tier = "Massive", tags = {"Fighter", "Gish", "Ranger", "Rogue"}, duration = -1},			
 			{name = "PRIMAL_HOWL_WOLF", type = "Status", category = "Damage", tier = "Massive", tags = {"Gen"}, duration = -1},
 			{name = "Projectile_HAG_PsychicMine", type = "Targeted", category = "Damage", tier = "Massive", tags = {"Bard", "Wiz", "Sorc"}, duration = -1, range = 18},			
@@ -1503,47 +1557,46 @@ local affixesByTier = {
 			{name = "SCL_PLAQUES_CHA_PASS", type = "Status", category = "Utility", tier = "Massive", tags = {"Bard", "Sorc", "Lock", "Pala"}, duration = -1},			
 			{name = "SCL_PLAQUES_INT_PASS", type = "Status", category = "Utility", tier = "Massive", tags = {"Wiz"}, duration = -1},			
 			{name = "SCL_PLAQUES_WIS_PASS", type = "Status", category = "Utility", tier = "Massive", tags = {"Cleric", "Druid"}, duration = -1},						
-			{name = "SEWERS_GREASEWIZARD_HARDCORE", type = "Status", category = "Utility", tier = "Massive", tags = {"Bard", "Lock", "Sorc", "Pala"}, duration = -1},			
+			{name = "SEWERS_GREASEWIZARD_HARDCORE", type = "Status", category = "Utility", tier = "Massive", tags = {"Bard", "Lock", "Sorc", "Pala", "Wiz"}, duration = -1},			
 			{name = "SHIELD", type = "Status", category = "Defense", tier = "Massive", tags = {"Gen"}, duration = -1},			
 			{name = "SPIDER_SWORD_HASTE", type = "Status", category = "Damage", tier = "Massive", tags = {"Gen"}, duration = -1},			
-			{name = "SPIRIT_GUARDIANS_NECROTIC_AURA", type = "Status", category = "Damage", tier = "Massive", tags = {"Lock", "Cleric", "Wiz"}, duration = -1},			
-			{name = "SPIRIT_GUARDIANS_RADIANT_AURA", type = "Status", category = "Damage", tier = "Massive", tags = {"Cleric", "Druid", "Pala", "Bard"}, duration = -1},					
+			{name = "SPIRIT_GUARDIANS_NECROTIC_AURA", type = "Status", category = "Damage", tier = "Massive", tags = {"Mag", "Pala"}, duration = -1},			
+			{name = "SPIRIT_GUARDIANS_RADIANT_AURA", type = "Status", category = "Damage", tier = "Massive", tags = {"Mag", "Pala"}, duration = -1},					
 			{name = "Scar_Fury_Gur", type = "Passive", category = "Damage", tier = "Massive", tags = {"Gen"}, duration = -1},					
 			{name = "Shout_BeaconOfHope", type = "Ability", category = "Defense", tier = "Massive", tags = {"Cleric", "Pala", "Druid", "Bard"}, duration = -1},			
 			{name = "Shout_DivineIntervention_Supplies", type = "Ability", category = "Utility", tier = "Massive", tags = {"Gen"}, duration = -1},			
-			{name = "Shout_Dreadful_Aspect", type = "Ability", category = "Utility", tier = "Massive", tags = {"Pala", "Lock", "Wiz", "Rogue"}, duration = -1},			
-			{name = "Shout_HAV_FlamingSpy_SummonHands", type = "Targeted", category = "Utility", tier = "Massive", tags = {"Gen"}, duration = -1},			
+			{name = "Shout_Dreadful_Aspect", type = "Ability", category = "Utility", tier = "Massive", tags = {"Pala", "Lock", "Wiz", "Rogue"}, duration = -1},						
 			{name = "Shout_HAV_FlamingSpy_VampiricShout", type = "Targeted", category = "Damage", tier = "Massive", tags = {"Lock", "Rogue", "Wiz"}, duration = -1},			
-			{name = "Shout_HeroesFeast", type = "Ability", category = "Utility", tier = "Massive", tags = {"Cleric", "Druid", "Pala", "Bard"}, duration = -1},			
-			{name = "Shout_LOW_Sacrifice_Slayer_Orin", type = "Ability", category = "Utility", tier = "Massive", tags = {"Fighter", "Gish", "Barb", "Rogue", "Ranger", "Monk", "Sorc", "Wiz", "Lock"}, duration = -1},			
-			{name = "Shout_MAG_Legendary_GiantSlayer_EnlargeSelf", type = "Ability", category = "Utility", tier = "Massive", tags = {"Barb", "Fighter", "Gish", "Pala", "Ranger", "Rogue"}, duration = -1},			
+			{name = "Shout_HeroesFeast", type = "Ability", category = "Utility", tier = "Massive", tags = {"Cleric", "Druid", "Pala", "Bard", "Wiz"}, duration = -1},			
+			{name = "Shout_LOW_Sacrifice_Slayer_Orin", type = "Ability", category = "Utility", tier = "Massive", tags = {"Gen"}, duration = -1},			
+			{name = "Shout_MAG_Legendary_GiantSlayer_EnlargeSelf", type = "Ability", category = "Utility", tier = "Massive", tags = {"Phys"}, duration = -1},			
 			{name = "Shout_MagicAllergy_Enlarge", type = "Ability", category = "Utility", tier = "Massive", tags = {"Phys"}, duration = -1},			
 			{name = "Shout_PackHowl_Wolf_Dire_NPC", type = "Ability", category = "Utility", tier = "Massive", tags = {"Gen"}, duration = -1},			
 			{name = "Shout_PrayerOfHealing", type = "Ability", category = "Utility", tier = "Massive", tags = {"Cleric", "Pala", "Druid", "Bard"}, duration = -1},			
-			{name = "Shout_Rage_Totem_Bear", type = "Ability", category = "Utility", tier = "Massive", tags = {"Barb", "Fighter", "Monk", "Rogue"}, duration = -1},			
+			{name = "Shout_Rage_Totem_Bear", type = "Ability", category = "Utility", tier = "Massive", tags = {"Phys"}, duration = -1},			
 			{name = "Shout_TAD_DisplacerBeast", type = "Ability", category = "Utility", tier = "Massive", tags = {"Druid"}, duration = -1},			
-			{name = "Shout_WYR_Dribbles_Dog_Howl", type = "Ability", category = "Damage", tier = "Massive", tags = {"Barb", "Druid", "Ranger"}, duration = -1},			
+			{name = "Shout_WYR_Dribbles_Dog_Howl", type = "Ability", category = "Damage", tier = "Massive", tags = {"Phys"}, duration = -1},			
 			{name = "Shout_WildMagic_Blur", type = "Ability", category = "Defense", tier = "Massive", tags = {"Gen"}, duration = -1},			
 			{name = "Shout_WildShape_Dilophosaurus", type = "Ability", category = "Damage", tier = "Massive", tags = {"Druid"}, duration = -1},			
 			{name = "Shout_WildShape_Owlbear", type = "Ability", category = "Damage", tier = "Massive", tags = {"Druid"}, duration = -1},			
 			{name = "TAD_Charm", type = "Passive", category = "Defense", tier = "Massive", tags = {"Gen"}, duration = -1},			
 			{name = "TAD_DrainAbility", type = "Passive", category = "Utility", tier = "Massive", tags = {"Gen"}, duration = -1},			
 			{name = "TAD_LuckOfTheFarRealms", type = "Passive", category = "Damage", tier = "Massive", tags = {"Rogue", "Ranger", "Monk", "Fighter", "Gish"}, duration = -1},			
-			{name = "TAD_MIND_SANCTUARY_AURA", type = "Status", category = "Utility", tier = "Massive", tags = {"Gen"}, duration = -1},						
+			{name = "MOD_TAD_MIND_SANCTUARY_AURA", type = "Status", category = "Utility", tier = "Massive", tags = {"Gen"}, duration = -1},						
 			{name = "TIDES_OF_CHAOS", type = "Status", category = "Utility", tier = "Massive", tags = {"Mag"}, duration = -1},			
-			{name = "TOXIN_PURPLEWORM", type = "Status", category = "Damage", tier = "Massive", tags = {"Barb", "Monk", "Fighter", "Druid", "Rogue", "Gish"}, duration = -1},						
+			{name = "TOXIN_PURPLEWORM", type = "Status", category = "Damage", tier = "Massive", tags = {"Barb", "Fighter", "Druid", "Rogue", "Gish", "Pala", "Cleric"}, duration = -1},						
 			{name = "Target_Bane_4_AI", type = "Targeted", category = "Utility", tier = "Massive", tags = {"Lock", "Rogue", "Wiz", "Bard"}, duration = -1, range = 10},			
 			{name = "Target_Bite_PhaseSpider_Queen", type = "Targeted", category = "Damage", tier = "Massive", tags = {"Barb", "Monk", "Fighter", "Rogue", "Druid"}, duration = -1, range = 5},			
-			{name = "Target_Bless_4_AI", type = "Ability", category = "Utility", tier = "Massive", tags = {"Cleric", "Druid", "Bard"}, duration = -1},			
+			{name = "Target_Bless_4_AI", type = "Ability", category = "Utility", tier = "Massive", tags = {"Cleric", "Druid", "Bard", "Wiz"}, duration = -1},			
 			{name = "Target_CRE_GithyankiGish_Blindness_3", type = "Targeted", category = "Utility", tier = "Massive", tags = {"Wiz", "Lock", "Rogue", "Ranger", "Bard", "Sorc"}, duration = -1, range = 10},			
 			{name = "Target_CallLightning_4", type = "Targeted", category = "Damage", tier = "Massive", tags = {"Sorc", "Wiz", "Druid"}, duration = -1, range = 18},			
-			{name = "Target_ConjureElemental_Elemental_Air", type = "Ability", category = "Damage", tier = "Massive", tags = {"Sorc", "Druid", "Wiz", "Bard"}, duration = -1},			
-			{name = "Target_ConjureElemental_Elemental_Earth", type = "Ability", category = "Damage", tier = "Massive", tags = {"Sorc", "Druid", "Wiz", "Bard", "Ranger"}, duration = -1},			
-			{name = "Target_ConjureElemental_Elemental_Fire", type = "Ability", category = "Damage", tier = "Massive", tags = {"Sorc", "Druid", "Wiz", "Bard", "Lock"}, duration = -1},			
-			{name = "Target_ConjureElemental_Elemental_Water", type = "Ability", category = "Damage", tier = "Massive", tags = {"Sorc", "Druid", "Wiz", "Bard", "Lock"}, duration = -1},			
+			{name = "Target_ConjureElemental_Elemental_Air", type = "Ability", category = "Damage", tier = "Massive", tags = {"Mag"}, duration = -1},			
+			{name = "Target_ConjureElemental_Elemental_Earth", type = "Ability", category = "Damage", tier = "Massive", tags = {"Mag"}, duration = -1},			
+			{name = "Target_ConjureElemental_Elemental_Fire", type = "Ability", category = "Damage", tier = "Massive", tags = {"Mag"}, duration = -1},			
+			{name = "Target_ConjureElemental_Elemental_Water", type = "Ability", category = "Damage", tier = "Massive", tags = {"Mag"}, duration = -1},			
 			{name = "Target_EPI_DivineViciousMockery", type = "Targeted", category = "Damage", tier = "Massive", tags = {"Bard", "Wiz", "Sorc"}, duration = -1, range = 24},			
 			{name = "Target_Eyebite_Sickened", type = "Targeted", category = "Utility", tier = "Massive", tags = {"Lock", "Wiz", "Rogue"}, duration = -1, range = 18},			
-			{name = "Target_Fly_6_AI", type = "Ability", category = "Utility", tier = "Massive", tags = {"Sorc", "Wiz", "Bard", "Druid"}, duration = -1},			
+			{name = "Target_Fly_6_AI", type = "Ability", category = "Utility", tier = "Massive", tags = {"Mag"}, duration = -1},			
 			{name = "Target_FreezingSphere_Throw", type = "Ability", category = "Damage", tier = "Massive", tags = {"Sorc", "Wiz", "Lock"}, duration = -1},			
 			{name = "Target_GlyphOfWarding_Acid", type = "Ability", category = "Damage", tier = "Massive", tags = {"Sorc", "Wiz", "Druid", "Ranger", "Lock"}, duration = -1},			
 			{name = "Target_GlyphOfWarding_Cold", type = "Ability", category = "Damage", tier = "Massive", tags = {"Sorc", "Wiz", "Lock"}, duration = -1},			
@@ -1556,16 +1609,16 @@ local affixesByTier = {
 			{name = "Target_HAV_DevilishOX_AlternateForm_Minotaur", type = "Ability", category = "Damage", tier = "Massive", tags = {"Druid"}, duration = -1},
 			{name = "Target_LOW_Dog_Ghost_PreyOffering_1", type = "Ability", category = "Damage", tier = "Massive", tags = {"Fighter", "Gish", "Ranger", "Rogue"}, duration = -1},			
 			{name = "Target_LOW_Eyebite_Sickened_Cazador_Ritualist", type = "Targeted", category = "Utility", tier = "Massive", tags = {"Lock", "Wiz", "Rogue"}, duration = -1, range = 18},			
-			{name = "Target_LOW_FlamingFist_RangersCompanion_Wolf", type = "Ability", category = "Damage", tier = "Massive", tags = {"Ranger", "Druid"}, duration = -1},					
+			{name = "Target_LOW_FlamingFist_RangersCompanion_Wolf", type = "Ability", category = "Damage", tier = "Massive", tags = {"Phys", "Druid"}, duration = -1},					
 			{name = "Target_LifeDrain_Wraith", type = "Targeted", category = "Damage", tier = "Massive", tags = {"Sorc", "Wiz", "Lock"}, duration = -1, range = 5},			
 			{name = "Target_MAG_Legendary_HellCrawler", type = "Targeted", category = "Damage", tier = "Massive", tags = {"Fighter", "Monk", "Barb", "Gish", "Pala"}, duration = -1, range = 18},			
 			{name = "Mod_Target_MAG_Legendary_ImmolatingGaze", type = "Targeted", category = "Damage", tier = "Massive", tags = {"Lock", "Sorc", "Druid", "Wiz"}, duration = -1, range = 10},			
 			{name = "Target_MAG_Spectator_ParalyzingRay", type = "Targeted", category = "Utility", tier = "Massive", tags = {"Wiz", "Bard", "Sorc", "Lock"}, duration = -1, range = 18},			
-			{name = "Target_MAG_SpiritualWeapon", type = "Ability", category = "Damage", tier = "Massive", tags = {"Cleric", "Pala", "Bard"}, duration = -1},			
-			{name = "Target_MAG_SpiritualWeapon_Greatsword", type = "Ability", category = "Damage", tier = "Massive", tags = {"Cleric", "Pala", "Bard"}, duration = -1},			
-			{name = "Target_MAG_SpiritualWeapon_Halberd", type = "Ability", category = "Damage", tier = "Massive", tags = {"Cleric", "Pala", "Bard"}, duration = -1},			
-			{name = "Target_MAG_SpiritualWeapon_Spear", type = "Ability", category = "Damage", tier = "Massive", tags = {"Cleric", "Pala", "Bard"}, duration = -1},			
-			{name = "Target_MAG_SpiritualWeapon_Trident", type = "Ability", category = "Damage", tier = "Massive", tags = {"Cleric", "Pala", "Bard"}, duration = -1},			
+			{name = "Target_MAG_SpiritualWeapon", type = "Ability", category = "Damage", tier = "Massive", tags = {"Cleric", "Pala", "Bard", "Wiz"}, duration = -1},			
+			{name = "Target_MAG_SpiritualWeapon_Greatsword", type = "Ability", category = "Damage", tier = "Massive", tags = {"Cleric", "Pala", "Bard", "Wiz"}, duration = -1},			
+			{name = "Target_MAG_SpiritualWeapon_Halberd", type = "Ability", category = "Damage", tier = "Massive", tags = {"Cleric", "Pala", "Bard", "Wiz"}, duration = -1},			
+			{name = "Target_MAG_SpiritualWeapon_Spear", type = "Ability", category = "Damage", tier = "Massive", tags = {"Cleric", "Pala", "Bard", "Wiz"}, duration = -1},			
+			{name = "Target_MAG_SpiritualWeapon_Trident", type = "Ability", category = "Damage", tier = "Massive", tags = {"Cleric", "Pala", "Bard", "Wiz"}, duration = -1},			
 			{name = "Target_MAG_WeaponAction_Bonesaw", type = "Targeted", category = "Damage", tier = "Massive", tags = {"Phys"}, duration = -1, range = 5},			
 			{name = "Target_MOO_Fanatic_GuardianOfFaith", type = "Targeted", category = "Damage", tier = "Massive", tags = {"Cleric", "Bard", "Pala", "Druid"}, duration = -1, range = 10},			
 			{name = "Target_MOO_Ketheric_CommandTroops", type = "Targeted", category = "Utility", tier = "Massive", tags = {"Fighter", "Gish", "Pala"}, duration = -1, range = 24},			
@@ -1578,49 +1631,77 @@ local affixesByTier = {
 			{name = "Target_SHA_Shadowquake_Summon_Dual", type = "Ability", category = "Damage", tier = "Massive", tags = {"Rogue", "Ranger", "Wiz", "Sorc", "Lock"}, duration = -1},			
 			{name = "Target_SHA_Shadowquake_Summon_Mace", type = "Ability", category = "Damage", tier = "Massive", tags = {"Rogue", "Ranger", "Wiz", "Sorc", "Lock"}, duration = -1},			
 			{name = "Target_SHA_Shadowquake_Summon_Melee", type = "Ability", category = "Damage", tier = "Massive", tags = {"Rogue", "Ranger", "Wiz", "Sorc", "Lock"}, duration = -1},			
-			{name = "Target_SHA_Shadowquake_Summon_Ranger", type = "Ability", category = "Damage", tier = "Massive", tags = {"Ranger", "Rogue", "Druid"}, duration = -1},			
+			{name = "Target_SHA_Shadowquake_Summon_Ranger", type = "Ability", category = "Damage", tier = "Massive", tags = {"Ranger", "Rogue", "Mag"}, duration = -1},			
 			{name = "Target_SHA_Shadowquake_Summon_Shield", type = "Ability", category = "Damage", tier = "Massive", tags = {"Mag", "Ranger", "Rogue"}, duration = -1},			
 			{name = "Target_SHA_Skeleton_WitheringSuction", type = "Targeted", category = "Damage", tier = "Massive", tags = {"Lock", "Wiz", "Rogue"}, duration = -1, range = 18},			
 			{name = "Target_Smite_Blinding", type = "Targeted", category = "Damage", tier = "Massive", tags = {"Pala"}, duration = -1, range = 5},	
 			{name = "Target_SpikeGrowth", type = "Targeted", category = "Damage", tier = "Massive", tags = {"Druid", "Ranger", "Bard"}, duration = -1, range = 18},			
-			{name = "Target_Summon_ExtraBear_Bear", type = "Targeted", category = "Damage", tier = "Massive", tags = {"Druid", "Ranger", "Barb"}, duration = -1, range = 10},			
+			{name = "Target_Summon_ExtraBear_Bear", type = "Targeted", category = "Damage", tier = "Massive", tags = {"Druid", "Ranger", "Barb", "Wiz"}, duration = -1, range = 10},			
 			{name = "Target_TAD_ConcentratedBlast", type = "Targeted", category = "Damage", tier = "Massive", tags = {"Sorc", "Wiz", "Lock", "Bard"}, duration = -1, range = 10},			
 			{name = "Target_TWN_AasimarSurvivor_StrengthDrain", type = "Targeted", category = "Damage", tier = "Massive", tags = {"Lock", "Wiz", "Rogue"}, duration = -1, range = 8},			
 			{name = "Target_WYR_Shield_Capacitor_Gortash_Debuff", type = "Targeted", category = "Utility", tier = "Massive", tags = {"Sorc", "Wiz", "Bard", "Lock"}, duration = -1, range = 18},			
 			{name = "Target_WYR_StinkingCloudCheese", type = "Targeted", category = "Utility", tier = "Massive", tags = {"Druid", "Sorc", "Wiz", "Lock", "Ranger"}, duration = -1, range = 18},						
 			{name = "TavernBrawler", type = "Passive", category = "Damage", tier = "Massive", tags = {"Monk", "Barb", "Fighter", "Gish"}, duration = -1},			
-			{name = "TotemSpirit_Bear", type = "Passive", category = "Damage", tier = "Massive", tags = {"Barb", "Fighter", "Monk", "Rogue"}, duration = -1},			
+			{name = "TotemSpirit_Bear", type = "Passive", category = "Utility", tier = "Massive", tags = {"Phys"}, duration = -1},			
 			{name = "UND_ADAMANTINEGOLEM_HARDCORE", type = "Status", category = "Damage", tier = "Massive", tags = {"Phys"}, duration = -1},			
 			{name = "UND_BLISS_SPORES", type = "Status", category = "Utility", tier = "Massive", tags = {"Gen"}, duration = -1},					
 			{name = "VOICE_OF_COMMAND", type = "Status", category = "Damage", tier = "Massive", tags = {"Phys"}, duration = 18},
 			{name = "MOD_NECROTIC_BINDING", type = "Status", category = "Defense", tier = "Massive", tags = {"Gen"}, duration = -1},			
-			{name = "WARGODSBLESSING_AURA", type = "Status", category = "Damage", tier = "Massive", tags = {"Pala", "Cleric", "Fighter", "Gish", "Barb"}, duration = -1},	
+			{name = "MOD_WARGODSBLESSING_AURA", type = "Status", category = "Damage", tier = "Massive", tags = {"Gen"}, duration = -1},	
 			{name = "MOD_TENET_OF_SLAUGHTER", type = "Status", category = "Damage", tier = "Massive", tags = {"Gen"}, duration = -1},	
 			{name = "MOD_TITANBOUND", type = "Status", category = "Damage", tier = "Massive", tags = {"Phys"}, duration = -1},
 			{name = "MOD_TORMENTING_ECHO_STATUS", type = "Status", category = "Damage", tier = "Massive", tags = {"Gen"}, duration = -1},	
 			{name = "MOD_LIFEBINDER_AURA", type = "Status", category = "Utility", tier = "Massive", tags = {"Gen"}, duration = -1},
 			{name = "MOD_SANCTUARY_OF_THOUGHT_AURA", type = "Status", category = "Defense", tier = "Massive", tags = {"Gen"}, duration = -1},
-			{name = "MOD_PRISMATIC_BARRIER", type = "Status", category = "Defense", tier = "Massive", tags = {"Gen"}, duration = 30},			
+			{name = "MOD_PRISMATIC_BARRIER", type = "Status", category = "Defense", tier = "Massive", tags = {"Gen"}, duration = 30},
+			{name = "Mod_Shout_Marked_for_the_Hunt", type = "Ability", category = "Defense", tier = "Massive", tags = {"Gen"}, duration = -1},		
+			{name = "MOD_APOCOLYPTIC_STATUS", type = "Status", category = "Damage", tier = "Massive", tags = {"Gen"}, duration = -1},	
+			{name = "MOD_LOADED_DICE", type = "Status", category = "Damage", tier = "Massive", tags = {"Gen"}, duration = -1},	
+			{name = "MOD_WARLORD_AURA", type = "Status", category = "Utility", tier = "Massive", tags = {"Gen"}, duration = -1},
+			{name = "Mod_Shout_ElementalCleaver_Acid", type = "Ability", category = "Damage", tier = "Massive", tags = {"Gen"}, duration = -1},	
+			{name = "Mod_Shout_ElementalCleaver_Cold", type = "Ability", category = "Damage", tier = "Massive", tags = {"Gen"}, duration = -1},	
+			{name = "Mod_Shout_ElementalCleaver_Fire", type = "Ability", category = "Damage", tier = "Massive", tags = {"Gen"}, duration = -1},	
+			{name = "Mod_Shout_ElementalCleaver_Lightning", type = "Ability", category = "Damage", tier = "Massive", tags = {"Gen"}, duration = -1},	
+			{name = "Mod_Shout_ElementalCleaver_Thunder", type = "Ability", category = "Damage", tier = "Massive", tags = {"Gen"}, duration = -1},	
+			{name = "MOD_HEXBLADE_STATUS", type = "Status", category = "Damage", tier = "Massive", tags = {"Gen"}, duration = -1},		
+			{name = "Mod_Shout_Renewing_Tide", type = "Ability", category = "Defense", tier = "Massive", tags = {"Gen"}, duration = -1},
+			{name = "MOD_WALKING_FORTRESS_SOURCE_LINK", type = "Status", category = "Defense", tier = "Massive", tags = {"Gen"}, duration = -1},	
+			{name = "MOD_MASTER_TATICIAN_LEADER", type = "Status", category = "Damage", tier = "Massive", tags = {"Gen"}, duration = -1},	
+			{name = "MOD_TYRANNY_AURA", type = "Status", category = "Defense", tier = "Massive", tags = {"Gen"}, duration = -1},
+			{name = "MOD_WRATHFUL_KNIGHT_STATUS", type = "Status", category = "Damage", tier = "Massive", tags = {"Phys"}, duration = -1},
+			{name = "Mod_Shadow_Eruption_Projectile", type = "Ability", category = "Damage", tier = "Massive", tags = {"Gen"}, duration = -1},	
+			{name = "MOD_VOID_REAVER_STATUS", type = "Status", category = "Damage", tier = "Massive", tags = {"Gen"}, duration = -1},	
+			{name = "MOD_PARASITE_ENTITY_STATUS", type = "Status", category = "Damage", tier = "Massive", tags = {"Gen"}, duration = -1},	
+			{name = "MOD_ACCELERANT_MOVEMENT", type = "Status", category = "Utility", tier = "Massive", tags = {"Gen"}, duration = -1},		
+			{name = "MOD_GLASS_CANNON_STATUS", type = "Status", category = "Damage", tier = "Massive", tags = {"Gen"}, duration = -1},		
+			{name = "MOD_POLARITY_SHIFT_STATUS", type = "Status", category = "Defense", tier = "Massive", tags = {"Gen"}, duration = -1},
+			{name = "MOD_TEMPEST_CALLER_STATUS", type = "Status", category = "Utility", tier = "Massive", tags = {"Mag"}, duration = -1},		
+			{name = "MOD_CLOUD_OF_DAGGERS_AURA", type = "Status", category = "Damage", tier = "Massive", tags = {"Gen"}, duration = -1},		
+			{name = "MOD_MAD_BOMBER", type = "Status", category = "Damage", tier = "Massive", tags = {"Gen"}, duration = -1},	
+			{name = "MOD_KINGSBANE_STATUS", type = "Status", category = "Damage", tier = "Massive", tags = {"Phys"}, duration = -1},
+			{name = "MOD_MAG_DEATH_DO_SHADOW_POSSESION_DOWNED_OVERRIDE", type = "Status", category = "Utility", tier = "Massive", tags = {"Lock", "Wiz"}, duration = -1},	
+			{name = "MOD_SHIFTING_MIRAGE", type = "Status", category = "Defense", tier = "Massive", tags = {"Gen"}, duration = -1},		
+			{name = "MOD_INFERNO_STATUS", type = "Status", category = "Damage", tier = "Massive", tags = {"Gen"}, duration = -1},					
     -- Add more massive affixes here
 },
 
 		Mythical = {		
 			{name = "DOG_GHOST_HARDCORE", type = "Status", category = "Defense", tier = "Mythical", tags = {"Gen"}, duration = -1},		
-			{name = "DREAD_AMBUSHER", type = "Status", category = "Damage", tier = "Mythical", tags = {"Rogue", "Ranger", "Fighter"}, duration = -1},			
-			{name = "ELIXIR_OF_THE_GOD", type = "Status", category = "Utility", tier = "Mythical", tags = {"Gen"}, duration = -1},			
+			{name = "DREAD_AMBUSHER", type = "Status", category = "Damage", tier = "Mythical", tags = {"Phys"}, duration = -1},			
+			{name = "MOD_ELIXIR_OF_THE_GOD", type = "Status", category = "Utility", tier = "Mythical", tags = {"Gen"}, duration = -1},			
 			{name = "END_ALLYABILITIES_MOLBUFF", type = "Status", category = "Damage", tier = "Mythical", tags = {"Sorc", "Wiz", "Druid", "Lock"}, duration = -1},			
-			{name = "END_ZEVLOR_LEVEL_11", type = "Status", category = "Utility", tier = "Mythical", tags = {"Pala", "Cleric", "Bard"}, duration = -1},			
-			{name = "EPI_GALEGOD_BUFF_AURA", type = "Status", category = "Utility", tier = "Mythical", tags = {"Gen"}, duration = -1},			
+			{name = "END_ZEVLOR_LEVEL_11", type = "Status", category = "Utility", tier = "Mythical", tags = {"Mag", "Pala"}, duration = -1},			
+			{name = "MOD_EPI_GALEGOD_BUFF_AURA", type = "Status", category = "Utility", tier = "Mythical", tags = {"Gen"}, duration = -1},			
 			{name = "FLAMING_SPHERE_AURA_4", type = "Status", category = "Damage", tier = "Mythical", tags = {"Mag", "Monk", "Fighter", "Pala", "Gish"}, duration = -1},			
 			{name = "GISHPRESENCE_GITHYANKI_AURA", type = "Status", category = "Defense", tier = "Mythical", tags = {"Gen"}, duration = -1},			
 			{name = "GLO_DEVILISHOX_AISPELLS", type = "Status", category = "Utility", tier = "Mythical", tags = {"Druid"}, duration = -1},			
-			{name = "HAV_ISOBELABDUCTION_FLAMINGSPY_UNHOLY_STRENGTH", type = "Status", category = "Utility", tier = "Mythical", tags = {"Barb", "Fighter", "Gish", "Monk"}, duration = -1},					
+			{name = "MOD_HAV_ISOBELABDUCTION_FLAMINGSPY_UNHOLY_STRENGTH", type = "Status", category = "Utility", tier = "Mythical", tags = {"Phys"}, duration = -1},					
 			{name = "LOW_FLORRICK_LEVEL_11", type = "Status", category = "Utility", tier = "Mythical", tags = {"Sorc", "Wiz", "Bard"}, duration = -1},			
-			{name = "LOW_HAG_INSECT_PLAGUE_AURA", type = "Status", category = "Damage", tier = "Mythical", tags = {"Druid", "Ranger", "Lock"}, duration = -1},			
+			{name = "LOW_HAG_INSECT_PLAGUE_AURA", type = "Status", category = "Damage", tier = "Mythical", tags = {"Mag"}, duration = -1},			
 			{name = "LOW_HOH_HELLSPHERE", type = "Status", category = "Damage", tier = "Mythical", tags = {"Lock", "Wiz", "Sorc"}, duration = -1},			
-			{name = "LOW_PHILGRAVESMANSION_CANOPICAURA_BRAIN", type = "Status", category = "Damage", tier = "Mythical", tags = {"Mag"}, duration = -1},			
-			{name = "LOW_RAMAZITHSTOWER_DEVA_AURA", type = "Status", category = "Damage", tier = "Mythical", tags = {"Cleric", "Pala", "Gish", "Druid", "Bard"}, duration = -1},			
-			{name = "LOW_RAMAZITHSTOWER_DEVA_BLESSING", type = "Status", category = "Damage", tier = "Mythical", tags = {"Cleric", "Pala", "Gish", "Druid", "Bard"}, duration = -1},						
+			{name = "MOD_LOW_PHILGRAVESMANSION_CANOPICAURA_BRAIN", type = "Status", category = "Damage", tier = "Mythical", tags = {"Mag"}, duration = -1},			
+			{name = "MOD_LOW_RAMAZITHSTOWER_DEVA_AURA", type = "Status", category = "Damage", tier = "Mythical", tags = {"Mag"}, duration = -1},			
+			{name = "MOD_LOW_RAMAZITHSTOWER_DEVA_BLESSING", type = "Status", category = "Damage", tier = "Mythical", tags = {"Gen"}, duration = -1},						
 			{name = "MOD_LOW_RAPHAEL_DEVILLISHSTRENGTH_STATUS", type = "Status", category = "Damage", tier = "Mythical", tags = {"Phys"}, duration = -1},			
 			{name = "LOW_RAPHAEL_WILLPOWER", type = "Status", category = "Defense", tier = "Mythical", tags = {"Gen"}, duration = -1},			
 			{name = "LOW_STORMSHORETABERNACLE_GODCURSED", type = "Status", category = "Damage", tier = "Mythical", tags = {"Mag", "Pala", "Fighter", "Gish", "Rogue", "Monk"}, duration = -1},			
@@ -1630,9 +1711,9 @@ local affixesByTier = {
 			{name = "Land_Desert_3", type = "Passive", category = "Damage", tier = "Mythical", tags = {"Druid", "Sorc", "Wiz", "Bard"}, duration = -1},			
 			{name = "Land_Desert_4", type = "Passive", category = "Utility", tier = "Mythical", tags = {"Druid", "Lock", "Wiz", "Sorc", "Bard"}, duration = -1},			
 			{name = "Land_Mountain_4", type = "Passive", category = "Utility", tier = "Mythical", tags = {"Druid", "Sorc", "Wiz", "Bard"}, duration = -1},			
-			{name = "Land_Swamp_4", type = "Passive", category = "Damage", tier = "Mythical", tags = {"Druid", "Lock"}, duration = -1},			
+			{name = "Land_Swamp_4", type = "Passive", category = "Damage", tier = "Mythical", tags = {"Druid", "Sorc", "Wiz", "Bard"}, duration = -1},			
 			{name = "Land_Underdark_4", type = "Passive", category = "Damage", tier = "Mythical", tags = {"Druid", "Sorc", "Wiz", "Bard", "Lock"}, duration = -1},
-			{name = "MAG_AUTOMATON_FIREBALL_SHOT_OWNER", type = "Status", category = "Damage", tier = "Mythical", tags = {"Ranger", "Gish", "Fighter"}, duration = -1},			
+			{name = "MAG_AUTOMATON_FIREBALL_SHOT_OWNER", type = "Status", category = "Damage", tier = "Mythical", tags = {"Gen"}, duration = -1},			
 			{name = "MAG_DexteritySavingThrow_Evasion", type = "Passive", category = "Defense", tier = "Mythical", tags = {"Gen"}, duration = -1},			
 			{name = "MAG_LEGENDARY_CHROMATIC_ATTUNEMENT_ACID", type = "Status", category = "Utility", tier = "Mythical", tags = {"Sorc", "Wiz", "Druid", "Ranger", "Lock"}, duration = -1},			
 			{name = "MAG_LEGENDARY_CHROMATIC_ATTUNEMENT_COLD", type = "Status", category = "Utility", tier = "Mythical", tags = {"Sorc", "Wiz", "Lock"}, duration = -1},			
@@ -1642,7 +1723,7 @@ local affixesByTier = {
 			{name = "MAG_LEGENDARY_CHROMATIC_ATTUNEMENT_THUNDER", type = "Status", category = "Utility", tier = "Mythical", tags = {"Sorc", "Druid", "Wiz", "Bard"}, duration = -1},			
 			{name = "MOD_DEATHSHEAD_UNSTOPPABLE_7", type = "Status", category = "Defense", tier = "Mythical", tags = {"Gen"}, duration = -1},			
 			{name = "MOD_LOW_CAZADORSPALACE_SPAWNBUFF_002", type = "Status", category = "Utility", tier = "Mythical", tags = {"Gen"}, duration = -1},			
-			{name = "MOD_LOW_DEVILSFEE_AURA", type = "Status", category = "Utility", tier = "Mythical", tags = {"Gen"}, duration = -1},	
+			{name = "MOD_LOW_DEVILSFEE_AURA", type = "Status", category = "Damage", tier = "Mythical", tags = {"Gen"}, duration = -1},	
 			{name = "MOD_LOW_RAMAZITHSTOWER_NIGHTSONG_BLESSING", type = "Status", category = "Utility", tier = "Mythical", tags = {"Gen"}, duration = -1},			
 			{name = "MOD_LOW_RAPHAEL_CASCADEOFSOULS_AURA", type = "Status", category = "Damage", tier = "Mythical", tags = {"Lock", "Rogue", "Wiz", "Sorc", "Druid"}, duration = -1},			
 			{name = "MOD_LOW_RISENSKELETON_MYRKULBOUND", type = "Status", category = "Defense", tier = "Mythical", tags = {"Gen"}, duration = -1},			
@@ -1650,36 +1731,35 @@ local affixesByTier = {
 			{name = "MOD_MAG_CELESTIAL_HASTE", type = "Status", category = "Utility", tier = "Mythical", tags = {"Gen"}, duration = -1},	
 			{name = "MOD_MAG_ZHENTARIM_DEMONSPIRIT_AURA", type = "Status", category = "Defense", tier = "Mythical", tags = {"Gen"}, duration = -1},							
 			{name = "MOD_POTION_OF_BRAVERY", type = "Status", category = "Defense", tier = "Mythical", tags = {"Gen"}, duration = -1},			
-			{name = "MOD_UND_GLUT_ENRAGE", type = "Status", category = "Utility", tier = "Mythical", tags = {"Druid", "Ranger", "Barb", "Fighter", "Monk", "Rogue"}, duration = -1},			
+			{name = "MOD_UND_GLUT_ENRAGE", type = "Status", category = "Utility", tier = "Mythical", tags = {"Gen"}, duration = -1},			
 			{name = "MOD_WARDING_BOND", type = "Status", category = "Defense", tier = "Mythical", tags = {"Gen"}, duration = -1},			
 			{name = "MOD_WYR_ALIORAMUS_MATINGPHEROMONES", type = "Status", category = "Defense", tier = "Mythical", tags = {"Phys"}, duration = -1},			
 			{name = "MOD_WYR_GORTASH_SHIELD_BUFF", type = "Status", category = "Defense", tier = "Mythical", tags = {"Gen"}, duration = -1},			
-			{name = "MOD_MOO_KETHERIC_PHASE1", type = "Status", category = "Utility", tier = "Mythical", tags = {"Pala", "Fighter", "Gish", "Lock"}, duration = -1},						
+			{name = "MOD_MOO_KETHERIC_PHASE1", type = "Status", category = "Utility", tier = "Mythical", tags = {"Gen"}, duration = -1},						
 			{name = "Mod_LegendaryAction_LOW_Cazador_BatSwarm_Block", type = "Passive", category = "Damage", tier = "Mythical", tags = {"Lock", "Rogue", "Sorc", "Wiz"}, duration = -1},			
-			{name = "Mod_Shout_Greater_Fortifying_Spirit", type = "Ability", category = "Utility", tier = "Mythical", tags = {"Bard", "Pala", "Druid", "Cleric"}, duration = -1},			
+			{name = "Mod_Shout_Greater_Fortifying_Spirit", type = "Ability", category = "Utility", tier = "Mythical", tags = {"Mag"}, duration = -1},			
 			{name = "Mod_Shout_LOW_Cazador_Ascend", type = "Ability", category = "Damage", tier = "Mythical", tags = {"Gen"}, duration = -1},			
 			{name = "Mod_Shout_WYR_ChainsOfTyranny_Gortash", type = "Ability", category = "Damage", tier = "Mythical", tags = {"Gen"}, duration = -1},			
-			{name = "Mod_Target_LOW_DevilsFee_PromiseOfWealth", type = "Targeted", category = "Utility", tier = "Mythical", tags = {"Gen"}, duration = -1, range = 18},			
+			{name = "Mod_Target_LOW_DevilsFee_PromiseOfWealth", type = "Targeted", category = "Damage", tier = "Mythical", tags = {"Gen"}, duration = -1, range = 18},			
 			{name = "NORMAL_US", type = "Status", category = "Utility", tier = "Mythical", tags = {"Phys"}, duration = -1},			
 			{name = "OLIVER_DOME_HARDCORE", type = "Status", category = "Defense", tier = "Mythical", tags = {"Lock", "Wiz", "Rogue"}, duration = 1},			
-			{name = "MOD_POTION_OF_THE_GIANT", type = "Status", category = "Utility", tier = "Mythical", tags = {"Barb", "Fighter", "Gish", "Pala"}, duration = -1},
-			{name = "SPIRIT_GUARDIANS_NECROTIC_AURA_4", type = "Status", category = "Damage", tier = "Mythical", tags = {"Lock", "Cleric", "Wiz"}, duration = -1},			
-			{name = "SPIRIT_GUARDIANS_RADIANT_AURA_4", type = "Status", category = "Damage", tier = "Mythical", tags = {"Cleric", "Druid", "Pala", "Bard"}, duration = -1},			
-			{name = "SUNBEAM_OWNER", type = "Status", category = "Damage", tier = "Mythical", tags = {"Druid", "Pala", "Cleric", "Bard"}, duration = -1},			
-			{name = "Shout_DarkUrge_Slayer", type = "Ability", category = "Utility", tier = "Mythical", tags = {"Druid"}, duration = -1},			
-			{name = "Shout_DivineIntervention_Healing", type = "Ability", category = "Utility", tier = "Mythical", tags = {"Druid", "Cleric", "Pala", "Bard"}, duration = -1},			
+			{name = "MOD_POTION_OF_THE_GIANT", type = "Status", category = "Utility", tier = "Mythical", tags = {"Phys"}, duration = -1},
+			{name = "SPIRIT_GUARDIANS_NECROTIC_AURA_4", type = "Status", category = "Damage", tier = "Mythical", tags = {"Mag", "Pala"}, duration = -1},			
+			{name = "SPIRIT_GUARDIANS_RADIANT_AURA_4", type = "Status", category = "Damage", tier = "Mythical", tags = {"Mag", "Pala"}, duration = -1},			
+			{name = "SUNBEAM_OWNER", type = "Status", category = "Damage", tier = "Mythical", tags = {"Mag"}, duration = -1},			
+			{name = "Shout_DarkUrge_Slayer", type = "Ability", category = "Utility", tier = "Mythical", tags = {"Gen"}, duration = -1},			
+			{name = "Shout_DivineIntervention_Healing", type = "Ability", category = "Utility", tier = "Mythical", tags = {"Druid", "Cleric", "Pala", "Bard", "Wiz"}, duration = -1},			
 			{name = "Shout_END_NetherBrain_KarsusCompulsionResist", type = "Ability", category = "Damage", tier = "Mythical", tags = {"Gish", "Bard", "Wiz"}, duration = -1},			
 			{name = "Shout_FrightfulPresence_Dragon", type = "Ability", category = "Utility", tier = "Mythical", tags = {"Wiz", "Lock", "Rogue"}, duration = -1},			
-			{name = "Shout_LOW_LivingSacrifice_Slayer", type = "Ability", category = "Damage", tier = "Mythical", tags = {"Wiz", "Lock", "Rogue"}, duration = -1},			
-			{name = "Shout_LOW_TransformIntoSlayer_Orin", type = "Ability", category = "Damage", tier = "Mythical", tags = {"Druid"}, duration = -1},			
+			{name = "Shout_LOW_LivingSacrifice_Slayer", type = "Ability", category = "Damage", tier = "Mythical", tags = {"Wiz", "Lock", "Rogue"}, duration = -1},					
 			{name = "Shout_Shillelagh_Dryad", type = "Ability", category = "Damage", tier = "Mythical", tags = {"Mag"}, duration = -1},			
 			{name = "Shout_WildMagic_Cambion", type = "Ability", category = "Damage", tier = "Mythical", tags = {"Lock", "Rogue", "Wiz"}, duration = -1},			
 			{name = "Shout_WildMagic_Enchant", type = "Ability", category = "Damage", tier = "Mythical", tags = {"Phys"}, duration = -1},			
-			{name = "Shout_WildShape_Myrmidon_Air", type = "Ability", category = "Damage", tier = "Mythical", tags = {"Druid"}, duration = -1},			
-			{name = "Shout_WildShape_Myrmidon_Earth", type = "Ability", category = "Damage", tier = "Mythical", tags = {"Druid"}, duration = -1},			
-			{name = "Shout_WildShape_Myrmidon_Fire", type = "Ability", category = "Damage", tier = "Mythical", tags = {"Druid"}, duration = -1},			
-			{name = "Shout_WildShape_Myrmidon_Water", type = "Ability", category = "Damage", tier = "Mythical", tags = {"Druid"}, duration = -1},			
-			{name = "TAD_MIND_SANCTUARY", type = "Status", category = "Utility", tier = "Mythical", tags = {"Gen"}, duration = -1},			
+			{name = "Shout_WildShape_Myrmidon_Air", type = "Ability", category = "Damage", tier = "Mythical", tags = {"Druid", "Wiz"}, duration = -1},			
+			{name = "Shout_WildShape_Myrmidon_Earth", type = "Ability", category = "Damage", tier = "Mythical", tags = {"Druid", "Wiz"}, duration = -1},			
+			{name = "Shout_WildShape_Myrmidon_Fire", type = "Ability", category = "Damage", tier = "Mythical", tags = {"Druid", "Wiz"}, duration = -1},			
+			{name = "Shout_WildShape_Myrmidon_Water", type = "Ability", category = "Damage", tier = "Mythical", tags = {"Druid", "Wiz"}, duration = -1},			
+			{name = "TAD_MIND_SANCTUARY", type = "Status", category = "Utility", tier = "Mythical", tags = {"Mag"}, duration = -1},			
 			{name = "Target_AnimateDead_FlyingGhoul_6", type = "Ability", category = "Damage", tier = "Mythical", tags = {"Wiz", "Lock", "Rogue"}, duration = -1},			
 			{name = "Target_AnimateDead_Ghoul_6", type = "Ability", category = "Damage", tier = "Mythical", tags = {"Wiz", "Lock", "Rogue"}, duration = -1},			
 			{name = "Target_ConjureElemental_Myrmidon_Air", type = "Ability", category = "Damage", tier = "Mythical", tags = {"Sorc", "Druid", "Wiz", "Bard"}, duration = -1},			
@@ -1690,13 +1770,16 @@ local affixesByTier = {
 			{name = "Target_MF_Imperil", type = "Targeted", category = "Utility", tier = "Mythical", tags = {"Wiz", "Sorc", "Lock", "Bard"}, duration = -1, range = 18},			
 			{name = "Target_ORI_Wyll_SummonCambion", type = "Ability", category = "Damage", tier = "Mythical", tags = {"Lock", "Wiz", "Rogue"}, duration = -1},			
 			{name = "Target_PhantasmalKiller", type = "Targeted", category = "Damage", tier = "Mythical", tags = {"Wiz", "Bard", "Sorc"}, duration = -1, range = 18},			
-			{name = "Target_PlanarAlly_Deva", type = "Ability", category = "Damage", tier = "Mythical", tags = {"Mag"}, duration = -1},			
-			{name = "Target_PlanarAlly_Djinni", type = "Ability", category = "Damage", tier = "Mythical", tags = {"Mag"}, duration = -1},			
+			{name = "Target_PlanarAlly_Deva", type = "Ability", category = "Damage", tier = "Mythical", tags = {"Gen"}, duration = -1},			
+			{name = "Target_PlanarAlly_Djinni", type = "Ability", category = "Damage", tier = "Mythical", tags = {"Gen"}, duration = -1},			
 			{name = "Target_SHA_Shadowquake_Summon_Boss", type = "Ability", category = "Damage", tier = "Mythical", tags = {"Wiz", "Sorc", "Lock"}, duration = -1},			
 			{name = "Target_Slow_AI", type = "Targeted", category = "Utility", tier = "Mythical", tags = {"Wiz", "Sorc", "Bard"}, duration = -1, range = 18},			
 			{name = "Target_TAD_BlackHole", type = "Targeted", category = "Utility", tier = "Mythical", tags = {"Sorc", "Wiz", "Lock", "Bard"}, duration = -1, range = 18},			
 			{name = "Target_WYR_CrushingFist_Gortash", type = "Targeted", category = "Damage", tier = "Mythical", tags = {"Wiz", "Lock", "Sorc"}, duration = -1, range = 18},			
-			{name = "WILD_MAGIC_TURN_MAGIC", type = "Status", category = "Utility", tier = "Mythical", tags = {"Gen"}, duration = -1},			
+			{name = "WILD_MAGIC_TURN_MAGIC", type = "Status", category = "Utility", tier = "Mythical", tags = {"Gen"}, duration = -1},	
+			{name = "MOD_BLISS_SPORE_AREA", type = "Status", category = "Utility", tier = "Mythical", tags = {"Gen"}, duration = -1},	
+			{name = "MOD_MOO_KETHERIC_DEATHBLOOMSPAWNONDEATH_AURA", type = "Status", category = "Damage", tier = "Mythical", tags = {"Gen"}, duration = -1},	
+			{name = "MOD_AURA_OF_RUIN_STATUS", type = "Status", category = "Damage", tier = "Mythical", tags = {"Gen"}, duration = -1},			
     -- Add more mythical affixes here
    }
 }
@@ -1720,38 +1803,38 @@ local solanethRespecBlocker = {} -- Tracks temporary immunity to revival during 
 -- Base Tier Probabilities
 local baseTierProbabilities = {
     Minor = 10,
-    Medium = 30,
-    Major = 40,
+    Medium = 20,
+    Major = 50,
     Massive = 15,
     Mythical = 5
 }
 
 -- Affix Application Chances Based on Target's Level
 local levelAffixChances = {
-    { levelMax = 2, chances = {{0, 25}, {1, 45}, {2, 25}, {3, 5}}, allowedTiers = {"Minor"} },
-    { levelMax = 4, chances = {{0, 20}, {1, 40}, {2, 30}, {3, 10}}, allowedTiers = {"Minor", "Medium"} },
-    { levelMax = 7, chances = {{0, 15}, {1, 35}, {2, 35}, {3, 15}}, allowedTiers = {"Minor", "Medium", "Major"} },
-    { levelMax = 9, chances = {{0, 10}, {1, 30}, {2, 40}, {3, 20}}, allowedTiers = {"Minor", "Medium", "Major", "Massive"} },
-    { levelMax = 10, chances = {{0, 5}, {1, 25}, {2, 45}, {3, 25}}, allowedTiers = {"Minor", "Medium", "Major", "Massive", "Mythical"} },
-    { levelMax = 11, chances = {{0, 0}, {1, 20}, {2, 50}, {3, 30}}, allowedTiers = {"Minor", "Medium", "Major", "Massive", "Mythical"} }, 
-    { levelMax = 14, chances = {{0, 0}, {1, 10}, {2, 55}, {3, 35}}, allowedTiers = {"Minor", "Medium", "Major", "Massive", "Mythical"} }, 
-    { levelMax = 32, chances = {{0, 0}, {1, 5}, {2, 50}, {3, 45}}, allowedTiers = {"Minor", "Medium", "Major", "Massive", "Mythical"} },
+    { levelMax = 2, chances = {{0, 20}, {1, 45}, {2, 30}, {3, 5}}, allowedTiers = {"Minor"} },
+    { levelMax = 4, chances = {{0, 15}, {1, 40}, {2, 35}, {3, 10}}, allowedTiers = {"Minor", "Medium"} },
+    { levelMax = 7, chances = {{0, 10}, {1, 20}, {2, 50}, {3, 20}}, allowedTiers = {"Minor", "Medium", "Major"} },
+    { levelMax = 9, chances = {{0, 0}, {1, 0}, {2, 60}, {3, 40}}, allowedTiers = {"Minor", "Medium", "Major", "Massive"} },
+    { levelMax = 10, chances = {{0, 0}, {1, 0}, {2, 50}, {3, 50}}, allowedTiers = {"Minor", "Medium", "Major", "Massive", "Mythical"} },
+    { levelMax = 11, chances = {{0, 0}, {1, 0}, {2, 40}, {3, 60}}, allowedTiers = {"Minor", "Medium", "Major", "Massive", "Mythical"} }, 
+    { levelMax = 14, chances = {{0, 0}, {1, 0}, {2, 30}, {3, 70}}, allowedTiers = {"Minor", "Medium", "Major", "Massive", "Mythical"} }, 
+    { levelMax = 32, chances = {{0, 0}, {1, 0}, {2, 20}, {3, 80}}, allowedTiers = {"Minor", "Medium", "Major", "Massive", "Mythical"} },
 }
 
 -- Chance for a mob to become Absolutist based on Level
 function CalculateDynamicAbsolutistChance(level)
     if level <= 4 then
-        return 9  -- 9% up to level 4
+        return 10  -- 10% up to level 4
     elseif level <= 8 then
-        return 10  -- 10% from levels 5 to 8
+        return 15  -- 15% from levels 5 to 8
     elseif level <= 12 then
-        return 11 -- 11% from levels 9 to 12
+        return 20 -- 20% from levels 9 to 12
     elseif level <= 14 then
-        return 12 -- 12% from levels 13 to 14
+        return 22 -- 22% from levels 13 to 14
     elseif level <= 16 then
-        return 13 -- 13% for level 15 and 16
+        return 23 -- 23% for level 15 and 16
     else
-        return 14 -- 14% from level 17 onwards
+        return 25 -- 25% from level 17 onwards
     end
 end
 
@@ -1759,7 +1842,7 @@ end
 local absolutistArchetypes = {
     Phys = {
 		{ name = "WarmingUp", affixes = {"Mod_MAG_Heat_Fire_Robe_Passive", "MOD_FANGS_OF_THE_FIRE_SNAKE", "PROTECTION_FROM_ENERGY_FIRE"} },
-		{ name = "Annoyed", affixes = {"MOD_SHADE_WALKER", "MAG_VIOLENCE", "RELENTLESS_AVENGER"} },
+		{ name = "Annoyed", affixes = {"MOD_SHADE_WALKER", "MOD_MAG_VIOLENCE", "RELENTLESS_AVENGER"} },
 		{ name = "GobSlap", affixes = {"MAG_MOMENTUM", "Mod_MAG_Violence_ViolenceOnDash_Passive", "MOD_FORCE_LEADERSHIP"} },
 		{ name = "BabyBully", affixes = {"Mod_Aimed_Redemption_Passive", "BULLS_STRENGTH", "Mod_MAG_Violence_ViolenceOnDamaged_Passive"} },
 		{ name = "Acidic", affixes = {"PROTECTION_FROM_ENERGY_ACID", "MOD_MAG_TWN_BREWERY_CLUB_ACID", "MOD_MAG_SPELLBLADE_ACID_ENERGY"} },
@@ -1778,7 +1861,7 @@ local absolutistArchetypes = {
 		{ name = "TrueSTrikeRetaliate", affixes = {"RALLY", "Mod_Extra_Reaction_Passive", "Mod_MAG_TheClover_OffHand_Passive"} },
 		{ name = "Packmentality", affixes = {"MOD_ASPECT_OF_THE_ELK_AURA", "MOD_FORMATIONTACTICS_AURA", "MartialAdvantage"} },
 		{ name = "InfernalPower", affixes = {"ALCH_OIL_REMOVERESISTANCEFIRE", "MOD_TWN_DISTILLERY_AURA_FIRE", "Mod_MAG_Infernal_Metal_Gloves_FireDamage_Passive"} },
-		{ name = "Ambushed", affixes = {"GNOLL_SUDDENRUSH", "Mod_ARM_Ambusher_2_Passive", "MOD_COMMANDERS_STRIKE_D8"} },
+		{ name = "Ambushed", affixes = {"GNOLL_SUDDENRUSH", "ALCH_ELIXIR_ALERTNESS", "MOD_COMMANDERS_STRIKE_D8"} },
 		{ name = "HobgoblinForce", affixes = {"FIENDISH_RESILIENCE_FORCE", "Mod_WildMagicBarbarian_MagicRetribution_Passive", "MOD_FORCE_LEADERSHIP_AURA"} },
 		{ name = "PheromonePower", affixes = {"Scar_Dunes_Gur", "NARCOLEPTIC_BURST", "MOD_WYR_ALIORAMUS_MATINGPHEROMONES"} },
 		{ name = "HardHeaded", affixes = {"Mod_MAG_HelmOfBalduran_MaxHP_Passive", "Mod_MAG_StunnImmunity_Passive", "Mod_DazedImmunity_Passive"} },
@@ -1839,7 +1922,7 @@ local absolutistArchetypes = {
 		{ name = "SplinteredStrikes", affixes = {"MOD_SPLINTERING_WARD", "Mod_Bleed_OnDamageTaken_Passive", "Mod_Scarlet_Strike"} },
 		{ name = "CryptkeeperMarch", affixes = {"MOD_EYES_OF_THE_CRYPTKEEPER", "ALCH_ELIXIR_ALERTNESS", "Mod_Shout_MAG_ZOC_ImmovableShout"} },
 		{ name = "NecrosisGen", affixes = {"Mod_Necrosis_Attacks_Passive", "Mod_Decaying_Attacks_Passive", "Mod_UND_Justiciar_ChainShirt_Magic_Passive"} },
-		{ name = "SoulReclamationPhys", affixes = {"Mod_Soul_Reclaim", "Mod_LeaperStride", "ALCH_ELIXIR_CRITICALS"} },
+		{ name = "SoulReclamationPhys", affixes = {"Mod_Soul_Reclaim", "Mod_LeaperStride", "MOD_SUPER_ALCH_ELIXIR_CRITICALS"} },
 		{ name = "FesteredPhysical", affixes = {"MOD_FESTERING_FOG", "Mod_MAG_TheDueller_WitheringCut_Passive", "Mod_MAG_LifeStealingCritical_Passive"} },
 		{ name = "LethargicAttackerPhys", affixes = {"Mod_Curse_of_Lethargy_Passive", "PackTactics", "Mod_LeaperStride"} },
 		{ name = "MartyrRequiemPhys", affixes = {"MOD_MARTYRS_REQUIEM", "Mod_Titans_Reach", "FREEDOM_OF_MOVEMENT"} },
@@ -1850,7 +1933,7 @@ local absolutistArchetypes = {
 		{ name = "StableFooting", affixes = {"Mod_ProneImmunity_Passive", "LONGSTRIDER", "GOBLINWARCRY"} },
 		{ name = "SpideryProtection", affixes = {"Mod_SpiderFallResistance", "PROTECTION_FROM_POISON", "MOD_MAG_TWN_BREWERY_CLUB_POISON"} },
 		{ name = "Bhaal", affixes = {"AURA_OF_MURDER", "Mod_LOW_Raphael_Cambions_ExtraDamage", "MOD_DEATHSHEAD_UNSTOPPABLE_3"} },
-		{ name = "MobileMelee", affixes = {"DISENGAGE", "EXPEDITIOUS_RETREAT", "FREEDOM_OF_MOVEMENT"} },
+		{ name = "MobileMelee", affixes = {"MOD_DISENGAGE", "EXPEDITIOUS_RETREAT", "FREEDOM_OF_MOVEMENT"} },
 		{ name = "Rigid", affixes = {"Mod_Moo_KethericArmor", "FLY", "Mod_MAG_Frost_IceSurfaceProneImmunity_Boots_Passive"} },
 		{ name = "Duelist", affixes = {"Mod_MAG_TheDueller_ImprovedDuelist_Passive", "Mod_MAG_BG_SlowedOnCrit_Passive", "Mod_MAG_TheDueller_WitheringCut_Passive"} },
 		{ name = "FuryPhys", affixes = {"MOD_AURA_OF_FEROCITY", "Mod_HordeBreaker", "Indomitable"} },
@@ -1863,6 +1946,68 @@ local absolutistArchetypes = {
 		{ name = "Tideturner", affixes = {"Mod_Tidebreaker_Passive", "MOD_AC_REDUCTION_AURA", "ALCH_POTION_JUMP"} },
 		{ name = "BloodfortheBloodGod", affixes = {"Mod_Bloodrush_Passive", "Mod_Scarlet_Strike", "FREEDOM_OF_MOVEMENT"} },
 		{ name = "TitanForm", affixes = {"MOD_TITANBOUND", "Mod_Tidebreaker_Passive", "Mod_HordeBreaker"} },
+		{ name = "MageBane", affixes = {"MOD_DISRUPTIVE_FORCE", "Mod_MageSlayer_AttackCaster", "Mod_Arcane_Infusion"} },
+		{ name = "DevastatingPayoffMelee", affixes = {"MOD_KILLER_INSTINCT_STATUS", "MOD_RELENTLESS_ATTACK_STATUS", "Mod_Riposte"} },
+		{ name = "GladiatorChamp", affixes = {"MOD_GLADIATOR_EFFECT", "MOD_TITANBOUND", "MOD_REGENERATION_SECONDWIND"} },
+		{ name = "LoneWarlord", affixes = {"MOD_WARLORD_AURA", "MOD_LONE_WARRIOR_AURA", "Alert"} },
+		{ name = "DevastatingBalance", affixes = {"MOD_KILLER_INSTINCT_STATUS", "MOD_RELENTLESS_ATTACK_STATUS", "MOD_PARAGON_EFFECT"} },
+		{ name = "TigerPhys", affixes = {"Mod_UND_BlessingOfBOOOAL", "Shout_Rage_Totem_Tiger", "AspectOfTheBeast_Tiger"} },
+		{ name = "EaglePhys", affixes = {"Alert", "ASTRAL_PLANE", "Shout_Rage_Totem_Eagle"} },
+		{ name = "PrimordialAcid", affixes = {"Mod_Shout_ElementalCleaver_Acid", "MOD_MAG_TWN_BREWERY_CLUB_ACID", "Shout_Rage_Giant"} },
+		{ name = "PrimordialCold", affixes = {"Mod_Shout_ElementalCleaver_Cold", "MOD_MAG_TWN_BREWERY_CLUB_COLD", "Shout_Rage_Giant"} },
+		{ name = "PrimordialFire", affixes = {"Mod_Shout_ElementalCleaver_Fire", "MOD_MAG_TWN_BREWERY_CLUB_FIRE", "Shout_Rage_Giant"} },
+		{ name = "PrimordialLightning", affixes = {"Mod_Shout_ElementalCleaver_Lightning", "Mod_MAG_ChargedLightning_Charge_OnDamage_Passive", "Shout_Rage_Giant"} },
+		{ name = "PrimordialThunder", affixes = {"Mod_Shout_ElementalCleaver_Thunder", "Mod_MAG_Thunder_Reverberation_Gloves_Passive", "Shout_Rage_Giant"} },
+		{ name = "Earthshaking", affixes = {"MOD_EARTHSHAKER_STATUS", "Mod_Adrenal_Overdrive_Passive", "Mod_Tumble_Tutor"} },
+		{ name = "LichKingFlyer", affixes = {"MOD_HEXBLADE_STATUS", "FLY", "MOD_JUGGERNAUT_STATUS"} },
+		{ name = "LichKing", affixes = {"MOD_HEXBLADE_STATUS", "MOD_CORNERED_BEAST", "MOD_WARLORD_AURA"} },
+		{ name = "WrathKnight", affixes = {"MOD_WRATHFUL_KNIGHT_STATUS", "MOD_CORNERED_BEAST", "MOD_JUGGERNAUT_STATUS"} },
+		{ name = "WrathfulTyrant", affixes = {"MOD_WRATHFUL_KNIGHT_STATUS", "MOD_TYRANNY_AURA", "MOD_RELENTLESS_ATTACK_STATUS"} },
+		{ name = "FrontlineTactician", affixes = {"MOD_MASTER_TATICIAN_LEADER", "Mod_Tidebreaker_Passive", "CLICK_HEELS"} },
+		{ name = "TitanQuake", affixes = {"MOD_EARTHSHAKER_STATUS", "MOD_TITANBOUND", "MAG_ZOC_FORCE_CONDUIT_IMMOVABLE"} },
+		{ name = "TacticalSplitter", affixes = {"MOD_MASTER_TATICIAN_LEADER", "MOD_PLATE_SPLITTER_STATUS", "MOD_WALKING_FORTRESS_SOURCE_LINK"} },
+		{ name = "HagWarriorBargain", affixes = {"MOD_HAG_WARRIORS_BARGAIN", "FLY", "MOD_HAG_WELL_GOOD"} },
+		{ name = "HolyStriker", affixes = {"MOD_DIVINE_FAVOR", "Mod_MAG_Radiant_RadiatingOrb_OnDamage_Passive", "FIENDISH_RESILIENCE_RADIANT"} },
+		{ name = "EagleInstinct", affixes = {"Mod_Wild_Instinct_Passive", "MOD_EAGLE_EYE_STATUS", "Mod_LeaperStride"} },
+		{ name = "VoidReaverPhys", affixes = {"MOD_VOID_REAVER_STATUS", "CRE_ASTRALPRISON_GRAVITY", "Mod_MAG_ZOC_ForceConduit_Halberd_Passive"} },
+		{ name = "FlowTempest", affixes = {"MOD_FLOW_STATE_STATUS", "Mod_MAG_TheThorns_VeilOfTheWind_Passive", "Mod_Razor_Tempest"} },
+		{ name = "PsychicTraining", affixes = {"MOD_CRE_COMBAT_INSTRUCTION", "MOD_FLOW_STATE_STATUS", "Tactical_Discipline"} },
+		{ name = "RuinedTyrant", affixes = {"MOD_AURA_OF_RUIN_STATUS", "MOD_TYRANNY_AURA", "MOD_ELIXIR_OF_THE_GOD"} },
+		{ name = "AcceleratedTiger", affixes = {"MOD_ACCELERANT_MOVEMENT", "Shout_Rage_Totem_Tiger", "Mod_Combat_Momentum_Passive"} },
+		{ name = "GlassSpeed", affixes = {"MOD_GLASS_CANNON_STATUS", "MOD_ACCELERANT_MOVEMENT", "ALCH_POTION_JUMP"} },
+		{ name = "SentinelBasic", affixes = {"MOD_SENTINEL_LEADER_STATUS", "MOD_FULL_SWING", "MOD_MERCILESS"} },
+		{ name = "SentinelLeader", affixes = {"MOD_SENTINEL_LEADER_STATUS", "Mod_Break_the_Line_Passive", "MOD_MASTER_TATICIAN_LEADER"} },
+		{ name = "StoneGuardian", affixes = {"MOD_GUARDIAN_CHALLENGE_STATUS", "MOD_STONEWALL", "Mod_Break_the_Line_Passive"} },
+		{ name = "GuardianBattle", affixes = {"MOD_GUARDIAN_CHALLENGE_STATUS", "MOD_BLOOD_FRENZY", "MOD_REGENERATION_SECONDWIND"} },
+		{ name = "RockBeatsCaster", affixes = {"MOD_ABSORB_SPELLCASTING_STATUS", "MOD_DISRUPTIVE_FORCE", "FIENDISH_RESILIENCE_FORCE"} },
+		{ name = "PolarityBreaker", affixes = {"MOD_POLARITY_SHIFT_STATUS", "MOD_BONEBREAKER", "Mod_Combat_Momentum_Passive"} },
+		{ name = "BasicTraining", affixes = {"MOD_COMBAT_TRAINING_STATUS", "MAG_AC_BOOST", "LONGSTRIDER"} },
+		{ name = "ReallyHappy", affixes = {"MOD_REALLY_GLAD_STATUS", "MOD_ASTARION_HAPPY", "Mod_Adrenal_Overdrive_Passive"} },
+		{ name = "RazorStorm", affixes = {"MOD_CLOUD_OF_DAGGERS_AURA", "Mod_Razor_Tempest", "Mod_Combat_Momentum_Passive"} },
+		{ name = "GranitePhys", affixes = {"MOD_GRANITE_HIDE_STATUS", "MAG_ZOC_FORCE_CONDUIT_IMMOVABLE", "MOD_GLADIATOR_EFFECT"} },
+		{ name = "KineticPhys", affixes = {"MOD_KINECTIC_DRAIN_STATUS", "Mod_Break_the_Line_Passive", "MOD_PREDATOR_PHASING"} },
+		{ name = "InnovativePhys", affixes = {"MOD_MAD_BOMBER", "MOD_REPAIR_MATRIX", "Mod_Escapist_Veil"} },
+		{ name = "BrandedPhys", affixes = {"MOD_SOUL_BRANDER_STATUS", "MOD_GRANITE_HIDE_STATUS", "Mod_Aimed_Redemption_Passive"} },
+		{ name = "Kingsbane", affixes = {"MOD_KINGSBANE_STATUS", "SPIDER_SWORD_HASTE", "Mod_Pistulent_Attacks"} },
+		{ name = "EnvenomedBeast", affixes = {"MOD_KINGSBANE_STATUS", "MOD_CORNERED_BEAST", "MOD_HAG_WARRIORS_BARGAIN"} },
+		{ name = "CalibratedOdds", affixes = {"MOD_AGAINST_THE_ODDS", "MOD_SAVAGE_CALIBRATION", "MOD_MERCILESS"} },
+		{ name = "Webrunner", affixes = {"SpiderWalk", "MAG_MOMENTUM", "MOD_GLO_WEB_SURGE"} },
+		{ name = "FocusLeader", affixes = {"MOD_FOCUS_AURA_STATUS", "Mod_Tidebreaker_Passive", "MOD_SOUL_BRANDER_STATUS"} },
+		{ name = "NimblePhys", affixes = {"MOD_NIMBLE_RECOVERY_STATUS", "Mod_Vengeful_Focus_Passive", "MOD_UND_NERE_SHIELDOFSCREAMS"} },
+		{ name = "ResolvePhys", affixes = {"MOD_INNER_RESOLVE_STATUS", "Mod_Battleforge_Resilience_Damage_Taken_Tracking", "Tactical_Discipline"} },
+		{ name = "ThralledPhys", affixes = {"MOD_LOW_GREASEWIZARD_THRALL", "MOD_MERCILESS", "Mod_MAG_Monk_Martial_Lethality_Passive"} },
+		{ name = "AggressiveBeast", affixes = {"Mod_Aggressors_Edge_Passive", "MOD_CORNERED_BEAST", "Mod_Adrenal_Overdrive_Passive"} },
+		{ name = "KingFeller", affixes = {"MOD_KINGSBANE_STATUS", "Mod_Aggressors_Edge_Passive", "MOD_POISONED_EDGE"} },
+		{ name = "ShieldCrusher", affixes = {"MOD_SHIELDBREAKER_STATUS", "MOD_GRANITE_HIDE_STATUS", "MAG_ZOC_FORCE_CONDUIT_IMMOVABLE"} },
+		{ name = "ShieldBreak", affixes = {"MOD_SHIELDBREAKER_STATUS", "MOD_BONEBREAKER", "MOD_KINECTIC_DRAIN_STATUS"} },
+		{ name = "ShieldWarrior", affixes = {"MOD_SHIELDBREAKER_STATUS", "MOD_MERCILESS", "MOD_HAG_WARRIORS_BARGAIN"} },
+		{ name = "ChitinousBrawl", affixes = {"MOD_CHITINOUS_CARAPACE_STATUS", "MOD_GLADIATOR_EFFECT", "MOD_BONEBREAKER"} },
+		{ name = "GaleBarrierPhys", affixes = {"MOD_GALE_BARRIER", "LONGSTRIDER", "MOD_THUNDERCLAP_STRIKES"} },
+		{ name = "DissolvingPhys", affixes = {"MOD_DISSOLVING_STRIKES_STATUS", "MOD_MIXCHANGE_ACID_BUFF_BREWER", "MOD_MAG_TWN_BREWERY_CLUB_ACID"} },
+		{ name = "InfernoPhys", affixes = {"MOD_INFERNO_STATUS", "MOD_REGENERATION_ELEMENTAL_LAVA", "Mod_Wild_Instinct_Passive"} },
+		{ name = "RollingThunder", affixes = {"MOD_ROLLING_THUNDER_STATUS", "MOD_THUNDEROUS_ADVANCE", "ALCH_POTION_JUMP"} },
+		{ name = "RisingDawnPhys", affixes = {"MOD_RISING_DAWN_STATUS", "Mod_MAG_Radiant_RadiatingOrb_OnDamage_Passive", "Mod_Duality"} },
+		{ name = "MercilessDawn", affixes = {"MOD_RISING_DAWN_STATUS", "MOD_MERCILESS", "MOD_FULL_SWING"} },
         -- Add more phys archetypes as needed
 
     },
@@ -1870,13 +2015,11 @@ local absolutistArchetypes = {
         { name = "Magicboi", affixes = {"ARMOR_OF_AGATHYS", "Mod_MAG_ChargedLightning_Charge_OnSpellDamage_Passive", "EXPEDITIOUS_RETREAT"} },
 		{ name = "Trainee", affixes = {"Mod_Moo_KethericArmor", "MIRROR_IMAGE_1", "MAG_CQC_ARCANE_CHARGE"} },
 		{ name = "Scholar", affixes = {"ArmyArcana", "Mod_HAG_Hair_INT_Passive", "Mod_HAG_Hair_WIS_Passive", "Mod_HAG_Hair_CHA_Passive"} },
-		{ name = "DragonPup", affixes = {"ALCH_ELIXIR_CRITICALS", "Mod_ARM_MagicalPlate_1_Passive", "DraconicResilience"} },
-		{ name = "AngryWizard", affixes = {"FALSE_LIFE", "COUNTERCHARM", "Mod_MAG_LowHP_IncreasedSpellDamage_Passive"} },
+		{ name = "DragonPup", affixes = {"MOD_SUPER_ALCH_ELIXIR_CRITICALS", "Mod_ARM_MagicalPlate_1_Passive", "DraconicResilience"} },
 		{ name = "Eleaffinity", affixes = {"PROTECTION_FROM_ENERGY_LIGHTNING", "PROTECTION_FROM_ENERGY_FIRE", "PROTECTION_FROM_ENERGY_COLD"} },
 		{ name = "Electrifed", affixes = {"PROTECTION_FROM_ENERGY_THUNDER", "PROTECTION_FROM_ENERGY_LIGHTNING", "Mod_TWN_KuoToa_Storm"} },
 		{ name = "Babybird", affixes = {"Mod_MAG_Mobility_MomentumOnDash_Passive", "Mod_MAG_ChargedLightning_Dash_Boots_Passive", "FEATHER_FALL"} },
 		{ name = "Chemical", affixes = {"MOD_GLO_ACIDIC_BRINE", "Mod_HAV_Phasm_AcidPool", "MOD_TWN_OOZE_PUTRID_AURA"} },
-		{ name = "Recharge", affixes = {"Mod_Metamagic_Distant", "TAD_Freecast", "Mod_UNI_Bow_SpellslotRecharge_Passive"} },
 		{ name = "Aware", affixes = {"Mod_MAG_Gish_TempHPWhileConcentrating_Boots_Passive", "Mod_MAG_OfArcanicDefense_Robe_Passive", "MOD_MAGIC_AWARENESS"} },
 		{ name = "Cantrip", affixes = {"Mod_WarCaster_OpportunitySpell", "Mod_MAG_OfSharpCaster_Hat_Passive", "Mod_MAG_ElementalGish_CantripBooster_Amulet_Passive"} },
 		{ name = "CasterHelp", affixes = {"Shout_SeeInvisibility", "Mod_EntropicWard", "Shout_Shillelagh"} },
@@ -1889,7 +2032,7 @@ local absolutistArchetypes = {
 		{ name = "ReactiveMagic", affixes = {"Mod_MAG_SecondChance_Passive", "Mod_Extra_Reaction_Passive", "Mod_WarCaster_OpportunitySpell"} },
 		{ name = "GraveBrain", affixes = {"Mod_UNDEAD", "MOD_SILENCED_AURA", "LOW_PHILGRAVESMANSION_CANOPICAURA_BRAIN"} },
 		{ name = "Extendedrange", affixes = {"Mod_Arcane_Grasp", "Mod_LandsStride_Advantage", "Mod_Fleetfoot_Surge"} },
-		{ name = "EscapeVelocityMag", affixes = {"Mod_Escape_Velocity_Passive", "FEATHER_FALL", "DISENGAGE"} },
+		{ name = "EscapeVelocityMag", affixes = {"Mod_Escape_Velocity_Passive", "FEATHER_FALL", "MOD_DISENGAGE"} },
 		{ name = "FesteredMagic", affixes = {"MOD_FESTERING_FOG", "MOD_GRAVEBORN_VEIL", "Mod_MAG_LifeStealingCritical_Passive"} },
 		{ name = "SentinalWatch", affixes = {"MOD_SENTINELS_WATCH_AURA", "ALCH_ELIXIR_ALERTNESS", "Mod_MAG_Shadow_FogOfCloudDisengage_Cloak_Passive"} },
 		{ name = "Ragnaros", affixes = {"MOD_REGENERATION_ELEMENTAL_LAVA", "Mod_MAG_Heat_Fire_Robe_Passive", "MOD_ORI_GALE_MYSTRABLESSING_2", "MOO_BLOODPOTION_DRAGONBORN_FIRE"} },
@@ -1899,13 +2042,12 @@ local absolutistArchetypes = {
 		{ name = "Spellprotected", affixes = {"Mod_MAG_Radiant_RadiatingOrb_Ring_Passive", "Mod_Shout_MAG_ZOC_ImmovableShout", "Mod_MAG_AbsoluteProtector_Shield_Passive"} },
 		{ name = "SpellBraced", affixes = {"MOD_EVASIVE_FOOTWORK", "Mod_MAG_CQCaster_SpellDCBonusWhileThreatened_Circlet_Passive", "Mod_MAG_CQCaster_CloseRangedSpellMastery_Gloves_Passive"} },
 		{ name = "MentalStrength", affixes = {"Mod_ARM_Elegant_1_Passive", "Mod_INT_1_Passive", "Mod_WIS_1_Passive"} },
-		{ name = "GroundedMag", affixes = {"FastHands", "Mod_Tumble_Tutor", "DISENGAGE"} },
+		{ name = "GroundedMag", affixes = {"FastHands", "Mod_Tumble_Tutor", "MOD_DISENGAGE"} },
 		{ name = "CambionPuppeteer", affixes = {"Target_ORI_Wyll_SummonCambion", "Mod_Arcane_Infusion", "MOD_GREATER_FORTIFIED_SPIRIT"} },
 		{ name = "Charge", affixes = {"Mod_MAG_Illithid_Regen_Circlet_Passive", "Mod_MAG_Zhentarim_BloodfeederBlade_Rapier_Passive", "Mod_MAG_CQCaster_GainArcaneChargeOnDamaged_Robe_Passive"} },
 		{ name = "MagicProtection", affixes = {"Mod_MAG_Paladin_MomentumOnConcentration_Boots_Passive", "Mod_MAG_OfArcanicDefense_Robe_Passive", "Mod_MAG_PHB_ScarabOfProtection_Amulet_Passive"} },
 		{ name = "FocusedAim", affixes = {"Mod_MAG_Harpers_ArmorOfShadows_Passive", "Mod_Reckless_Aim", "Mod_Unerring_Marksman"} },
 		{ name = "MagSentry", affixes = {"Mod_Mistwalker_Passive", "ALCH_ELIXIR_ALERTNESS", "DevilsSight"} },
-		{ name = "TrueServitude", affixes = {"MOD_HAG_MASKOFSERVITUDE", "Mod_MAG_LowHP_IncreasedSpellDamage_Passive", "Mod_Arcane_Grasp"} },
 		{ name = "IlluminatedMantle", affixes = {"MOD_MANTLE_OF_LUMINESCENCE", "MOD_LOW_HOUSEOFHOPE_AEGIS", "Mod_MAG_AbsoluteProtector_Shield_Passive"} },
 		{ name = "ColdScales", affixes = {"MOD_RIGOR_MORTIS", "Mod_MultiattackDefense", "Mod_MAG_FrostTalon_ChillingCounter_Passive"} },
 		{ name = "MenacingVisage", affixes = {"MOD_VALKRANAS_VOGUE_VISAGE", "ALCH_ELIXIR_ALERTNESS", "MOD_SENTINELS_WATCH_AURA"} },
@@ -1928,14 +2070,52 @@ local absolutistArchetypes = {
 		{ name = "FireAffinity", affixes = {"MOD_LOW_LORROAKAN_FIRE", "Mod_MAG_Fire_ApplyBurning_Passive", "Mod_MAG_Fire_HeatOnWeaponDamage_Passive"} },
 		{ name = "MagicEcho", affixes = {"MOD_ARCANE_ECHO", "FIENDISH_RESILIENCE_FORCE", "Mod_MAG_Infernal_Metal_AttackBonus_Passive"} },
 		{ name = "MagicDevastator", affixes = {"MOD_ARCANE_ECHO", "MOD_TWN_DISTILLERY_RESISTANCE_FORCE", "Mod_MAG_ArcaneEnchantment_Passive"} },
+		{ name = "PyroManiac", affixes = {"MOD_IGNITION_POINT", "MOD_LOW_LORROAKAN_FIRE", "Shout_Fanning_Flame"} },
+		{ name = "StarryDragonMag", affixes = {"MOD_WILDSHAPE_STARRY_DRAGON_PLAYER", "MOD_DISCIPLINED_STRIKES", "SPIRIT_GUARDIANS_RADIANT_AURA"} },
+		{ name = "SplendidMantleMag", affixes = {"Mod_Shout_Mantle_of_Splendor", "MOD_LAST_LAUGH", "Mod_Bastion_Pulse"} },
+		{ name = "BellsTollMag", affixes = {"MOD_DEATH_KNELL_STATUS", "DevilsSight", "SPIRIT_GUARDIANS_NECROTIC_AURA"} },
+		{ name = "TideBringer", affixes = {"Mod_Shout_Renewing_Tide", "MOD_SANCTUARY_OF_THOUGHT_AURA", "AURA_OF_WARDING"} },
+		{ name = "ProtectiveDevotee", affixes = {"MOD_SELFLESS_DEVOTION_STATUS", "Mod_Shout_Mantle_of_Splendor", "Tough"} },
+		{ name = "ReparingProtection", affixes = {"MOD_SELFLESS_DEVOTION_STATUS", "MOD_REPAIR_MATRIX", "AURA_OF_WARDING"} },
+		{ name = "HagScholarBargain", affixes = {"MOD_HAG_SCHOLARS_BARGAIN", "FLY", "MOD_HAG_WELL_GOOD"} },
+		{ name = "HolyMag", affixes = {"MOD_DIVINE_FAVOR", "MOD_TWN_DISTILLERY_AURA_RADIANT", "MOD_MOO_NIGHTSONG_MOONBEAM"} },
+		{ name = "MagicalArchery", affixes = {"MOD_WILDSHAPE_STARRY_ARCHER", "DEATH_WARD", "LOW_GithProdigy_PsionicSkin"} },
+		{ name = "HolyDragon", affixes = {"MOD_WILDSHAPE_STARRY_DRAGON_PLAYER", "FLY", "Mod_Escapist_Veil"} },
+		{ name = "GaleNecrosis", affixes = {"MOD_ORI_GALE_NECROTICAURA", "MOD_HAG_SCHOLARS_BARGAIN", "Mod_Pistulent_Attacks"} },
+		{ name = "VoidReaverMag", affixes = {"MOD_VOID_REAVER_STATUS", "MOD_TWN_DISTILLERY_RESISTANCE_FORCE", "Ethereal"} },
+		{ name = "ReverberMag", affixes = {"Mod_MAG_Thunder_ReverberationOnStatusApply_Boots_Passive", "MOD_LESSER_FORTIFIED_SPIRIT", "PROTECTION_FROM_ENERGY_THUNDER"} },
+		{ name = "NecrosisBrewer", affixes = {"MOD_NECROTIC_AURA_BREWER", "MOD_MEENLOCK_FEAR_AURA", "MOD_SCL_SHADOWBIRDS_2"} },
+		{ name = "MetamorphicMag", affixes = {"MOD_PARASITE_ENTITY_STATUS", "MOD_SCL_SHADOWBIRDS_3", "Mod_Pistulent_Attacks"} },
+		{ name = "AcceleratedAir", affixes = {"MOD_ACCELERANT_MOVEMENT", "MOD_LOW_LORROAKAN_AIR", "Mod_MAG_ChargedLightning_Charge_OnDamage_Passive"} },
+		{ name = "CastervsCaster", affixes = {"MOD_ABSORB_SPELLCASTING_STATUS", "MagicResistance", "Mod_MAG_CQCaster_SpellDCBonusWhileThreatened_Circlet_Passive"} },
+		{ name = "EyeoftheStorm", affixes = {"MOD_EYE_OF_THE_STORM_AURA", "MOD_STORMBRAND", "MAG_ZOC_FORCE_CONDUIT_IMMOVABLE"} },
+		{ name = "EyeLightningCharge", affixes = {"MOD_EYE_OF_THE_STORM_AURA", "Mod_MAG_ChargedLightning_Charge_OnDamage_Passive", "Mod_LightningShield"} },
+		{ name = "TempestCaller", affixes = {"MOD_TEMPEST_CALLER_STATUS", "FLY", "Mod_MAG_Greater_ElementalDamageReduction_Passive"} },
+		{ name = "PrismaticStorm", affixes = {"MOD_CLOUD_OF_DAGGERS_AURA", "MOD_PRISMATIC_BARRIER", "Mod_Escapist_Veil"} },
+		{ name = "AdamantMagic", affixes = {"MOD_ADAMANT_RESOLVE", "MOD_ABSORB_SPELLCASTING_STATUS", "MagicResistance"} },
+		{ name = "KineticMag", affixes = {"MOD_KINECTIC_DRAIN_STATUS", "MOD_HAG_SCHOLARS_BARGAIN", "Mod_Lost_Time_Attack_Passive"} },
+		{ name = "BrandedMag", affixes = {"MOD_SOUL_BRANDER_STATUS", "MOD_SELFLESS_DEVOTION_STATUS", "Mod_Shout_Renewing_Tide"} },
+		{ name = "StarryArchery", affixes = {"MOD_WILDSHAPE_STARRY_ARCHER", "BLESS", "MOD_MARTYRS_REQUIEM"} },
+		{ name = "ArcaneSeeker", affixes = {"MOD_ARCANE_SEEKER_STATUS", "Mod_Last_Stand", "FIENDISH_RESILIENCE_FORCE"} },
+		{ name = "ArcaneEnfeebler", affixes = {"MOD_ARCANE_ENFEEBLE_STATUS", "Mod_Pistulent_Attacks", "Mod_MAG_Sarevok_OfChaos_Greatsword_Leeching_Passive"} },
+		{ name = "ArcaneGrasp", affixes = {"MOD_ARCANE_GRASPING_ARROW_STATUS", "Mod_Virulent_Attack_Passive", "MOD_MIXCHANGE_POISON_BUFF_BREWER"} },
+		{ name = "ArcaneShadow", affixes = {"MOD_ARCANE_SHADOW_ARROW_STATUS", "MOD_DEATHSHEAD_UNSTOPPABLE_3", "Mod_Composed_Assault_Passive"} },
+		{ name = "DisengagingMag", affixes = {"MOD_DISENGAGING_AURA_STATUS", "MOD_KINECTIC_DRAIN_STATUS", "Mod_Aggressors_Edge_Passive"} },
+		{ name = "ChitiniousMage", affixes = {"MOD_CHITINOUS_CARAPACE_STATUS", "LOW_HAG_INSECT_PLAGUE_AURA", "MOD_BLISS_SPORE_AREA"} },
+		{ name = "GaleBarrierMag", affixes = {"MOD_GALE_BARRIER", "FLY", "Mod_MAG_Thunder_ReverberationOnStatusApply_Boots_Passive"} },
+		{ name = "MirageMag", affixes = {"MOD_SHIFTING_MIRAGE", "Mod_Escapist_Veil", "MOD_MINDPIERCER_STRIKES"} },
+		{ name = "DissolvingMag", affixes = {"MOD_DISSOLVING_STRIKES_STATUS", "Mod_MAG_Acid_AcidMeleeCounter_Cloak_Passive", "Mod_Aggressors_Edge_Passive"} },
+		{ name = "InfernalMag", affixes = {"MOD_INFERNO_STATUS", "Mod_Target_LOW_GreaseWizard_RaiseElemental", "Mod_Composed_Assault_Passive"} },
+		{ name = "RollingThunderMag", affixes = {"MOD_ROLLING_THUNDER_STATUS", "Mod_ThunderShield", "FLY"} },
 		-- Add more mag archetypes as needed
     },
     Gen = {
         { name = "HardyUpbringing", affixes = {"Mod_Hardy", "Athlete_StandUp", "FALSE_LIFE"} },
 		{ name = "Kitten", affixes = {"HIDE_IN_PLAIN_SIGHT", "CATS_GRACE", "RemarkableAthlete_Jump"} },
-		{ name = "Cardio", affixes = {"UND_INVIGORATINGSPORES", "DISENGAGE", "MOD_ASPECT_OF_THE_ELK"} },
+		{ name = "Cardio", affixes = {"UND_INVIGORATINGSPORES", "MOD_DISENGAGE", "MOD_ASPECT_OF_THE_ELK"} },
 		{ name = "Smelly", affixes = {"POISON_SIMPLE_IMMUNE", "FIENDISH_RESILIENCE_NECROTIC", "STENCH"} },
-		{ name = "Precise", affixes = {"ReliableTalent", "BEND_LUCK_ATTACK_BONUS", "ALCH_ELIXIR_CRITICALS"} },
+		{ name = "Precise", affixes = {"ReliableTalent", "BEND_LUCK_ATTACK_BONUS", "MOD_SUPER_ALCH_ELIXIR_CRITICALS"} },
+		{ name = "BasicPrecise", affixes = {"ReliableTalent", "BEND_LUCK_ATTACK_BONUS", "Mod_MAG_SecondChance_Passive"} },
 		{ name = "Agile", affixes = {"BEND_LUCK_SAVE_BONUS", "Athlete_StandUp", "SWORDSPIDER_HARDCORE"} },
 		{ name = "Sneaky", affixes = {"ShadowStealth", "Mod_ARM_Ambusher_1_Passive", "HIDE_IN_PLAIN_SIGHT"} },
 		{ name = "Bedwarmer", affixes = {"BEDWARMER_AURA", "Mod_LOW_Guildhall_IsolatedPrey", "Mod_MAG_Umberlee_FireColdResistance_Passive"} },
@@ -1947,7 +2127,7 @@ local absolutistArchetypes = {
 		{ name = "Sleepy", affixes = {"MOD_END_ALLYBUFF_HALSIN", "Mod_FeyAncestry", "NARCOLEPTIC_BURST"} },
 		{ name = "ShadowCrit", affixes = {"DevilsSight", "Mod_SHA_DarkVengeance", "Mod_MAG_Sarevok_HornedHelmet_DeathbringerSight_Passive"} },
 		{ name = "Instincts", affixes = {"Mod_MAG_LowHP_TemporaryHP_Passive", "Mod_MAG_ShieldConduit_Passive", "SURVIVAL_INSTINCT"} },
-		{ name = "Resistance", affixes = {"Mod_DamageReduction_Dragon", "MAG_CQ_CASTER_DISRUPTION_AURA", "LEGENDARY_RESISTANCE"} },
+		{ name = "Resistance", affixes = {"Mod_DamageReduction_Dragon", "MOD_MAG_CQ_CASTER_DISRUPTION_AURA", "LEGENDARY_RESISTANCE"} },
 		{ name = "Immutable", affixes = {"LOW_RAPHAEL_WILLPOWER", "Ethereal", "ImmutableExistance"} },
 		{ name = "GodHasted", affixes = {"MAG_PHB_CLOAK_OF_DISPLACEMENT", "Mod_Last_Stand", "MOD_MAG_CELESTIAL_HASTE"} },
 		{ name = "WellSupplied", affixes = {"POTION_OF_HEROISM", "HEROES_FEAST", "Shout_DivineIntervention_Supplies"} },
@@ -1960,7 +2140,6 @@ local absolutistArchetypes = {
 		{ name = "AbsoluteSentry", affixes = {"Mod_Mistwalker_Passive", "ALCH_ELIXIR_ALERTNESS", "Mod_SentryStealth_Defense"} },
 		{ name = "FeyWilds", affixes = {"CLOAK_OF_SHADOWS", "Mobile_DashAcrossDifficultTerrain", "Mod_Faeriefire_OnDamageTaken_Passive"} },
 		{ name = "LowCalmness", affixes = {"Mod_MAG_LowHP_IgnoreAttackOfOpportunity_Passive", "Mod_MAG_LowHP_IncreaseSpeed_Passive", "Mod_LowHP_CalmnessinPain_Passive"} },
-		{ name = "Webrunner", affixes = {"SpiderWalk", "MAG_MOMENTUM", "MOD_GLO_WEB_SURGE"} },
 		{ name = "ArmorReducer", affixes = {"MOD_AC_REDUCTION_AURA", "MAG_AC_BOOST", "Mod_Hamstring_OnDamageTaken_Passive"} },
 		{ name = "Bulwark", affixes = {"Mod_Aegis_Resilience", "Tough", "LONGSTRIDER"} },
 		{ name = "ShadeStepper", affixes = {"MOD_SHADOW_STEP", "Mod_Shadowseer", "Mod_MAG_Shadow_CriticalBoostWhileObscured_Helmet_Passive"} },
@@ -2003,14 +2182,14 @@ local absolutistArchetypes = {
 		{ name = "PestilentAura", affixes = {"MOD_PESTILENT_SHROUD_AURA", "Mod_Decaying_Attacks_Passive", "Mod_UND_Justiciar_ChainShirt_Magic_Passive"} },
 		{ name = "Splintered", affixes = {"MOD_SPLINTERING_WARD", "Mod_Bleed_OnDamageTaken_Passive", "Mod_Scarlet_Strike"} },
 		{ name = "NecrosisGen", affixes = {"Mod_Necrosis_Attacks_Passive", "Mod_Decaying_Attacks_Passive", "Mod_UND_Justiciar_ChainShirt_Magic_Passive"} },
-		{ name = "SoulReclamation", affixes = {"Mod_Soul_Reclaim", "FIENDISH_RESILIENCE_NECROTIC", "ALCH_ELIXIR_CRITICALS"} },
+		{ name = "SoulReclamation", affixes = {"Mod_Soul_Reclaim", "FIENDISH_RESILIENCE_NECROTIC", "MOD_SUPER_ALCH_ELIXIR_CRITICALS"} },
 		{ name = "Festering", affixes = {"MOD_FESTERING_FOG", "MOD_GRAVEBORN_VEIL", "Mod_DEN_Apprentice_DaggerOfShar_Passive"} },
 		{ name = "VitalityDrainGen", affixes = {"Mod_Vitality_Drain_Passive", "ALCH_POTION_JUMP", "Mod_MAG_LowHP_IncreaseSpeed_Passive"} },
 		{ name = "HeraldofMisfortuneGen", affixes = {"MOD_HERALD_OF_MISFORTUNE", "Mod_MAG_Bhalist_Hat_Passive", "MAG_PHB_CLOAK_OF_DISPLACEMENT"} },
 		{ name = "LethargicAttacker", affixes = {"Mod_Curse_of_Lethargy_Passive", "Mod_Hamstring_OnDamageTaken_Passive", "Mod_LeaperStride"} },
 		{ name = "MartyrRequiemGen", affixes = {"MOD_MARTYRS_REQUIEM", "MOD_MAG_RAMPART_AURA", "FREEDOM_OF_MOVEMENT"} },
 		{ name = "SacrificalWarding", affixes = {"MOD_SACRIFICIAL_WARDING", "FEATHER_FALL", "Mod_MAG_HelmOfBalduran_MaxHP_Passive"} },
-		{ name = "EscapeVelocityGen", affixes = {"Mod_Escape_Velocity_Passive", "FEATHER_FALL", "DISENGAGE"} },
+		{ name = "EscapeVelocityGen", affixes = {"Mod_Escape_Velocity_Passive", "FEATHER_FALL", "MOD_DISENGAGE"} },
 		{ name = "IceWalker", affixes = {"Mod_MAG_Frost_IceSurfaceProneImmunity_Boots_Passive", "Mod_MAG_LowHP_IgnoreAttackOfOpportunity_Passive", "EXPEDITIOUS_RETREAT"} },
 		{ name = "AbsoluteShieldedGen", affixes = {"Mod_Shout_MAG_ZOC_ImmovableShout", "CLICK_HEELS", "GOB_PRIESTESS_ABSOLUTEWORD_SHIELD"} },
 		{ name = "ThrallBonusGen", affixes = {"MOD_LOW_GREASEWIZARD_THRALL", "Mod_Aegis_Resilience", "Mod_Shout_MAG_ZOC_ImmovableShout"} },
@@ -2021,10 +2200,10 @@ local absolutistArchetypes = {
 		{ name = "SpellShielding", affixes = {"Mod_MAG_AbsoluteProtector_Shield_Passive", "MOD_SACRIFICIAL_WARDING", "Mod_MAG_SleepImmunity_Passive"} },
 		{ name = "DeathsDoor", affixes = {"Mod_Last_Stand", "Mod_Phantom_Veil", "Mod_Duality"} },
 		{ name = "AscendedGen", affixes = {"Mod_Shout_LOW_Cazador_Ascend", "MOD_HERALD_OF_MISFORTUNE", "ClarifiedMortality"} },
-		{ name = "RuthlessPrecision", affixes = {"MOD_RUTHLESS_AGGRESSION", "Mod_Aimed_Redemption_Passive", "ALCH_ELIXIR_CRITICALS"} },
+		{ name = "RuthlessPrecision", affixes = {"MOD_RUTHLESS_AGGRESSION", "Mod_Aimed_Redemption_Passive", "MOD_SUPER_ALCH_ELIXIR_CRITICALS"} },
 		{ name = "CelestialWar", affixes = {"Target_PlanarAlly_Deva", "Mod_Shout_Shattered_Soul", "HEROES_FEAST"} },
 		{ name = "GuardWatchGen", affixes = {"Shout_Watchful_Warden_Initial", "MOD_DEFLECT_MISSILE_AURA", "Mod_Bastion_Pulse"} },
-		{ name = "MercilessGen", affixes = {"MOD_MERCILESS", "Mod_Battleforge_Resilience_Damage_Taken_Tracking", "DISENGAGE"} },
+		{ name = "MercilessGen", affixes = {"MOD_MERCILESS", "Mod_Battleforge_Resilience_Damage_Taken_Tracking", "MOD_DISENGAGE"} },
 		{ name = "StormCharger", affixes = {"MOD_STORMBRAND", "Mod_LightningShield", "Mod_MAG_ChargedLightning_Resistance_Ring_Passive"} },
 		{ name = "ChilledEdgeGen", affixes = {"MOD_FREEZING_EDGE", "MAG_FROST_ICE_PRONE_IMMUNITY_BOOTS", "PROTECTION_FROM_ENERGY_COLD"} },
 		{ name = "JoltedEnemyGen", affixes = {"MOD_CRACKLING_JOLT", "Mod_MAG_ChargedLightning_ChargeOnTakeDamage_Cloak_Passive", "PROTECTION_FROM_ENERGY_LIGHTNING"} },
@@ -2054,6 +2233,84 @@ local absolutistArchetypes = {
 		{ name = "IllusoryStrikes", affixes = {"Mod_Illusory_Edge_Passive", "MOD_AC_REDUCTION_AURA", "MOD_DISCIPLINED_STRIKES"} },
 		{ name = "PsionicShadows", affixes = {"Mod_MAG_Blindside_Shortsword_Passive", "Mod_SHA_DarkVengeance", "Mod_MAG_Sarevok_OfChaos_Greatsword_Leeching_Passive"} },
 		{ name = "MagicallyWarded", affixes = {"Mod_MAG_PHB_ScarabOfProtection_Amulet_Passive", "Mod_Arcane_Infusion", "Mod_Adrenal_Overdrive_Passive"} },
+		{ name = "PerfectSoldier", affixes = {"MOD_REGENERATION_SECONDWIND", "MOD_PERFECT_OPENING", "Mod_Adrenal_Overdrive_Passive"} },
+		{ name = "IgnitionSwitch", affixes = {"MOD_IGNITION_POINT", "Mod_MAG_LC_BurnOnDamage_Scimitar_Passive", "MOD_MIXCHANGE_FIRE_BUFF_BREWER"} },
+		{ name = "StoneCold", affixes = {"MOD_STONEWALL", "MOD_FREEZING_EDGE", "Mod_Wild_Instinct_Passive"} },
+		{ name = "FrenziedBlood", affixes = {"MOD_STONEWALL", "MOD_BLOOD_FRENZY", "Tough"} },
+		{ name = "EldritchHorror", affixes = {"MOD_SYNAPTIC_PARASITE", "Mod_HAG_MaskOfVengeance", "MOD_INT_ORPHEUS_PROTECTION"} },
+		{ name = "PsychicMayhem", affixes = {"MOD_SYNAPTIC_PARASITE", "MOD_MINDPIERCER_STRIKES", "FIENDISH_RESILIENCE_PSYCHIC"} },
+		{ name = "StormChaser", affixes = {"MOD_WHIRLWIND_AURA", "MOD_STORMBRAND", "MOD_LOW_LORROAKAN_AIR"} },
+		{ name = "ClownCollege", affixes = {"MOD_LAST_LAUGH", "MOD_SYNAPTIC_PARASITE", "Tough"} },
+		{ name = "DoomCaller", affixes = {"MOD_APOCOLYPTIC_STATUS", "MOD_MERCILESS", "MOD_STONEWALL"} },
+		{ name = "HouseAlwaysWins", affixes = {"MOD_LOADED_DICE", "MOD_GREATER_FORTIFIED_SPIRIT", "Mod_Adrenal_Overdrive_Passive"} },
+		{ name = "DoomSoldier", affixes = {"MOD_APOCOLYPTIC_STATUS", "SPIRIT_GUARDIANS_NECROTIC_AURA", "MOD_SHA_NECROMANCER_SPECTRALFORM"} },
+		{ name = "LaughingArmy", affixes = {"MOD_LAST_LAUGH", "MOD_MOO_KETHERIC_DEATHBLOOMSPAWNONDEATH_AURA", "Target_AnimateDead_Skeleton_4"} },
+		{ name = "HuntheHunted", affixes = {"Mod_Shout_Marked_for_the_Hunt", "Shout_DarkUrge_Slayer", "STONESKIN"} },
+		{ name = "GamblersLuck", affixes = {"MOD_LOADED_DICE", "BLESS", "Tactical_Discipline"} },
+		{ name = "ConfidentlyAggressive", affixes = {"Mod_Composed_Assault_Passive", "Mod_Hardy", "MOD_REGENERATION_SABERTOOTH"} },
+		{ name = "ArrogantBully", affixes = {"MOD_OVERCONFIDENT", "Mod_Predators_Rejuvenation", "MOD_SYNAPTIC_PARASITE"} },
+		{ name = "ConfidenceDeluxe", affixes = {"MOD_OVERCONFIDENT", "HEROES_FEAST", "Mod_MAG_Sarevok_OfChaos_Greatsword_Leeching_Passive"} },
+		{ name = "ParagonofPower", affixes = {"MOD_PARAGON_EFFECT", "Mod_Tidebreaker_Passive", "Mod_Aggressors_Edge_Passive"} },
+		{ name = "DualityofChaos", affixes = {"MOD_PARAGON_EFFECT", "MOD_LOADED_DICE", "MOD_DISCIPLINED_STRIKES"} },
+		{ name = "ImtheJuggernautBitch", affixes = {"MOD_JUGGERNAUT_STATUS", "Mod_Aegis_Resilience", "FREEDOM_OF_MOVEMENT"} },
+		{ name = "SpeedKills", affixes = {"MOD_JUGGERNAUT_STATUS", "Mod_Combat_Momentum_Passive", "SPIDER_SWORD_HASTE"} },
+		{ name = "AssassinForHire", affixes = {"MOD_KILLER_INSTINCT_STATUS", "Mobile_CounterAttackOfOpportunity", "Mod_Fleetfoot_Surge"} },
+		{ name = "DevastatingIsolation", affixes = {"MOD_KILLER_INSTINCT_STATUS", "Mod_LOW_Guildhall_IsolatedPrey", "MOD_PARAGON_EFFECT"} },
+		{ name = "RunescapeWarlord", affixes = {"MOD_GLADIATOR_EFFECT", "MOD_BLOOD_FRENZY", "Mod_MAG_Sarevok_OfChaos_Greatsword_Leeching_Passive"} },
+		{ name = "PitMasterofDoom", affixes = {"MOD_GLADIATOR_EFFECT", "MOD_APOCOLYPTIC_STATUS", "Mod_UNI_DoomAxe_Passive"} },
+		{ name = "SpellAbsorber", affixes = {"Mod_Arcane_Infusion", "Mod_MAG_MagicalDurability_Passive", "Mod_Aimed_Redemption_Passive"} },
+		{ name = "CorneredMonstrosity", affixes = {"MOD_CORNERED_BEAST", "Mod_Bloodrush_Passive", "MOD_STONEWALL"} },
+		{ name = "ThickSkinnedBeast", affixes = {"MOD_CORNERED_BEAST", "MOD_GREATER_FORTIFIED_SPIRIT", "SURVIVAL_INSTINCT"} },
+		{ name = "FlowStateHero", affixes = {"MOD_FLOW_STATE_STATUS", "MOD_PARAGON_EFFECT", "HEROES_FEAST"} },
+		{ name = "DruggedFlowAbsurdity", affixes = {"MOD_FLOW_STATE_STATUS", "CONS_DRUG_STIMULANT", "LOW_GithProdigy_PsionicSkin"} },
+		{ name = "WarlordsCommand", affixes = {"MOD_WARLORD_AURA", "GREMISHKA_ENLARGE", "Mod_Hardy"} },
+		{ name = "WarlordChampion", affixes = {"MOD_WARLORD_AURA", "MOD_JUGGERNAUT_STATUS", "Tactical_Discipline"} },
+		{ name = "PlanarCommander", affixes = {"MOD_WARLORD_AURA", "Target_PlanarAlly_Djinni", "Shout_HeroesFeast"} },
+		{ name = "WarGodEmpowered", affixes = {"MOD_WARGODSBLESSING_AURA", "MOD_LIFEBINDER_AURA", "MAG_ZOC_FORCE_CONDUIT_IMMOVABLE"} },
+		{ name = "TwilightPurge", affixes = {"Mod_Shadow_Eruption_Projectile", "MOD_KILLER_INSTINCT_STATUS", "Mod_Duality"} },
+		{ name = "CorruptedLifeGiver", affixes = {"MOD_LIFEBINDER_AURA", "SPIRIT_GUARDIANS_NECROTIC_AURA", "MOD_APOCOLYPTIC_STATUS"} },
+		{ name = "SwarmHorde", affixes = {"LOW_HAG_INSECT_PLAGUE_AURA", "SPIDER_SWORD_HASTE", "Mod_MAG_TheThorns_VeilOfTheWind_Passive"} },
+		{ name = "AWRaidGL", affixes = {"MOD_NECROTIC_BINDING", "Mod_Shout_Marked_for_the_Hunt", "Mod_Shout_Shattered_Soul"} },
+		{ name = "StarryDragon", affixes = {"MOD_WILDSHAPE_STARRY_DRAGON_PLAYER", "BLESS", "MOD_TWN_DISTILLERY_AURA_RADIANT"} },
+		{ name = "ArmourSplitter", affixes = {"MOD_PLATE_SPLITTER_STATUS", "Mod_Break_the_Line_Passive", "MOD_STONEWALL"} },
+		{ name = "BellsToll", affixes = {"MOD_DEATH_KNELL_STATUS", "Mod_Moo_KethericArmor", "MOD_APOSTLE_AURA"} },
+		{ name = "HexReaper", affixes = {"MOD_HEXBLADE_STATUS", "MOD_FLOW_STATE_STATUS", "MOD_DEATHSHEAD_UNSTOPPABLE_5"} },
+		{ name = "Citadel", affixes = {"MOD_WALKING_FORTRESS_SOURCE_LINK", "Mod_Shout_Renewing_Tide", "MOD_PLATE_SPLITTER_STATUS"} },
+		{ name = "TacticalCommander", affixes = {"MOD_WALKING_FORTRESS_SOURCE_LINK", "MOD_MASTER_TATICIAN_LEADER", "MOD_PLATE_SPLITTER_STATUS"} },
+		{ name = "TheTyrant", affixes = {"MOD_TYRANNY_AURA", "MOD_AC_REDUCTION_AURA", "MOD_CORNERED_BEAST"} },
+		{ name = "BasicEagle", affixes = {"MOD_EAGLE_EYE_STATUS", "EAGLES_SPLENDOR", "FEATHER_FALL"} },
+		{ name = "BasicHeavy", affixes = {"MOD_HEAVY_HAND_STATUS", "Mod_MAG_RiskyAttack_Passive", "LONGSTRIDER"} },
+		{ name = "BlissfulGiver", affixes = {"MOD_BLISS_SPORE_AREA", "MOD_UND_GLUT_ENRAGE", "MOD_HAG_MASKOFSERVITUDE"} },
+		{ name = "Jolter", affixes = {"MOD_CRACKLING_JOLT", "Mod_Escape_Velocity_Passive", "Mod_MAG_ChargedLightning_Charge_OnDamage_Passive"} },
+		{ name = "VoidReaver", affixes = {"MOD_VOID_REAVER_STATUS", "MOD_APOCOLYPTIC_STATUS", "Mod_LOW_Sarevok_Essence_Amelyssan"} },
+		{ name = "RuinedEra", affixes = {"MOD_AURA_OF_RUIN_STATUS", "MOD_JUGGERNAUT_STATUS", "MOD_FLOW_STATE_STATUS"} },
+		{ name = "WithoutTraceAura", affixes = {"MOD_PASS_WITHOUT_TRACE_AURA", "Mod_Shadowseer", "Mod_Measured_Precision_Passive"} },
+		{ name = "SneakyStriker", affixes = {"MOD_PASS_WITHOUT_TRACE_SPECIAL", "FEATHER_FALL", "MOD_ORI_GALE_STAFFNECROTICAURA_ALLY_BUFF"} },
+		{ name = "NecroticBarrier", affixes = {"MOD_ORI_GALE_STAFFNECROTICAURA", "Mod_MAG_SarevokArmor_WitheringBarrier_Passive", "FIENDISH_RESILIENCE_NECROTIC"} },
+		{ name = "GodAmongUs", affixes = {"MOD_ELIXIR_OF_THE_GOD", "BLESS", "MOD_PARAGON_EFFECT"} },
+		{ name = "MetamorphicInfestation", affixes = {"MOD_PARASITE_ENTITY_STATUS", "UND_BLISS_SPORES", "MOD_MEENLOCK_FEAR_AURA"} },
+		{ name = "Accelerated", affixes = {"MOD_ACCELERANT_MOVEMENT", "MOD_STORMBRAND", "MOD_ADRENAL_OVERDRIVE"} },
+		{ name = "GlassCalibration", affixes = {"MOD_GLASS_CANNON_STATUS", "MOD_LOW_OSKARSBELOVED_CURSEDSKULL", "MOD_SAVAGE_CALIBRATION"} },
+		{ name = "WrathfulGen", affixes = {"Mod_MAG_Mobility_MomentumOnDash_Passive", "Mod_MAG_Violence_ViolenceOnDash_Passive", "EXPEDITIOUS_RETREAT"} },
+		{ name = "CasterCursed", affixes = {"MOD_ABSORB_SPELLCASTING_STATUS", "Mod_Arcane_Infusion", "MAG_ZOC_FORCE_CONDUIT_IMMOVABLE"} },
+		{ name = "PolarityTides", affixes = {"MOD_POLARITY_SHIFT_STATUS", "MOD_MERCILESS", "Mod_Tidebreaker_Passive"} },
+		{ name = "LuckyInstinct", affixes = {"MOD_BATTLE_REFLEXES_STATUS", "BEND_LUCK_ATTACK_BONUS", "Mod_LeaperStride"} },
+		{ name = "GraniteResolve", affixes = {"MOD_ADAMANT_RESOLVE", "MOD_GRANITE_HIDE_STATUS", "Mod_Battleforge_Resilience_Damage_Taken_Tracking"} },
+		{ name = "ExplosiveInnovation", affixes = {"MOD_MAD_BOMBER", "MOD_GLO_BLACKPOWDERKEG", "MOD_ACCELERANT_MOVEMENT"} },
+		{ name = "BrandedDisciple", affixes = {"MOD_SOUL_BRANDER_STATUS", "BLESS", "MOD_DISENGAGE"} },
+		{ name = "AgainstOdds", affixes = {"MOD_AGAINST_THE_ODDS", "MOD_MERCILESS", "Mod_Aimed_Redemption_Passive"} },
+		{ name = "FocusGuide", affixes = {"MOD_FOCUS_AURA_STATUS", "Mod_Vengeful_Focus_Passive", "MOD_MERCILESS"} },
+		{ name = "InnerResolve", affixes = {"MOD_INNER_RESOLVE_STATUS", "Mod_MAG_Githborn_Circlet_Passive", "MagicResistance"} },
+		{ name = "NimbleRecovery", affixes = {"MOD_NIMBLE_RECOVERY_STATUS", "Mod_Escapist_Veil", "MOD_DISCIPLINED_STRIKES"} },
+		{ name = "AggressiveOpening", affixes = {"MOD_ADAMANT_RESOLVE", "Mod_Tidebreaker_Passive", "Mod_Aggressors_Edge_Passive"} },
+		{ name = "DisengagingAlly", affixes = {"MOD_DISENGAGING_AURA_STATUS", "EXPEDITIOUS_RETREAT", "Mod_Combat_Momentum_Passive"} },
+		{ name = "ChitinousBug", affixes = {"MOD_CHITINOUS_CARAPACE_STATUS", "Mod_WildMagicBarbarian_MagicRetribution_Passive", "MOD_PARASITE_ENTITY_STATUS"} },
+		{ name = "GaleBarrier", affixes = {"MOD_GALE_BARRIER", "FEATHER_FALL", "MOD_CRACKLING_JOLT"} },
+		{ name = "MirageDancer", affixes = {"MOD_SHIFTING_MIRAGE", "MOD_NIMBLE_RECOVERY_STATUS", "MOD_DISCIPLINED_STRIKES"} },
+		{ name = "DissolvingGen", affixes = {"MOD_DISSOLVING_STRIKES_STATUS", "MOD_MERCILESS", "MOD_ELEMENTAL_SHELTER_AURA"} },
+		{ name = "InfernoGen", affixes = {"MOD_INFERNO_STATUS", "MOD_POLARITY_SHIFT_STATUS", "FLY"} },
+		{ name = "RollingThunderGen", affixes = {"MOD_ROLLING_THUNDER_STATUS", "Mod_MAG_Thunder_ReverberationOnStatusApply_Boots_Passive", "MOD_RELENTLESS_ATTACK_STATUS"} },
+		{ name = "RisingDawnGen", affixes = {"MOD_RISING_DAWN_STATUS", "MOD_MARTYRS_REQUIEM", "Mod_LeaperStride"} },
         -- Add more gen archetypes as needed
 	},
     Barb = {
@@ -2076,7 +2333,7 @@ local absolutistArchetypes = {
 		{ name = "BloodthirstGnoll", affixes = {"Mod_LOW_Cazador_SpawnBuff_Astarion_Passive", "MOD_GNOLL_AURABLOODTHIRST_AURA", "MOD_GNOLL_PACKTACTICS_AURA"} },
 		{ name = "BearNecessities", affixes = {"Tough", "Mod_BleedImmunity_Passive", "Target_Summon_ExtraBear_Bear"} },
 		{ name = "InnerBear", affixes = {"UND_BOOOALSERVANT", "Mod_Gaping_Attacks_Passive", "Shout_Rage_Totem_Bear"} },
-		{ name = "TavernMaster", affixes = {"Mod_MAG_Shove_ACboost", "MOD_FORCE_THROWER", "TavernBrawler"} },
+		{ name = "TavernMaster", affixes = {"Mod_MAG_Shove_ACboost", "Mod_Force_Thrower", "TavernBrawler"} },
 		{ name = "SplinteredReflect", affixes = {"MOD_SPLINTERING_WARD", "Mod_Battleforge_Resilience_Damage_Taken_Tracking", "Mod_MAG_Barbarian_Armor_BoneSpike_Passive"} },
 		{ name = "MountainousStrength", affixes = {"Mod_Nocrit_OnDamageTaken_Passive", "Mod_Strength_Drain_Attack_Passive", "POTION_OF_STRENGTH_CLOUD_GIANT"} },
 		{ name = "TheGiant", affixes = {"ALCH_OIL_REDUCE", "MOD_FOR_OGRE_ENRAGE_HARDCORE", "Shout_MAG_Legendary_GiantSlayer_EnlargeSelf"} },
@@ -2087,7 +2344,7 @@ local absolutistArchetypes = {
 		{ name = "UndeadBarb", affixes = {"DEATH_WARD", "Mod_Decaying_Attacks_Passive", "Mod_MAG_Barbarian_Hide_Helmet_Bloodthirsty_Passive"} },
        	{ name = "MagicalBarb", affixes = {"Mod_Arcane_Infusion", "MagicResistance", "Shout_WildMagicBarbarian_Teleport_Activate"} },
 		{ name = "GraveBarbarian", affixes = {"MOD_GRAVEBORN_VEIL", "MOD_LONE_WARRIOR_AURA", "MAG_ZOC_FORCE_CONDUIT"} },
-		{ name = "UnholyRage", affixes = {"Mod_Dazed_Attack_Passive", "Shout_EndlessRage", "HAV_ISOBELABDUCTION_FLAMINGSPY_UNHOLY_STRENGTH"} },
+		{ name = "UnholyRage", affixes = {"Mod_Dazed_Attack_Passive", "Shout_EndlessRage", "MOD_HAV_ISOBELABDUCTION_FLAMINGSPY_UNHOLY_STRENGTH"} },
 		{ name = "GiantKing", affixes = {"Mod_MAG_Mobility_ExplosionOnJump_Passive", "Mod_Hindered_Attack_Passive", "MOD_POTION_OF_THE_GIANT"} },
 		{ name = "SahuaginFerocity", affixes = {"Shout_GoblinWarcry", "MOD_REGENERATION_SABERTOOTH", "RAGE_SAHUAGIN"} },
 		{ name = "ElkSeason", affixes = {"EXPEDITIOUS_RETREAT", "AspectOfTheBeast_Stallion", "Shout_Rage_Totem_Elk"} },
@@ -2101,6 +2358,8 @@ local absolutistArchetypes = {
 		{ name = "TombstoneBear", affixes = {"BULLS_STRENGTH", "Mod_Greater_LeaperStride", "MOD_TOMBSTONE_BURDEN"} },
 		{ name = "GravebornBarb", affixes = {"MOD_GRAVEBORN_VEIL", "Mod_Battleforge_Resilience_Damage_Taken_Tracking", "Tough"} },
 		{ name = "BoneCrusherBarb", affixes = {"MOD_BONEBREAKER", "Mod_Tempered_Fury", "Mod_MAG_TWN_Brewery_Greatclub_Passive"} },
+		{ name = "ShieldCrushingBarb", affixes = {"MOD_SHIELDBREAKER_STATUS", "MOD_BONEBREAKER", "MOD_EARTHSHAKER_STATUS"} },
+		{ name = "ThornBarb", affixes = {"MOD_OAKSKIN_STATUS", "MOD_THORN_WHIP_STATUS", "Target_Summon_WoodWoad_Dryad"} },
 		-- Add more Barb archetypes as needed
 	},
     Fighter = {
@@ -2122,7 +2381,7 @@ local absolutistArchetypes = {
 		{ name = "Ironsul", affixes = {"Mod_ARM_ExceptionalPlate_2_Passive", "HAG_GURHUNTER_HARDCORE", "BANITES_IRONCONSUL_HARD"} },
 		{ name = "GeneralWrath", affixes = {"MOD_GREATER_DAMAGE_REDUCTION", "Mod_MAG_Defender_DefensiveStance_Passive", "MOD_LEGENDARYACTION_MOO_KETHERIC_GENERALSWRATH"} },
 		{ name = "InfernalLegion", affixes = {"DEATH_WARD", "MOD_AURA_OF_FEROCITY", "MOD_UNI_ELITE_MERREGONMASK_AURA"} },
-		{ name = "InfantryLeader", affixes = {"MOD_FIGHTING_STYLE_PROTECTION_AURA", "Charger", "WARGODSBLESSING_AURA"} },
+		{ name = "InfantryLeader", affixes = {"MOD_FIGHTING_STYLE_PROTECTION_AURA", "Charger", "MOD_WARGODSBLESSING_AURA"} },
 		{ name = "AbsoluteDuelist", affixes = {"Mod_MAG_ZOC_ForceConduit_Halberd_Passive", "Mod_MAG_MeleeDebuff_AttackDebuff2_OnDamage_Passive", "Mod_MAG_TheDueller_ImprovedDuelist_Passive"} },
 		{ name = "TheRallyMan", affixes = {"MOD_FIGHTING_STYLE_PROTECTION_AURA", "Mod_Rally", "Mod_MAG_LowHP_BonusAction_Passive"} },
 		{ name = "Ram", affixes = {"Mod_DazedImmunity_Passive", "Charger", "Mod_MAG_StaffOFRam_KnockStun_Passive"} },
@@ -2139,9 +2398,11 @@ local absolutistArchetypes = {
 		{ name = "GraveVeteran", affixes = {"Mod_Nocrit_Attack_Passive", "MOD_LONE_WARRIOR_AURA", "MAG_ZOC_FORCE_CONDUIT"} },
 		{ name = "SerratedTempest", affixes = {"Mod_Razor_Tempest", "MOD_LONE_WARRIOR_AURA", "MOD_REGENERATION_SECONDWIND"} },
 		{ name = "SerratedVet", affixes = {"Mod_Razor_Tempest", "Mod_Battleforge_Resilience_Damage_Taken_Tracking", "Mod_MultiattackDefense"} },
-		{ name = "VetTactician", affixes = {"Tactical_Discipline", "Shout_Watchful_Warden_Initial", "DISENGAGE"} },
-		{ name = "UndeadCommandment", affixes = {"Mod_Reapers_Hand", "Mod_Shout_GoadingRoar_Bear_Summon", "Mod_MAG_TheDueller_ImprovedDuelist_Passive"} },
+		{ name = "VetTactician", affixes = {"Tactical_Discipline", "Shout_Watchful_Warden_Initial", "MOD_DISENGAGE"} },
+		{ name = "UndeadCommandment", affixes = {"MOD_REAPERS_HAND_STATUS", "Mod_Shout_GoadingRoar_Bear_Summon", "Mod_MAG_TheDueller_ImprovedDuelist_Passive"} },
 		{ name = "DarkGift", affixes = {"Mod_Dark_Gift", "MOD_GRAVEBORN_VEIL", "FightingStyle_Defense"} },
+		{ name = "ArcaneEruptionFighter", affixes = {"MOD_ARCANE_ENFEEBLE_STATUS", "MOD_MERCILESS", "Mod_Shadow_Eruption_Projectile"} },
+		{ name = "ThornedFighter", affixes = {"MOD_THORN_WHIP_STATUS", "Mod_Aggressors_Edge_Passive", "MOD_ELEMENTAL_SHELTER_AURA"} },
         -- Add more Fighter archetypes as needed
 	},
     Monk = {
@@ -2163,7 +2424,7 @@ local absolutistArchetypes = {
 		{ name = "RadiantFists", affixes = {"Mod_MAG_Infernal_Metal_Helmet_InfernalSight_Passive", "DEATH_WARD", "Manifestation_of_Soul"} },
 		{ name = "NecroticFists", affixes = {"DEATH_WARD", "MOD_MEENLOCK_FEAR_AURA", "Manifestation_of_Body"} },
 		{ name = "SoulFist", affixes = {"GOB_PRIESTESS_ABSOLUTEWORD_SHIELD", "Mod_WildMagicBarbarian_MagicRetribution_Passive", "MAG_Force_SoulCatchingDamage_Passive"} },
-		{ name = "Spiderman", affixes = {"SpiderWalk", "WEB_BUFF_SPIDER_ACTIVE", "FOR_SPIDERQUEEN_ENRAGE_HARDCORE"} },
+		{ name = "Spiderman", affixes = {"SpiderWalk", "MOD_WEB_BUFF_SPIDER_ACTIVE", "FOR_SPIDERQUEEN_ENRAGE_HARDCORE"} },
 		{ name = "WayofKushigo", affixes = {"Mod_MAG_AdvantageOnReactionAttack_Passive", "Mod_Extra_Reaction_Passive", "MAG_Monk_Magic_Armor_Passive"} },
 		{ name = "InfernalBlows", affixes = {"POTION_OF_RESISTANCE_FIRE", "Mod_MAG_Fire_ApplyBurning_Passive", "Mod_MAG_Infernal_Metal_Gloves_FireDamage_Passive"} },
 		{ name = "Serenity", affixes = {"Parry", "Mod_MAG_Monk_Magic_Hat_Passive", "MAG_SOUL_CATCHING"} },
@@ -2178,15 +2439,15 @@ local absolutistArchetypes = {
         -- Add more Monk archetypes as needed
 	},
     Rogue = {
-        { name = "Nightstalk", affixes = {"HIDE_IN_PLAIN_SIGHT", "PASS_WITHOUT_TRACE_AURA", "Mod_MAG_Shadow_CriticalBoostWhileObscured_Helmet_Passive"} },
-		{ name = "Crit", affixes = {"Mod_Aimed_Redemption_Passive", "Mod_MAG_Bhalist_Hat_Passive", "ALCH_ELIXIR_CRITICALS"} },
+        { name = "Nightstalk", affixes = {"MOD_DISCIPLINED_STRIKES", "MOD_PASS_WITHOUT_TRACE_AURA", "Mod_MAG_Shadow_CriticalBoostWhileObscured_Helmet_Passive"} },
+		{ name = "Crit", affixes = {"Mod_Aimed_Redemption_Passive", "Mod_MAG_Bhalist_Hat_Passive", "MOD_SUPER_ALCH_ELIXIR_CRITICALS"} },
 		{ name = "Tricky", affixes = {"Mod_ARM_Balance_1_Passive", "MAG_PHB_CLOAK_OF_DISPLACEMENT", "Mod_MAG_Shadow_FogOfCloudDisengage_Cloak_Passive"} },
 		{ name = "Poison", affixes = {"MOD_GLO_POISONCLOUD", "MOD_MAG_TWN_BREWERY_CLUB_POISON", "WEAPON_COATED_WITH_POISON"} },
 		{ name = "toxicbleed", affixes = {"Target_FindFamiliar_Spider", "MOD_MAG_TWN_BREWERY_CLUB_POISON", "UND_BOOOALSERVANT"} },
 		{ name = "Dextrous", affixes = {"ReliableTalent", "Mod_HAG_Hair_DEX_Passive", "CATS_GRACE"} },
 		{ name = "Advantageous", affixes = {"Mobile_DashAcrossDifficultTerrain", "NaturalExplorer_ExpertClimber", "MOD_SHADOW_STEP"} },
 		{ name = "Assassin", affixes = {"Mod_ARM_Ambusher_2_Passive", "Mod_UNI_DarkUrge_Stealth_Expertise_Passive", "Assassinate_Initiative"} },
-		{ name = "GiantSlayer", affixes = {"DISENGAGE", "TAD_CullTheWeak", "GiantKiller"} },
+		{ name = "GiantSlayer", affixes = {"MOD_DISENGAGE", "TAD_CullTheWeak", "GiantKiller"} },
 		{ name = "Reflexive", affixes = {"Mod_MAG_AdvantageOnReactionAttack_Passive", "FastHands", "Mod_Extra_Reaction_Passive"} },
 		{ name = "Chillingtouch", affixes = {"Mod_UNI_DoomAxe_Passive", "Mod_MAG_TheDueller_WitheringCut_Passive", "AURA_OF_VILEOBLIVION"} },
 		{ name = "FortuneFavored", affixes = {"BARDIC_INSPIRATION_D8", "MOD_ASTARION_HAPPY", "Mod_MAG_TWN_Tollhouse_Fortune_Morningstar_Passive"} },
@@ -2195,14 +2456,14 @@ local absolutistArchetypes = {
 		{ name = "TooLucky", affixes = {"MOD_ALCH_ELIXIR_TADPOLE_ADVANTAGE", "Shout_HAG_UseCharm", "Lucky_Unlock"} },
 		{ name = "TheShadow", affixes = {"Mod_MAG_Shadow_CriticalBoostWhileObscured_Helmet_Passive", "Mod_MAG_Harpers_ArmorOfShadows_Passive", "Shout_Inkblot"} },
 		{ name = "Toxicologist", affixes = {"Mod_Poison_OnDamageTaken_Passive", "POTION_OF_RESISTANCE_POISON", "TOXIN_SERPENTVENOM"} },
-		{ name = "SneakyCounter", affixes = {"PASS_WITHOUT_TRACE_AURA", "Mod_MAG_LowHP_BonusAction_Passive", "LOW_Guildhall_SneakyRiposte"} },
+		{ name = "SneakyCounter", affixes = {"MOD_PASS_WITHOUT_TRACE_AURA", "Mod_MAG_LowHP_BonusAction_Passive", "LOW_Guildhall_SneakyRiposte"} },
 		{ name = "ShadowStalker", affixes = {"Mod_MAG_BarbMonk_Dexterity_Passive", "Mod_LOW_Guildhall_IsolatedPrey", "LOW_OskarsBeloved_Poltergeists_Invisible"} },
 		{ name = "PurpleToxins", affixes = {"PROTECTION_FROM_POISON", "Mod_Seaplague_Attacks_Passive", "TOXIN_PURPLEWORM"} },
 		{ name = "Crithunger", affixes = {"Mod_MAG_Critical_CriticalSwiftness_Passive", "Mod_MAG_LifeStealingCritical_Passive", "TAD_LuckOfTheFarRealms"} },
 		{ name = "AbsoluteRot", affixes = {"FIENDISH_RESILIENCE_NECROTIC", "Mod_GapingWound_OnDamageTaken_Passive", "Mod_Fleshrot_Attack_Passive"} },
 		{ name = "HobgoblinPoisonous", affixes = {"MOD_GLO_WEB_SURGE", "Mod_MAG_Poison_PoisonExposure_Gloves_Passive", "MOD_POISON_HOBGOBLIN_LEADERSHIP_AURA"} },
 		{ name = "Finessecomboer", affixes = {"PATIENT_DEFENCE", "CONS_DRUG_STIMULANT", "MOD_AURA_OF_FINESSE"} },
-		{ name = "VetInformant", affixes = {"Mod_Echoes_Of_The_Underworld", "Shout_Watchful_Warden_Initial", "DISENGAGE"} },
+		{ name = "VetInformant", affixes = {"Mod_Echoes_Of_The_Underworld", "Shout_Watchful_Warden_Initial", "MOD_DISENGAGE"} },
 		{ name = "NecroticThirst", affixes = {"MOD_UNI_HEALINSHADOW", "Mod_MAG_SHA_SharBlessing_Spear_Passive", "Mod_MAG_Barbarian_Hide_Helmet_Bloodthirsty_Passive"} },
 		{ name = "AstarionGenes", affixes = {"Mod_LOW_Cazador_SpawnBuff_Astarion_Passive", "MOD_ASTARION_HAPPY", "MOD_LEGENDARYACTION_LOW_CAZADOR_BATSWARM"} },
 		{ name = "TheSpecialist", affixes = {"SPIDER_SWORD_HASTE", "Lucky_Unlock", "MOD_SCL_SHADOWBIRDS_3"} },
@@ -2240,10 +2501,10 @@ local absolutistArchetypes = {
 		{ name = "FireLorrakan", affixes = {"Mod_MAG_Legendary_Chromatic_Heat_Passive", "MOD_TWN_DISTILLERY_AURA_FIRE", "MOD_LOW_LORROAKAN_FIRE"} },
 		{ name = "WaterLorrakan", affixes = {"Mod_MAG_LC_Wave_Trident_Passive", "MOD_WATER_SURFACE_REGENERATION", "MOD_LOW_LORROAKAN_WATER"} },
 		{ name = "IceDragon", affixes = {"Mod_MAG_Legendary_Chromatic_Frost_Passive", "MOD_TWN_DISTILLERY_AURA_COLD", "MOO_BLOODPOTION_DRAGONBORN_ICE"} },
-		{ name = "QuickCasts", affixes = {"LOW_RAMAZITHSTOWER_HARDCORE", "SORCERYPOINT_2", "Mod_Metamagic_Quickened"} },
+		{ name = "QuickCasts", affixes = {"LOW_RAMAZITHSTOWER_HARDCORE", "SORCERYPOINT_4", "Mod_Metamagic_Quickened"} },
 		{ name = "DeathlyChillSorc", affixes = {"Mod_Deathchill_Empowerment_Passive", "Mod_DamageReduction_Dragon_Hardcore", "MOD_SENTINELS_WATCH_AURA"} },
-		{ name = "TwinCast", affixes = {"LOW_RAMAZITHSTOWER_HARDCORE", "SORCERYPOINT_2", "SplitEnchantment"} },
-		{ name = "EmpoweredCast", affixes = {"LOW_RAMAZITHSTOWER_HARDCORE", "SORCERYPOINT_2", "Mod_Metamagic_Empowered"} },
+		{ name = "TwinCast", affixes = {"LOW_RAMAZITHSTOWER_HARDCORE", "SORCERYPOINT_4", "SplitEnchantment"} },
+		{ name = "EmpoweredCast", affixes = {"LOW_RAMAZITHSTOWER_HARDCORE", "SORCERYPOINT_4", "Mod_Metamagic_Empowered"} },
 		{ name = "AcidFume", affixes = {"Mod_MAG_Acid_AcidMeleeCounter_Cloak_Passive", "Mod_MAG_Legendary_Chromatic_NoxiousFumes_Passive", "MOD_TWN_DISTILLERY_AURA_ACID"} },
 		{ name = "AirMyrmidon", affixes = {"MOD_TWN_DISTILLERY_AURA_LIGHTNING", "Target_Fly_6_AI", "Target_ConjureElemental_Myrmidon_Air"} },
 		{ name = "LegendaryChromaticCold", affixes = {"Mod_MAG_Frost_GenerateSurfaceOnColdDamage_Ring_Passive", "MOD_TWN_DISTILLERY_AURA_COLD", "MAG_LEGENDARY_CHROMATIC_ATTUNEMENT_COLD", "MAG_FROST_ICE_PRONE_IMMUNITY_BOOTS"} },
@@ -2256,9 +2517,10 @@ local absolutistArchetypes = {
 		{ name = "WinterWeaveSorc", affixes = {"Mod_Winterweave_Mastery_Passive", "Mod_MAG_Umberlee_FireColdResistance_Passive", "Mod_MAG_FrostTalon_ChillingCounter_Passive"} },
 		{ name = "ArcaneShieldingSorc", affixes = {"Mod_Arcane_Infusion", "Mod_MAG_AbsoluteProtector_Shield_Passive_Strong", "MOD_TWN_DISTILLERY_RESISTANCE_FORCE"} },
 		{ name = "MagmaRaiser", affixes = {"Shout_Fanning_Flame", "Mod_Target_LOW_GreaseWizard_RaiseElemental", "Mod_MAG_Legendary_Chromatic_Heat_Passive"} },
-		{ name = "FrostGrippedSorc", affixes = {"Mod_Frosty_Grip_Passive", "Mod_MAG_ElementalGish_CantripBooster_Amulet_Passive", "Mod_MAG_Legendary_Chromatic_Frost_Passive"} },
-		{ name = "DeathlyChillSupreme", affixes = {"Mod_Deathchill_Empowerment_Passive", "Mod_DamageReduction_Dragon_Hardcore", "Mod_Frosty_Grip_Passive"} },
+		{ name = "FrostGrippedSorc", affixes = {"MOD_SUB_ZERO_STATUS", "Mod_MAG_ElementalGish_CantripBooster_Amulet_Passive", "Mod_MAG_Legendary_Chromatic_Frost_Passive"} },
+		{ name = "DeathlyChillSupreme", affixes = {"Mod_Deathchill_Empowerment_Passive", "Mod_DamageReduction_Dragon_Hardcore", "MOD_SUB_ZERO_STATUS"} },
 		{ name = "FrostharrowLegacy", affixes = {"Mod_Frostharrow_Legacy", "Mod_MAG_AdditionalSpellSlot_Level1_Passive", "Brittled_Attacks_Passive"} },
+		{ name = "OakSorc", affixes = {"MOD_OAKSKIN_STATUS", "UND_BLESS_STAFF_MYSTRA", "Mod_ThunderShield"} },
         -- Add more Sorc archetypes as needed	
 	},
     Cleric = {
@@ -2266,27 +2528,27 @@ local absolutistArchetypes = {
 		{ name = "Focused", affixes = {"MAG_AC_BOOST", "MOD_ORI_GALE_MYSTRABLESSING_1", "Mod_MAG_Paladin_MomentumOnConcentration_Boots_Passive"} },
 		{ name = "TwilightGuard", affixes = {"Mod_MAG_Shadow_SpellDCBonusWhileObscured_Circlet_Passive", "Mod_MAG_Harpers_RingOfTwilight_Passive", "FIENDISH_RESILIENCE_NECROTIC"} },
 		{ name = "HardenedPriest", affixes = {"Mod_MAG_Githborn_MagicEating_HalfPlate_Passive", "MOD_METAL_COATING", "Mod_Hardy"} },
-		{ name = "Basic", affixes = {"DIVINE_FAVOR", "Mod_Shout_MAG_ZOC_ImmovableShout", "Mod_HAG_Hair_WIS_Passive"} },
+		{ name = "Basic", affixes = {"MOD_DIVINE_FAVOR", "Mod_Shout_MAG_ZOC_ImmovableShout", "Mod_HAG_Hair_WIS_Passive"} },
 		{ name = "Selfless", affixes = {"Mod_Mod_MAG_HelmOfBalduran_Protection_Passive", "WILD_MAGIC_HEAL", "DiscipleOfLife"} },
 		{ name = "ToppedOff", affixes = {"MOD_HAG_WELL_GOOD", "Mod_MAG_Healer_HealSelf_Passive", "AURA_OF_VITALITY_AURA"} },
 		{ name = "Potency", affixes = {"Mod_MAG_Radiant_RadiatingOrb_Ring_Passive", "MAG_HolyFire_Passive", "PotentSpellcasting"} },
 		{ name = "Shadowed", affixes = {"InuredtoUndeath", "DEATH_WARD", "Mod_SHA_DarkVengeance"} },
 		{ name = "RenewalCleric", affixes = {"Mod_Bastion_Pulse", "CIRCLE_OF_RENEWAL_AURA", "Mod_Warders_Empathy"} },
-		{ name = "Pacifist", affixes = {"DISENGAGE", "Target_SpiritualWeapon_Greataxe", "SANCTUARY"} },
+		{ name = "Pacifist", affixes = {"MOD_DISENGAGE", "Target_SpiritualWeapon_Greataxe", "SANCTUARY"} },
 		{ name = "PeacefulProtector", affixes = {"DEATH_WARD", "Shout_MAG_DevoteesMace_Healing_Aura", "AURA_OF_WARDING"} },
 		{ name = "AbsolutePurity", affixes = {"MOD_TWN_DISTILLERY_AURA_RADIANT", "Mod_UND_Myco_Alchemist_HealerGloves_Passive", "LOW_GithProdigy_PsionicSkin"} },
 		{ name = "Recuperated", affixes = {"Mod_MAG_PHB_OfRegeneration_Ring_Passive", "Mod_Shout_Fortifying_Spirit", "Shout_PreserveLife"} },
-		{ name = "Mass", affixes = {"Mod_MAG_MeleeDebuff_AttackDebuff1_OnDamaged_Passive", "WARDING_FLARE_IMPROVED_AURA", "Shout_HealingWord_Mass"} },
+		{ name = "Mass", affixes = {"Mod_MAG_MeleeDebuff_AttackDebuff1_OnDamaged_Passive", "MOD_WARDING_FLARE_IMPROVED_AURA", "Shout_HealingWord_Mass"} },
 		{ name = "Retreating", affixes = {"MAG_MOMENTUM", "Mod_DEN_HellridersPride_Passive", "Mod_MAG_Healer_DisengageOnHeal_Passive"} },
 		{ name = "PriestPunch", affixes = {"Mod_MAG_UnarmedEnchantment_1_Passive", "Mod_MartialArts_BonusUnarmedStrike", "Mod_MAG_Monk_Magic_Boots_Passive"} },
-		{ name = "WarPriest", affixes = {"Target_SpiritualWeapon_Spear", "WarMagic", "WARGODSBLESSING_AURA"} },
+		{ name = "WarPriest", affixes = {"Target_SpiritualWeapon_Spear", "WarMagic", "MOD_WARGODSBLESSING_AURA"} },
 		{ name = "Guardian", affixes = {"Mod_MAG_BarbMonk_Strength_Passive", "GOB_PRIESTESS_ABSOLUTEWORD_SHIELD", "Target_GuardianOfFaith_5"} },
 		{ name = "HopeBeacon", affixes = {"MAG_OF_DEVOUT_AMULET_CHANNEL_DIVINITY", "HEROES_FEAST", "Shout_BeaconOfHope"} },
 		{ name = "SpiritRadiance", affixes = {"DIVINE_SENSE", "MOD_WILD_MAGIC_BARBARIAN_PROTECTIVE_LIGHTS", "SPIRIT_GUARDIANS_RADIANT_AURA"} },
 		{ name = "Blesser", affixes = {"Mod_UND_Myco_Alchemist_HealerGloves_Passive", "MOD_MOO_NIGHTSONG_MOONBEAM", "Mod_UNI_MassHealRing_Passive"} },
 		{ name = "HolyReflector", affixes = {"LOW_RAPHAEL_WILLPOWER", "MOD_LOW_RAPHAEL_REPELLING_DIVINITY", "Mod_MAG_Radiant_Radiating_Helmet_Passive"} },
 		{ name = "HolyMantle", affixes = {"Mod_Blind_OnDamageTaken_Passive", "HEROISM", "MOD_CRUSADERS_MANTLE"} },
-		{ name = "RadiantSplendor", affixes = {"Mod_MAG_AbsoluteProtector_Shield_Passive_Strong", "GuardianOfFaith_Retaliate", "LOW_RAMAZITHSTOWER_DEVA_AURA"} },
+		{ name = "RadiantSplendor", affixes = {"Mod_MAG_AbsoluteProtector_Shield_Passive_Strong", "GuardianOfFaith_Retaliate", "MOD_LOW_RAMAZITHSTOWER_DEVA_AURA"} },
 		{ name = "GodCursed", affixes = {"Mod_Bane_OnDamageTaken_Passive", "Mod_MAG_Harpers_ArmorOfShadows_Passive", "LOW_STORMSHORETABERNACLE_GODCURSED"} },
 		{ name = "DivineReplenishment", affixes = {"Shout_DivineIntervention_Supplies", "Mod_UNI_Bow_SpellslotRecharge_Passive", "MAG_OF_DEVOUT_AMULET_CHANNEL_DIVINITY"} },
 		{ name = "GuidedbyFaith", affixes = {"BLESS", "FIENDISH_RESILIENCE_RADIANT", "Mod_MAG_Victory_Longbow_Passive"} },
@@ -2295,11 +2557,12 @@ local absolutistArchetypes = {
 		{ name = "TeamPlayer", affixes = {"Mod_Warders_Empathy", "Mod_Shout_Fortifying_Spirit", "Mod_Rally"} },
 		{ name = "BastionPulser", affixes = {"Mod_Bastion_Pulse", "Mod_Shout_Fortifying_Spirit", "Mod_Warders_Empathy"} },
 		{ name = "BendOverCleric", affixes = {"CIRCLE_OF_RENEWAL_AURA", "MOD_GREATER_DAMAGE_REDUCTION", "Mod_UNI_MassHealRing_Passive"} },
+		{ name = "RisingCleric", affixes = {"MOD_RISING_DAWN_STATUS", "HEROES_FEAST", "Mod_MAG_Radiant_Radiating_Helmet_Passive"} },
 	  -- Add more Cleric archetypes as needed	
 	},
     Pala = {
 		{ name = "MildTough", affixes = {"MAG_HELM_OF_BALDURAN_REGENERATION", "PurityOfBody", "Mod_ARM_SuperiorPlate_1_Passive", "Mod_MAG_HelmOfBalduran_MaxHP_Passive"} },
-		{ name = "Vanilla", affixes = {"Halfling_Brave", "KNOWLEDGE_OF_THE_AGES_STRENGTH", "DIVINE_FAVOR"} },
+		{ name = "Vanilla", affixes = {"Halfling_Brave", "KNOWLEDGE_OF_THE_AGES_STRENGTH", "MOD_DIVINE_FAVOR"} },
 		{ name = "StalwartProtector", affixes = {"Mod_MAG_Radiant_RadiatingOrb_OnDamage_Passive", "Mod_ARM_ExceptionalPlate_1_Passive", "Mod_MAG_MeleeDebuff_AttackDebuff1_OnDamage_Passive"} },
 		{ name = "RadiatingPresence", affixes = {"Mod_HAG_Hair_CHA_Passive", "FIENDISH_RESILIENCE_RADIANT", "Mod_MAG_Radiant_DamageBonusOnIlluminatedTarget_Ring_Passive"} },
 		{ name = "Relentless", affixes = {"Mod_MAG_MartialBravery_Passive", "RELENTLESS_AVENGER", "Mod_MAG_CharismaCaster_TempHP_Passive"} },
@@ -2314,10 +2577,10 @@ local absolutistArchetypes = {
 		{ name = "Holiest", affixes = {"DIVINE_SENSE", "BEACON_OF_HOPE", "MOD_TWN_DISTILLERY_AURA_RADIANT"} },
 		{ name = "RenewalPala", affixes = {"Mod_Bastion_Pulse", "CIRCLE_OF_RENEWAL_AURA", "Mod_Warders_Empathy"} },
 		{ name = "DarkVengeance", affixes = {"VAMPIRIC_TOUCH", "MOD_MEENLOCK_FEAR_AURA", "Lifedrinker"} },
-		{ name = "UndeadCommandmentPala", affixes = {"Mod_Bastion_Pulse", "Mod_Reapers_Hand", "Mod_Warders_Empathy"} },
+		{ name = "UndeadCommandmentPala", affixes = {"Mod_Bastion_Pulse", "MOD_REAPERS_HAND_STATUS", "Mod_Warders_Empathy"} },
 		{ name = "LesserZevlor", affixes = {"Mod_MAG_Radiant_Radiating_Helmet_Passive", "GOB_PRIESTESS_ABSOLUTEWORD_SHIELD", "COL_ZEVLOR_LEVEL_8"} },
 		{ name = "FearfulConquest", affixes = {"MOD_GREATER_DAMAGE_REDUCTION", "Thought_Shield_Psychic_Reflection", "LOW_GITHYANKIPALADIN_AURAOFCONQUEST"} },
-		{ name = "OrinMight", affixes = {"AURA_OF_TERROR", "Mod_MAG_BarbMonk_Strength_Passive", "LOW_BHAALTEMPLE_ORINSLAYER_ENRAGE"} },
+		{ name = "OrinMight", affixes = {"AURA_OF_TERROR", "Mod_MAG_BarbMonk_Strength_Passive", "MOD_LOW_BHAALTEMPLE_ORINSLAYER_ENRAGE"} },
 		{ name = "BattlePrayer", affixes = {"LOW_RAPHAEL_WILLPOWER", "MOD_HAG_MASKOFSERVITUDE", "Shout_PrayerOfHealing"} },
 		{ name = "RighteousBlows", affixes = {"Mod_MAG_DazingSmite_Passive", "Mod_Blind_OnDamageTaken_Passive", "MOD_DIVINE_EMINENCE"} },
 		{ name = "CrusaderMantle", affixes = {"Mod_MAG_LC_RadiantLight_Rapier_Passive", "Mod_SCL_Raven_Hardcore", "MOD_CRUSADERS_MANTLE"} },	
@@ -2325,12 +2588,13 @@ local absolutistArchetypes = {
 		{ name = "GodBlessed", affixes = {"MOD_TWN_DISTILLERY_AURA_RADIANT", "Mod_Offbalance_OnDamageTaken_Passive", "MOD_LOW_RAMAZITHSTOWER_NIGHTSONG_BLESSING"} },
 		{ name = "DivineGuidance", affixes = {"DIVINE_SENSE", "MAG_HolyFire_Passive", "Mod_CHA_CompassSpear_Passive"} },
 		{ name = "BlindingRadiance", affixes = {"Mod_Blind_OnDamageTaken_Passive", "Mod_MAG_DazingSmite_Passive", "MOD_MOO_NIGHTSONG_MOONBEAM"} },
-		{ name = "WardedGlory", affixes = {"Mod_MAG_LowHP_TemporaryHP_Passive", "Mod_MAG_OfArcanicDefense_Robe_Passive", "WARDING_FLARE_IMPROVED_AURA"} },
+		{ name = "WardedGlory", affixes = {"Mod_MAG_LowHP_TemporaryHP_Passive", "Mod_MAG_OfArcanicDefense_Robe_Passive", "MOD_WARDING_FLARE_IMPROVED_AURA"} },
 		{ name = "TeamGainz", affixes = {"BUGBEAR_HARDCORE", "GREMISHKA_ENLARGE", "MOD_WYR_GORTASH_MANIFESTATION_AURA"} },
 		{ name = "DestinedGlory", affixes = {"BeguilingDefenses", "MOD_GLO_RADIANT_BLINDING", "Mod_MAG_Victory_Longbow_Passive"} },
 		{ name = "TeamTactics", affixes = {"Mod_Warders_Empathy", "Tough", "Mod_Rally"} },
 		{ name = "BastionPulsing", affixes = {"Mod_Bastion_Pulse", "Mod_Shout_Fortifying_Spirit", "Mod_Warders_Empathy"} },
 		{ name = "BendOverPala", affixes = {"CIRCLE_OF_RENEWAL_AURA", "MOD_GREATER_DAMAGE_REDUCTION", "Mod_Shout_MAG_ZOC_ImmovableShout"} },
+		{ name = "RisingPala", affixes = {"MOD_RISING_DAWN_STATUS", "MOD_SELFLESS_DEVOTION_STATUS", "MOD_ADAMANT_RESOLVE"} },
         -- Add more Pala archetypes as needed	
 	},
     Bard = {
@@ -2354,7 +2618,7 @@ local absolutistArchetypes = {
 		{ name = "WordsofAffirmation", affixes = {"Mod_MAG_LC_Jannath_Hat_Passive", "MOD_CRUSADERS_MANTLE", "Target_Bless_4_AI"} },
 		{ name = "TadpoleShielding", affixes = {"GOB_PRIESTESS_ABSOLUTEWORD_SHIELD", "TAD_BLACK_HOLE_AURA", "MF_SHIELD_OF_THRALLS"} },
 		{ name = "DreadfulWords", affixes = {"AURA_OF_TERROR", "Mod_UNI_WYR_Circus_ClownHammer_Passive", "Mod_DreadfulWord"} },
-		{ name = "DriderGift", affixes = {"WEB_BUFF_SPIDER_ACTIVE", "Mod_MAG_BarbMonk_Dexterity_Passive", "DRIDER_LEADERSHIP_AURA"} },
+		{ name = "DriderGift", affixes = {"MOD_WEB_BUFF_SPIDER_ACTIVE", "Mod_MAG_BarbMonk_Dexterity_Passive", "DRIDER_LEADERSHIP_AURA"} },
 		{ name = "SinisterVocalist", affixes = {"StillnessOfMind", "MAG_HARPERS_SINGING_SWORD_SHRIEKING_AURA", "Mod_Shout_LOW_HouseOfGrief_Howl"} },
 		{ name = "ConfusedRetort", affixes = {"Resilient_Constitution", "PurityOfBody", "MOD_CONFUSION_RAT"} },
 		{ name = "ConfidenceDisruptor", affixes = {"Mod_MAG_Bedazzling_Passive", "MAG_BLOODFEEDER_SCARLET_TRANCE", "MOD_LOW_OSKARSBELOVED_AURA"} },
@@ -2382,10 +2646,10 @@ local absolutistArchetypes = {
 		{ name = "Swampglider", affixes = {"MOD_BLIGHT_VINE_HARDCORE", "POTION_OF_RESISTANCE_POISON", "Mod_CRE_HatcheryBoots_Passive"} },
 		{ name = "Wolf", affixes = {"UND_BOOOALSERVANT", "PackTactics", "Shout_WildShape_Wolf_Dire"} },
 		{ name = "Winds", affixes = {"MOD_DAMPENELEMENTS_RESISTANCE", "FLY", "POTION_OF_BOTTLE_BREATH"} },
-		{ name = "FrogSecretions", affixes = {"ALCH_POTION_JUMP", "MOD_TWN_DISTILLERY_AURA_POISON", "Mod_HAG_KillerFrogReaction"} },
+		{ name = "FrogSecretions", affixes = {"ALCH_POTION_JUMP", "MOD_TWN_DISTILLERY_AURA_POISON", "MOD_KILLER_FROG_STATUS"} },
 		{ name = "HealingStorm", affixes = {"MOD_WATER_SURFACE_REGENERATION", "MOD_TWN_DISTILLERY_AURA_LIGHTNING", "Shout_MAG_DevoteesMace_Healing_Aura"} },
 		{ name = "Muddy", affixes = {"Target_ConjureElementals_Minor_MudMephit", "NaturesWard", "MOD_DEATHBURST_MUDMEPHIT"} },
-		{ name = "Spores", affixes = {"MOD_MOD_UND_SPORECLOUD", "Shout_SymbioticEntity", "MAG_DRUID_EXTRA_SPORES"} },
+		{ name = "Spores", affixes = {"MOD_UND_SPORECLOUD", "Shout_SymbioticEntity", "MAG_DRUID_EXTRA_SPORES"} },
 		{ name = "WoodWoad", affixes = {"Mod_FOR_NightWalkers_WebImmunity", "MOD_WOOD_WOAD_REGENERATION", "Target_Summon_WoodWoad_Dryad"} },
 		{ name = "NaturesFist", affixes = {"Mod_MAG_Monk_Magic_Hat_Passive", "Mod_MartialArts_BonusUnarmedStrike", "Mod_MAG_Monk_Magic_Boots_Passive"} },
 		{ name = "Moonbless", affixes = {"Mod_UND_Myco_Alchemist_HealerGloves_Passive", "WILD_MAGIC_HEAL", "MAG_SHA_SELUNE_BLESSING_MOONMOTE_AURA"} },
@@ -2404,12 +2668,13 @@ local absolutistArchetypes = {
 		{ name = "StealthCat", affixes = {"CLOAK_OF_SHADOWS", "ShadowStealth", "Shout_Wildshape_Panther"} },
 		{ name = "SwampProtector", affixes = {"Mod_LandsStride_Advantage", "Mod_Stench_OnDamageTaken_Passive", "Land_Swamp_2"} },
 		{ name = "SummerButterfly", affixes = {"MOD_GLO_RADIANT_BLINDING", "Mod_FeyAncestry", "Mod_GOB_DrowCommander_Mace_Passive"} },
-		{ name = "Spiderling", affixes = {"Mod_SpiderFallResistance", "Shout_WildShape_Spider", "MOD_GLO_WEB_SURGE", "WEB_BUFF_SPIDER_ACTIVE"} },
+		{ name = "Spiderling", affixes = {"Mod_SpiderFallResistance", "Shout_WildShape_Spider", "MOD_GLO_WEB_SURGE", "MOD_WEB_BUFF_SPIDER_ACTIVE"} },
 		{ name = "BadgerdontGiveaF", affixes = {"Mod_MAG_PHB_OfRegeneration_Ring_Passive", "Mod_AspectOfTheBeast_HoneyBadger", "Shout_WildShape_Badger"} },
 		{ name = "AcidAura", affixes = {"Mod_CRE_HatcheryBoots_Passive", "MOD_CAUSTIC_AURA", "Mod_MAG_Acid_AcidMeleeCounter_Cloak_Passive"} },
 		{ name = "StormsEmbrace", affixes = {"MOD_WHIRLWIND_AURA", "Mod_MAG_ChargedLightning_Charge_OnSpellDamage_Passive", "HeartOfTheStorm_Resistance"} },
 		{ name = "TempestDomainDruid", affixes = {"HeartOfTheStorm_Resistance", "MOD_WHIRLWIND_AURA", "MOD_TEMPEST_DOMAIN"} },
 		{ name = "WrathofNature", affixes = {"Mod_Blight_Caller_Passive", "Mod_Faeriefire_OnDamageTaken_Passive", "ALCH_ELIXIR_BARKSKIN"} },
+		{ name = "OakDruid", affixes = {"MOD_OAKSKIN_STATUS", "Mod_Blight_Caller_Passive", "MOD_WILD_MAGIC_BARBARIAN_VINE_GROWTH"} },
 	   -- Add more Druid archetypes as needed	
 	},
     Lock = {
@@ -2458,7 +2723,7 @@ local absolutistArchetypes = {
 		{ name = "GraveCurrent", affixes = {"Mod_Grave_Currents", "MOD_DEATHSHEAD_UNSTOPPABLE_1", "Mod_CTY_NecromancyOfThay_ForbiddenKnowledge_Passive"} },
 		{ name = "MenacingVisageWiz", affixes = {"MOD_VALKRANAS_VOGUE_VISAGE", "ALCH_ELIXIR_ALERTNESS", "ARMOR_OF_AGATHYS_2"} },
 		{ name = "BlightedVisageLock", affixes = {"MOD_VALKRANAS_VOGUE_VISAGE", "ARMOR_OF_AGATHYS_2", "Mod_Blight_Caller_Passive"} },
-		{ name = "FrostGripped", affixes = {"Mod_Frosty_Grip_Passive", "Mod_MAG_Cold_IncreaseColdDamageOnCast_Passive", "Mod_UNI_DoomAxe_Passive"} },
+		{ name = "FrostGripped", affixes = {"MOD_SUB_ZERO_STATUS", "Mod_MAG_Cold_IncreaseColdDamageOnCast_Passive", "Mod_UNI_DoomAxe_Passive"} },
 		{ name = "DeathlyChillLock", affixes = {"Mod_Deathchill_Empowerment_Passive", "Mod_UNI_DoomAxe_Passive", "Mod_MAG_Legendary_Chromatic_Frost_Passive"} },
 		{ name = "CryptLock", affixes = {"MOD_EYES_OF_THE_CRYPTKEEPER", "MOD_DEATHSHEAD_UNSTOPPABLE_1", "Mod_MAG_SarevokArmor_WitheringBarrier_Passive"} },
         -- Add more Lock archetypes as needed	
@@ -2500,7 +2765,7 @@ local absolutistArchetypes = {
 		{ name = "HidenSeek", affixes = {"DOPPELGANGER_HARDCORE", "Target_Invisibility_4_AI", "MAGICAL_AMBUSH"} },
 		{ name = "ForceMissile", affixes = {"MAG_WARLOCK_QUICKENED_CANTRIPS", "FIENDISH_RESILIENCE_FORCE", "Mod_UND_SocietyOfBrilliance_MagicMissileNecklace_Passive"} },
 		{ name = "VampLordy", affixes = {"DevilsSight", "MOD_LEGENDARYACTION_LOW_CAZADOR_BATSWARM", "DEATH_WARD"} },
-		{ name = "FrostGrippedWiz", affixes = {"Mod_Frosty_Grip_Passive", "Mod_MAG_ElementalGish_CantripBooster_Amulet_Passive", "Mod_MAG_Legendary_Chromatic_Frost_Passive"} },
+		{ name = "FrostGrippedWiz", affixes = {"MOD_SUB_ZERO_STATUS", "Mod_MAG_ElementalGish_CantripBooster_Amulet_Passive", "Mod_MAG_Legendary_Chromatic_Frost_Passive"} },
 		{ name = "Elements", affixes = {"MAG_CQC_ARCANE_CHARGE", "Mod_UNI_MartyrAmulet_Passive", "Mod_Absorb_Elements_Passive"} },
 		{ name = "Scaled", affixes = {"Mod_UND_SocietyOfBrilliance_ResonanceStaff_Passive", "Mod_MAG_ElementalDamageReduction_Passive", "Mod_UNI_MartyrAmulet_Passive"} },
 		{ name = "IllithidMind", affixes = {"Mod_MAG_Illithid_Regen_Circlet_Passive", "Mod_PsionicRebuke_Netherbrain", "Mod_MAG_Psychic_MentalFatigue_Cape_Passive"} },
@@ -2519,28 +2784,60 @@ local absolutistArchetypes = {
 		{ name = "DeathlyChillWiz", affixes = {"Mod_Deathchill_Empowerment_Passive", "MOD_GLO_FROZEN_SHOCKWAVE", "MOD_SENTINELS_WATCH_AURA"} },
 		{ name = "CryptWiz", affixes = {"MOD_EYES_OF_THE_CRYPTKEEPER", "MOD_DEATHSHEAD_UNSTOPPABLE_1", "Mod_MAG_SarevokArmor_WitheringBarrier_Passive"} },
 		{ name = "FrostharrowLegacyWiz", affixes = {"Mod_Frostharrow_Legacy", "Mod_MAG_AdditionalSpellSlot_Level1_Passive", "MOD_DEATHSHEAD_UNSTOPPABLE_1"} },
+		{ name = "StormAscendent", affixes = {"Land_Mountain_2", "MOD_LOW_LORROAKAN_AIR", "Mod_MAG_ChargedLightning_Charge_OnSpellDamage_Passive"} },
+		{ name = "AirLorrakanWiz", affixes = {"Mod_MAG_Legendary_Chromatic_LightningCharge_Passive", "MOD_TWN_DISTILLERY_AURA_LIGHTNING", "MOD_LOW_LORROAKAN_AIR"} },
+		{ name = "EarthLorrakanWiz", affixes = {"Mod_MAG_Legendary_Chromatic_Poisoned_Passive", "MOD_TWN_DISTILLERY_AURA_POISON", "MOD_LOW_LORROAKAN_EARTH"} },
+		{ name = "FireLorrakanWiz", affixes = {"Mod_MAG_Legendary_Chromatic_Heat_Passive", "MOD_TWN_DISTILLERY_AURA_FIRE", "MOD_LOW_LORROAKAN_FIRE"} },
+		{ name = "WaterLorrakanWiz", affixes = {"Mod_MAG_LC_Wave_Trident_Passive", "MOD_WATER_SURFACE_REGENERATION", "MOD_LOW_LORROAKAN_WATER"} },
+		{ name = "IceDragonWiz", affixes = {"Mod_MAG_Legendary_Chromatic_Frost_Passive", "MOD_TWN_DISTILLERY_AURA_COLD", "MOO_BLOODPOTION_DRAGONBORN_ICE"} },
+		{ name = "QuickCastsWiz", affixes = {"LOW_RAMAZITHSTOWER_HARDCORE", "SORCERYPOINT_4", "Mod_Metamagic_Quickened"} },
+		{ name = "DeathlyChillSorcWiz", affixes = {"Mod_Deathchill_Empowerment_Passive", "Mod_DamageReduction_Dragon_Hardcore", "MOD_SENTINELS_WATCH_AURA"} },
+		{ name = "TwinCastWiz", affixes = {"LOW_RAMAZITHSTOWER_HARDCORE", "SORCERYPOINT_4", "SplitEnchantment"} },
+		{ name = "EmpoweredCastWiz", affixes = {"LOW_RAMAZITHSTOWER_HARDCORE", "SORCERYPOINT_4", "Mod_Metamagic_Empowered"} },
+		{ name = "AirMyrmidonWiz", affixes = {"MOD_TWN_DISTILLERY_AURA_LIGHTNING", "Target_Fly_6_AI", "Target_ConjureElemental_Myrmidon_Air"} },
+		{ name = "LegendaryChromaticColdWiz", affixes = {"Mod_MAG_Frost_GenerateSurfaceOnColdDamage_Ring_Passive", "MOD_TWN_DISTILLERY_AURA_COLD", "MAG_LEGENDARY_CHROMATIC_ATTUNEMENT_COLD", "MAG_FROST_ICE_PRONE_IMMUNITY_BOOTS"} },
+		{ name = "FlameAzerWiz", affixes = {"DraconicResilience", "Mod_MAG_Fire_IncreasedDamage_Passive", "Target_ConjureElementals_Minor_Azer"} },
+		{ name = "MagmaMephitsWiz", affixes = {"Mod_BurnImmunity_Passive", "CRE_BREWERYKOBOLDS_FIREWINEBELLY", "Target_LOW_GreaseWizard_Mephit_Summon_Magma"} },
+		{ name = "WoodWoadWiz", affixes = {"Mod_FOR_NightWalkers_WebImmunity", "MOD_WOOD_WOAD_REGENERATION", "Target_Summon_WoodWoad_Dryad"} },
+		{ name = "EarthAlliesWiz", affixes = {"MOD_METAL_COATING", "MOD_BLIGHT_VINE_HARDCORE", "Target_ConjureElemental_Elemental_Earth"} },
+		{ name = "StormHandsWiz", affixes = {"Mod_MAG_ChargedLightning_Charge_OnDamage_Passive", "Mod_MAG_Legendary_Chromatic_Reverberation_Passive", "CALL_LIGHTNING_TECHNICAL", "MOD_GLO_LIGHTNING_SURGE"} },
+		{ name = "BlightedVisageLockWiz", affixes = {"MOD_VALKRANAS_VOGUE_VISAGE", "ARMOR_OF_AGATHYS_2", "Mod_Blight_Caller_Passive"} },
+		{ name = "WrathofNatureWiz", affixes = {"Mod_Blight_Caller_Passive", "Mod_Faeriefire_OnDamageTaken_Passive", "ALCH_ELIXIR_BARKSKIN"} },
+		{ name = "BellsTollWiz", affixes = {"MOD_DEATH_KNELL_STATUS", "DevilsSight", "Mod_UNI_DoomAxe_Passive"} },
+		{ name = "OakWiz", affixes = {"MOD_OAKSKIN_STATUS", "STONESKIN", "Mod_MAG_ArcaneEnchantment_Passive"} },
+		{ name = "VoidReaverWiz", affixes = {"MOD_VOID_REAVER_STATUS", "MOD_TWN_DISTILLERY_RESISTANCE_FORCE", "MOD_ARCANE_ECHO"} },
+		{ name = "ArcanumWiz", affixes = {"Mod_Skull_Of_Arcanum", "MOD_ACCELERANT_MOVEMENT", "MOD_SANCTUARY_OF_THOUGHT_AURA"} },
+		{ name = "MindoverMatter", affixes = {"MOD_MIND_OVER_MATTER", "SCL_PLAQUES_INT_PASS", "MOD_ARCANE_ECHO"} },
+		{ name = "VoidoverMatter", affixes = {"MOD_MIND_OVER_MATTER", "MOD_VOID_REAVER_STATUS", "Mod_Supreme_ArcaneEnchantment_Passive"} },
+		{ name = "WizIntel", affixes = {"Mod_Echoes_Of_The_Underworld", "MOD_LAST_LAUGH", "MOD_SYNAPTIC_PARASITE"} },
+		{ name = "TempestHeralder", affixes = {"MOD_TEMPEST_CALLER_STATUS", "Mod_MAG_Legendary_Chromatic_Reverberation_Passive", "CALL_LIGHTNING_TECHNICAL"} },
+		{ name = "TempestAccelerated", affixes = {"MOD_TEMPEST_CALLER_STATUS", "MOD_ACCELERANT_MOVEMENT", "MOD_MIND_OVER_MATTER"} },
+		{ name = "AngryWizard", affixes = {"FALSE_LIFE", "COUNTERCHARM", "Mod_MAG_LowHP_IncreasedSpellDamage_Passive"} },
+		{ name = "TrueServitude", affixes = {"MOD_HAG_MASKOFSERVITUDE", "Mod_MAG_LowHP_IncreasedSpellDamage_Passive", "Mod_Arcane_Grasp"} },
+		{ name = "Recharge", affixes = {"Mod_Metamagic_Distant", "TAD_Freecast", "Mod_UNI_Bow_SpellslotRecharge_Passive"} },
+		{ name = "ShiftingEcho", affixes = {"MOD_SHIFTING_MIRAGE", "MOD_MIND_OVER_MATTER", "MOD_ARCANE_ECHO"} },
         -- Add more Wiz archetypes as needed	
 	},
     Gish = {
         { name = "Balanced", affixes = {"Mod_MAG_LowHP_IncreaseDamagePsychic_Passive", "Mod_ProneImmunity_Passive", "Mod_ARM_BodyAid_1_Passive"} },
 		{ name = "Psychic", affixes = {"Mod_ARM_MagicalPlate_1_Passive", "FIENDISH_RESILIENCE_PSYCHIC", "HAV_PSYCHIC_BOON"} },
 		{ name = "Strength", affixes = {"BUGBEAR_HARDCORE", "WYR_GORTASH_MANIFESTATION_AURA_BUFF", "MOD_FULL_SWING"} },
-		{ name = "Warrior", affixes = {"Mod_Hamstring_OnDamageTaken_Passive", "Mod_PhalanxFormation_Duergar", "SHA_SKELETON_CRUELTY"} },
+		{ name = "Warrior", affixes = {"Mod_Hamstring_OnDamageTaken_Passive", "Mod_PhalanxFormation_Duergar", "MOD_SHA_SKELETON_CRUELTY"} },
 		{ name = "Willful", affixes = {"MOD_TAD_PSIONIC_DOMINATION", "Duergar_DuergarResilience", "Mod_MAG_Monk_SoulRejunevation_Passive"} },
 		{ name = "Gished", affixes = {"Mod_Mod_MAG_HelmOfBalduran_Protection_Passive", "Mod_MAG_MagicEating_Robe_Passive", "MAG_GISH_ARCANE_SYNERGY"} },
 		{ name = "MobileArmor", affixes = {"Mod_Nocrit_OnDamageTaken_Passive", "Mobile_CounterAttackOfOpportunity", "Mod_ARM_ExceptionalPlate_2_Passive"} },
 		{ name = "Magebane", affixes = {"Mod_MAG_AbsoluteProtector_Shield_Passive", "Mod_MageSlayer_BreakConcentration", "Mod_MageSlayer_Advantage"} },
 		{ name = "Willpower", affixes = {"Mod_FeyAncestry", "ASTRAL_BUFF", "Mod_LowHP_CalmnessinPain_Passive"} },
-		{ name = "FieryRush", affixes = {"GOB_DROWCOM_BUFF", "Mod_MAG_Mobility_MomentumOnDamage_Passive", "Mod_UNI_Bow_SpellslotRecharge_Passive"} },
+		{ name = "FieryRush", affixes = {"MOD_GOB_DROWCOM_BUFF", "Mod_MAG_Mobility_MomentumOnDamage_Passive", "Mod_UNI_Bow_SpellslotRecharge_Passive"} },
 		{ name = "Mindshielding", affixes = {"BrutalCritical ", "ClarifiedMortality", "MOD_INT_ORPHEUS_PROTECTION"} },
 		{ name = "Repellent", affixes = {"MAG_DEFENDER_WEAPON_ENCHANTMENT_TECHNICAL", "TAD_SHIELD_OF_THRALLS", "LOW_GithProdigy_PsionicSkin"} },
 		{ name = "Leecher", affixes = {"Mod_MAG_Monk_SoulRejunevation_Passive", "RALLY", "Mod_MAG_Sarevok_OfChaos_Greatsword_Leeching_Passive"} },
-		{ name = "ConcentratedForce", affixes = {"FIENDISH_RESILIENCE_FORCE", "Scar_Sirocco_Gur", "GLO_BLACKPOWDERKEG"} },
+		{ name = "ConcentratedForce", affixes = {"FIENDISH_RESILIENCE_FORCE", "Scar_Sirocco_Gur", "MOD_GLO_BLACKPOWDERKEG"} },
 		{ name = "RushedBrawl", affixes = {"Mod_LandsStride_Advantage", "GNOLL_SUDDENRUSH", "TAD_PeaceBreaker"} },
 		{ name = "Slayer", affixes = {"Mod_MAG_BarbMonk_Strength_Passive", "Mod_Shout_Fury_Gnoll_Unlock_Initial", "Shout_LOW_Sacrifice_Slayer_Orin"} },
 		{ name = "WizardBane", affixes = {"Mod_AntiMagic_Attacks_Passive", "MOD_TAD_PSIONIC_DOMINATION", "ALCH_OIL_WIZARDSBANE"} },
 		{ name = "PsychicRetaliation", affixes = {"Mod_MAG_Psychic_MentalFatigue_Cape_Passive", "AURA_OF_TERROR", "Mod_HAG_MaskOfVengeance"} },
-		{ name = "InstructedOnslaught", affixes = {"MOD_END_ALLYBUFF_HALSIN", "MOD_FIGHTING_STYLE_PROTECTION_AURA", "CRE_COMBAT_INSTRUCTION"} },
+		{ name = "InstructedOnslaught", affixes = {"MOD_END_ALLYBUFF_HALSIN", "MOD_FIGHTING_STYLE_PROTECTION_AURA", "MOD_CRE_COMBAT_INSTRUCTION"} },
 		{ name = "MagicWeapon", affixes = {"MOD_WILD_MAGIC_BARBARIAN_PROTECTIVE_LIGHTS", "WarMagic", "Target_MagicWeapon_3"} },
 		{ name = "Jedi", affixes = {"SHIELD", "WILD_MAGIC_TELEKINESIS", "TAD_Displace"} },		
 		{ name = "HobgoblinThunder", affixes = {"Mod_MAG_Thunder_Reverberation_Gloves_Passive", "Mod_MAG_Thunder_InflictDazeOnReverberatedCreature_Cloak_Passive", "MOD_THUNDER_HOBGOBLIN_LEADERSHIP_AURA"} },
@@ -2560,7 +2857,7 @@ local absolutistArchetypes = {
 		{ name = "WatchfulGish", affixes = {"Mod_MAG_ElementalGish_ArcaneAcuity_Helmet_Passive", "Shout_Watchful_Warden_Initial", "TAD_SHIELD_OF_THRALLS"} },
 		{ name = "ElementalAvatar", affixes = {"MOD_WHIRLWIND_AURA", "FLAMING_SPHERE_AURA", "Shout_MAG_Self_ElementalWeapon_Cold"} },
 		{ name = "CryptkeepingGish", affixes = {"MOD_EYES_OF_THE_CRYPTKEEPER", "Mod_Momentums_Edge", "Mod_Greater_LeaperStride"} },
-		{ name = "UndeadCommandmentGish", affixes = {"Mod_Reapers_Hand", "MOD_UND_NERE_SHIELDOFSCREAMS", "Mod_MAG_TheDueller_ImprovedDuelist_Passive"} },
+		{ name = "UndeadCommandmentGish", affixes = {"MOD_REAPERS_HAND_STATUS", "MOD_UND_NERE_SHIELDOFSCREAMS", "Mod_MAG_TheDueller_ImprovedDuelist_Passive"} },
 		{ name = "DarkGiftKnight", affixes = {"Mod_Dark_Gift", "MOD_GRAVEBORN_VEIL", "Target_MagicWeapon_3"} },
         -- Add more Gish archetypes as needed		
 	},
@@ -2583,7 +2880,7 @@ local absolutistArchetypes = {
 		{ name = "CollosalAim", affixes = {"GiantKiller", "DOPPELGANGER_HARDCORE", "FOR_THAY_HARDCORE_RANGED"} },
 		{ name = "ShadowHunter", affixes = {"Mod_LOW_Guildhall_IsolatedPrey", "Mod_Shout_Shadow_Meld", "Mod_Rebound_Marksman_Passive"} },
 		{ name = "BowWhip", affixes = {"MartialArts_DextrousUnarmedAttacks", "Mod_MartialArts_BonusUnarmedStrike", "Mod_MAG_Monk_Magic_Boots_Passive"} },
-		{ name = "HowlerCrit", affixes = {"ALCH_ELIXIR_CRITICALS", "Mod_MAG_Critical_CriticalSwiftness_Passive", "Shout_WYR_Dribbles_Dog_Howl"} },
+		{ name = "HowlerCrit", affixes = {"MOD_SUPER_ALCH_ELIXIR_CRITICALS", "Mod_MAG_Critical_CriticalSwiftness_Passive", "Shout_WYR_Dribbles_Dog_Howl"} },
 		{ name = "HowlPackBuffs", affixes = {"ALCH_ELIXIR_ALERTNESS", "MOD_GNOLL_PACKTACTICS_AURA", "Shout_PackHowl_Wolf_Dire_NPC"} },
 		{ name = "NecroticGift", affixes = {"DEATH_WARD", "MOD_ORI_GALE_NECROTICAURA", "Target_LOW_Dog_Ghost_PreyOffering_1"} },
 		{ name = "Greatarcher", affixes = {"HALF_MOVEMENT", "Mod_DeflectMissiles", "POTION_OF_THE_GREATARCHER"} },
@@ -2593,13 +2890,17 @@ local absolutistArchetypes = {
 		{ name = "InsectPlague", affixes = {"MOD_GLO_WEB_SURGE", "MOD_FROG_REFLECTIVEMUCUS", "LOW_HAG_INSECT_PLAGUE_AURA"} },
 		{ name = "MortarFire", affixes = {"POTION_OF_RESISTANCE_FIRE", "Mod_MAG_Cunning_HandCrossbow_Combo_Passive", "MAG_AUTOMATON_FIREBALL_SHOT_OWNER"} },
 		{ name = "MildlySharpened", affixes = {"FightingStyle_Defense", "Mod_UND_Elder_Warpick_Passive", "ALCH_OIL_DAMAGEATTACKBUFF"} },
-		{ name = "ForcefulShots", affixes = {"GLO_BLACKPOWDERKEG", "MOD_WILD_MAGIC_BARBARIAN_PROTECTIVE_LIGHTS_AURA", "Mod_Shout_MAG_WeaponAction_TelekineticBolt"} },
+		{ name = "ForcefulShots", affixes = {"MOD_GLO_BLACKPOWDERKEG", "MOD_WILD_MAGIC_BARBARIAN_PROTECTIVE_LIGHTS_AURA", "Mod_Shout_MAG_WeaponAction_TelekineticBolt"} },
 		{ name = "AcidArrow", affixes = {"MOD_GLO_ACIDIC_BRINE", "Mod_MAG_Acid_AcidMeleeCounter_Cloak_Passive", "Mod_Acid_Ooze_Passive"} },
 		{ name = "DreadfulArcher", affixes = {"HIDE_IN_PLAIN_SIGHT", "Mobile_CounterAttackOfOpportunity", "DREAD_AMBUSHER"} },
 		{ name = "SpiderFriend", affixes = {"Mod_FOR_NightWalkers_WebImmunity", "MOD_GLO_WEB_SURGE", "Target_RangersCompanion_GiantSpider"} },
 		{ name = "Stinking", affixes = {"Mod_Decaying_Attacks_Passive", "Resilient_Constitution", "Mod_Stench_OnDamageTaken_Passive"} },
 		{ name = "TrickShooter", affixes = {"Mod_LOW_Guildhall_IsolatedPrey", "Mod_Greater_LeaperStride", "Mod_Rebound_Marksman_Passive"} },
-		{ name = "WardenCaller", affixes = {"ALCH_ELIXIR_ALERTNESS", "Mod_SentryStealth_Defense", "Mod_MultiattackDefense"} },
+		{ name = "StarryRanger", affixes = {"MOD_WILDSHAPE_STARRY_ARCHER", "Mod_MAG_Radiant_RadiatingOrb_OnDamage_Passive", "Mobile_CounterAttackOfOpportunity"} },
+		{ name = "SeekingRanger", affixes = {"MOD_ARCANE_SEEKER_STATUS", "MOD_LOADED_DICE", "MOD_PARAGON_EFFECT"} },
+		{ name = "EnfeebleRanger", affixes = {"MOD_ARCANE_ENFEEBLE_STATUS", "MOD_PLATE_SPLITTER_STATUS", "Mod_Vitality_Drain_Passive"} },
+		{ name = "GraspingRanger", affixes = {"MOD_ARCANE_GRASPING_ARROW_STATUS", "MOD_GLADIATOR_EFFECT", "NATURES_STEP_AURA_DRYAD"} },
+		{ name = "ShadowRanger", affixes = {"MOD_ARCANE_SHADOW_ARROW_STATUS", "MOD_HEXBLADE_STATUS", "DevilsSight"} },
 	  -- Add more Ranger archetypes as needed		
     }
 }
@@ -2619,13 +2920,13 @@ local comboAffixMappings = {
 		["TIDES_OF_CHAOS"] = "WildMagic",
 		["BANITES_FIST_HARD"] = "Mod_PushingAttack",
 		["BANITES_IRONCONSUL_HARD"] = "Mod_ManeuveringAttack",
-		["Mod_DistractingStrike"] = "MartialAdept",
-		["Mod_ManeuveringAttack"] = "MartialAdept",
-		["MartialAdept"] = "Mod_TripAttack",
-		["Mod_PushingAttack"] = "MartialAdept",
-		["Mod_TripAttack"] = "MartialAdept",
+		["Mod_DistractingStrike"] = "Mod_MartialAdept",
+		["Mod_ManeuveringAttack"] = "Mod_MartialAdept",
+		["Mod_MartialAdept"] = "Mod_TripAttack",
+		["Mod_PushingAttack"] = "Mod_MartialAdept",
+		["Mod_TripAttack"] = "Mod_MartialAdept",
 		["AdditionalSuperiorityDie_Level_1"] = "Mod_Rally",
-		["Mod_Rally"] = "AdditionalSuperiorityDie_Level_1",
+		["Mod_Rally"] = "Mod_MartialAdept",
 		["MAG_Monk_Magic_Armor_Passive"] = "PATIENT_DEFENCE",
 		["AspectOfTheBeast_Wolverine"] = "UND_BOOOALSERVANT",
 		["AspectOfTheBeast_Tiger"] = "UND_BOOOALSERVANT",
@@ -2655,7 +2956,7 @@ local comboAffixMappings = {
 		["Mod_UND_SocietyOfBrilliance_MagicMissileNecklace_Passive"] = "DEN_Rolan_DefaultSpells",
 		["Mod_UNI_MassHealRing_Passive"] = "Shout_HealingWord_Mass",
 		["MAG_Healer_TempHPOnHeal_Passive"] = "Shout_MAG_DevoteesMace_Healing_Aura",
-		["Mod_Riposte"] = "MartialAdept",
+		["Mod_Riposte"] = "Mod_MartialAdept",
 		["Mod_SignOfIllOmen"] = "TAD_Freecast",
 		["Mod_ThiefOfFiveFates"] = "TAD_Freecast",
 		["Mod_DreadfulWord"] = "TAD_Freecast",
@@ -2689,10 +2990,10 @@ local comboAffixMappings = {
 		["Mod_MAG_SarevokArmor_WitheringBarrier_Passive"] = "VAMPIRIC_TOUCH",	
 		["Target_SHA_Justiciar_UntenableSecret"] = "HALF_MOVEMENT",	
 		["MOD_MOO_KETHERIC_PHASE1"] = "Target_MOO_Ketheric_CommandTroops",	
-		["Target_MOO_Fanatic_GuardianOfFaith"] = "DISENGAGE",	
+		["Target_MOO_Fanatic_GuardianOfFaith"] = "MOD_DISENGAGE",	
 		["Target_TWN_AasimarSurvivor_StrengthDrain"] = "HALF_MOVEMENT",	
 		["Target_SHA_Justiciar_LifeDrain"] = "HALF_MOVEMENT",	
-		["Target_MAG_Poison_PoisonLethality"] = "DISENGAGE",	
+		["Target_MAG_Poison_PoisonLethality"] = "MOD_DISENGAGE",	
 		["Target_MAG_WeaponAction_Fleshrend"] = "HALF_MOVEMENT",	
 		["Target_MAG_Legendary_HellCrawler"] = "Mod_MAG_Infernal_Plate_Armor_DamageThreshold_Passive",	
 		["MOD_LOW_DEVILSFEE_AURA"] = "Mod_Target_LOW_DevilsFee_PromiseOfWealth",	
@@ -2701,20 +3002,20 @@ local comboAffixMappings = {
 		["Target_MAG_RetrievingShot"] = "HALF_MOVEMENT",	
 		["Target_Grease"] = "MOO_BLOODPOTION_DRAGONBORN_FIRE",
 		["Target_Silence"] = "MOD_LOW_PHILGRAVESMANSION_CANOPICAURA_LUNGS",	
-		["Mod_FeintingAttack"] = "MartialAdept",	
-		["Mod_GoadingAttack"] = "MartialAdept",	
+		["Mod_FeintingAttack"] = "Mod_MartialAdept",	
+		["Mod_GoadingAttack"] = "Mod_MartialAdept",	
 		["DraconicAncestry_Bronze"] = "DevilsSight",	
 		["Land_Swamp"] = "DevilsSight",	
 		["Mod_MAG_Fire_HeatOnInflictBurning_Boots_Passive"] = "Mod_MAG_Fire_BurningOnDamaged_Cloak_Passive",	
 		["MAG_FIRE_HEAT"] = "PROTECTION_FROM_ENERGY_FIRE",	
 		["Mod_MAG_Thunder_InflictDazeOnThunderDamage_Ring_Passive"] = "Mod_MAG_Thunder_ReverberationOnRangeSpellDamage_Amulet_Passive",	
-		["Mod_MAG_Frost_GenerateFrostOnDamage_Gloves_Passive"] = "Shout_MAG_Self_ElementalWeapon_Cold",	
+		["Mod_MAG_Frost_GenerateFrostOnDamage_Gloves_Passive"] = "MOD_FREEZING_EDGE",	
 		["SORCERYPOINT_2"] = "Mod_Metamagic_Distant",	
-		["ElementalAffinity_Resistance_Acid"] = "SORCERYPOINT_2",	
-		["ElementalAffinity_Resistance_Cold"] = "SORCERYPOINT_2",	
-		["ElementalAffinity_Resistance_Fire"] = "SORCERYPOINT_2",	
-		["ElementalAffinity_Resistance_Lightning"] = "SORCERYPOINT_2",	
-		["ElementalAffinity_Resistance_Poison"] = "SORCERYPOINT_2",	
+		["ElementalAffinity_Resistance_Acid"] = "SORCERYPOINT_4",	
+		["ElementalAffinity_Resistance_Cold"] = "SORCERYPOINT_4",	
+		["ElementalAffinity_Resistance_Fire"] = "SORCERYPOINT_4",	
+		["ElementalAffinity_Resistance_Lightning"] = "SORCERYPOINT_4",	
+		["ElementalAffinity_Resistance_Poison"] = "SORCERYPOINT_4",	
 		["ELEMENTALAFFINITY_ACID_EXTRA_DAMAGE_TECHNICAL"] = "DraconicAncestry_Black",	
 		["ELEMENTALAFFINITY_COLD_EXTRA_DAMAGE_TECHNICAL"] = "DraconicAncestry_White",	
 		["ELEMENTALAFFINITY_FIRE_EXTRA_DAMAGE_TECHNICAL"] = "DraconicAncestry_Red",	
@@ -2736,11 +3037,11 @@ local comboAffixMappings = {
 		["Shout_MagicAllergy_SelfHeal"] = "Mod_FOR_NightWalkers_WebImmunity",
 		["Mod_Shout_LOW_Cazador_Ascend"] = "Mod_LegendaryAction_LOW_Cazador_BatSwarm_Block",
 		["Mod_LegendaryAction_LOW_Cazador_BatSwarm_Block"] = "Mod_Shout_LOW_Cazador_Ascend",
-		["MOD_FORCE_THROWER"] = "Shout_WeaponBond",
-		["MOD_SHOCK_THROWER"] = "Shout_WeaponBond",
-		["MOD_FIRE_THROWER"] = "Shout_WeaponBond",
-		["MOD_ACID_THROWER"] = "Shout_WeaponBond",
-		["MOD_NECROTIC_THROWER"] = "Shout_WeaponBond",	
+		["Mod_Force_Thrower"] = "Shout_WeaponBond",
+		["Mod_Shock_Thrower"] = "Shout_WeaponBond",
+		["Mod_Fire_Thrower"] = "Shout_WeaponBond",
+		["Mod_Acid_Thrower"] = "Shout_WeaponBond",
+		["Mod_Necrotic_Thrower"] = "Shout_WeaponBond",	
 		["Target_Entangle_Dryad"] = "NATURES_STEP_AURA_DRYAD",	
 		["MOD_WOOD_WOAD_REGENERATION"] = "Mod_Regeneration_WoodWoad_Cooldown_Technical",
 		["Mod_Regeneration_WoodWoad_Cooldown_Technical"] = "MOD_WOOD_WOAD_REGENERATION",	
@@ -2761,6 +3062,8 @@ local comboAffixMappings = {
 		["MOD_WATER_SURFACE_REGENERATION"] = "Mod_MAG_LC_Umberlee_Regeneration_Boots_Passive",
 		["Mod_MAG_LC_Umberlee_Regeneration_Boots_Passive"] = "MOD_WATER_SURFACE_REGENERATION",	
 		["Mod_Target_LOW_GreaseWizard_RaiseElemental"] = "MOD_REGENERATION_ELEMENTAL_LAVA",	
+		["Lifedrinker"] = "Mod_MAG_LC_Jannath_Hat_Passive",	
+		["Mod_MAG_Thunder_ReverberationOnStatusApply_Boots_Passive"] = "Mod_MAG_Radiant_RadiatingOrb_OnDamage_Passive",	
     -- Add more as needed
 	}
 	
@@ -3585,22 +3888,22 @@ end
 -- Boss Base Tier Probabilities
 local bossBaseTierProbabilities = {
     Minor = 5,
-    Medium = 15,
-    Major = 40,
-    Massive = 25,
-    Mythical = 15
+    Medium = 10,
+    Major = 45,
+    Massive = 30,
+    Mythical = 10
 }
 
 -- Boss Affix Application Chances Based on Target's Level
 local bossLevelAffixChances = {
-    { levelMax = 2, chances = {{0, 0}, {1, 0}, {2, 85}, {3, 15}}, allowedTiers = {"Minor"} },
-    { levelMax = 4, chances = {{0, 0}, {1, 0}, {2, 80}, {3, 20}}, allowedTiers = {"Minor", "Medium"} },
-    { levelMax = 7, chances = {{0, 0}, {1, 0}, {2, 75}, {3, 25}}, allowedTiers = {"Minor", "Medium", "Major"} },
-    { levelMax = 9, chances = {{0, 0}, {1, 0}, {2, 70}, {3, 30}}, allowedTiers = {"Minor", "Medium", "Major", "Massive"} },
-    { levelMax = 11, chances = {{0, 0}, {1, 0}, {2, 65}, {3, 35}}, allowedTiers = {"Minor", "Medium", "Major", "Massive", "Mythical"} },
-    { levelMax = 15, chances = {{0, 0}, {1, 0}, {2, 60}, {3, 40}}, allowedTiers = {"Minor", "Medium", "Major", "Massive", "Mythical"} },
-    { levelMax = 20, chances = {{0, 0}, {1, 0}, {2, 55}, {3, 45}}, allowedTiers = {"Minor", "Medium", "Major", "Massive", "Mythical"} },
-    { levelMax = 32, chances = {{0, 0}, {1, 0}, {2, 50}, {3, 50}}, allowedTiers = {"Minor", "Medium", "Major", "Massive", "Mythical"} },
+    { levelMax = 2, chances = {{0, 0}, {1, 0}, {2, 70}, {3, 30}}, allowedTiers = {"Minor"} },
+    { levelMax = 4, chances = {{0, 0}, {1, 0}, {2, 60}, {3, 40}}, allowedTiers = {"Minor", "Medium"} },
+    { levelMax = 7, chances = {{0, 0}, {1, 0}, {2, 50}, {3, 50}}, allowedTiers = {"Minor", "Medium", "Major"} },
+    { levelMax = 9, chances = {{0, 0}, {1, 0}, {2, 40}, {3, 60}}, allowedTiers = {"Minor", "Medium", "Major", "Massive"} },
+    { levelMax = 11, chances = {{0, 0}, {1, 0}, {2, 30}, {3, 70}}, allowedTiers = {"Minor", "Medium", "Major", "Massive", "Mythical"} },
+    { levelMax = 15, chances = {{0, 0}, {1, 0}, {2, 20}, {3, 80}}, allowedTiers = {"Minor", "Medium", "Major", "Massive", "Mythical"} },
+    { levelMax = 20, chances = {{0, 0}, {1, 0}, {2, 10}, {3, 90}}, allowedTiers = {"Minor", "Medium", "Major", "Massive", "Mythical"} },
+    { levelMax = 32, chances = {{0, 0}, {1, 0}, {2, 0}, {3, 100}}, allowedTiers = {"Minor", "Medium", "Major", "Massive", "Mythical"} },
 }
 
 -- Adjusted Tier Probabilities considering boss logic
@@ -3739,7 +4042,6 @@ local function ApplyAffix(target, affix, depth, isComboAffix, filteredAffixes, i
     isComboAffix = isComboAffix or false
     isAbsolutist = isAbsolutist or false
 
-
     -- Safeguard: Skip affix application for friendly targets or excessive recursion depth
     if (affix.type ~= "Targeted" and friendlyTargets[target]) or depth > 1 then
         return false
@@ -3786,6 +4088,8 @@ local function ApplyAffix(target, affix, depth, isComboAffix, filteredAffixes, i
         return false
     end
 
+    local affixApplicationSucceeded = true
+
     -- Error handling for affix application
     local status, err = pcall(function()
         if affix.type == "Status" then
@@ -3817,18 +4121,14 @@ local function ApplyAffix(target, affix, depth, isComboAffix, filteredAffixes, i
             end
 
             if not affixApplied then
-                -- Retry with a new affix if targeted application failed
-                local newAffix
-                repeat
-                    newAffix = filteredAffixes[math.random(#filteredAffixes)]
-                until newAffix.name ~= affix.name
-                ApplyAffix(target, newAffix, 0, false, filteredAffixes, isAbsolutist)
+                -- Targeted affix failed; return false so SelectAndApplyAffixes can handle replacement safely
+                affixApplicationSucceeded = false
             end
         end
 
         -- Handle combo affixes
         local comboAffixName = comboAffixMappings[affix.name]
-        if comboAffixName and not appliedAffixesPerTarget[target][comboAffixName] and not isComboAffix then
+        if affixApplicationSucceeded and comboAffixName and not appliedAffixesPerTarget[target][comboAffixName] and not isComboAffix then
             local comboAffix = FindAffixByName(comboAffixName)
             if comboAffix then
                 ApplyAffix(target, comboAffix, depth + 1, true, filteredAffixes, isAbsolutist)
@@ -3840,6 +4140,10 @@ local function ApplyAffix(target, affix, depth, isComboAffix, filteredAffixes, i
 
     -- Handle errors during application
     if not status then
+        return false
+    end
+
+    if not affixApplicationSucceeded then
         return false
     end
 
@@ -3886,10 +4190,51 @@ local function SelectAbsolutistArchetype(enemyType, level, identifiedClass, allo
     }
 
     -- Set probabilities for each category, adjusting if no identified class
-    local archetypeProbabilities = {class = identifiedClass and 35 or 0, type = 35, general = 30}
+    local archetypeProbabilities = {class = identifiedClass and 30 or 0, type = 35, general = 35}
     if not identifiedClass then
         archetypeProbabilities.type = 50
         archetypeProbabilities.general = 50
+    end
+
+    -- Define Absolutist-specific tier weights for archetype selection
+    local absolutistTierProbabilities = {
+        Minor = 10,
+        Medium = 18,
+        Major = 45,
+        Massive = 22,
+        Mythical = 5
+    }
+
+    local tierRank = {
+        Minor = 1,
+        Medium = 2,
+        Major = 3,
+        Massive = 4,
+        Mythical = 5
+    }
+
+    local tierOrder = {"Minor", "Medium", "Major", "Massive", "Mythical"}
+
+    -- Normalize Absolutist tier weights against currently allowed tiers
+    local adjustedArchetypeTierWeights = {}
+    local totalTierWeight = 0
+
+    for tier, probability in pairs(absolutistTierProbabilities) do
+        if allowedTiersSet[tier] then
+            adjustedArchetypeTierWeights[tier] = probability
+            totalTierWeight = totalTierWeight + probability
+        end
+    end
+
+    if totalTierWeight > 0 then
+        for tier, probability in pairs(adjustedArchetypeTierWeights) do
+            adjustedArchetypeTierWeights[tier] = (probability / totalTierWeight) * 100
+        end
+    end
+
+    for _, tier in ipairs(tierOrder) do
+        if adjustedArchetypeTierWeights[tier] then
+        end
     end
 
     -- Track total counts of valid archetypes
@@ -3927,6 +4272,7 @@ local function SelectAbsolutistArchetype(enemyType, level, identifiedClass, allo
     end
 
 
+
     local chance = Ext.Utils.Random(100)
     local cumulativeChance = 0
     local selectedCategory = nil
@@ -3939,10 +4285,22 @@ local function SelectAbsolutistArchetype(enemyType, level, identifiedClass, allo
     end
 
     if selectedCategory then
+
         local validArchetypes = {}
+        local selectedPoolTierCounts = {
+            Minor = 0,
+            Medium = 0,
+            Major = 0,
+            Massive = 0,
+            Mythical = 0,
+            Unknown = 0
+        }
+
         for _, archetype in ipairs(archetypePools[selectedCategory] or {}) do
             local isValid = true
             local containsUndead = false
+            local highestTier = nil
+            local highestTierRank = 0
 
             for _, affixName in ipairs(archetype.affixes) do
                 local affix = FindAffixByName(affixName)
@@ -3950,6 +4308,12 @@ local function SelectAbsolutistArchetype(enemyType, level, identifiedClass, allo
                     isValid = false
                     break
                 end
+
+                if tierRank[affix.tier] and tierRank[affix.tier] > highestTierRank then
+                    highestTier = affix.tier
+                    highestTierRank = tierRank[affix.tier]
+                end
+
                 if tableContains(affix.tags, "Undead") then
                     containsUndead = true
                     if not isUndead then
@@ -3960,15 +4324,59 @@ local function SelectAbsolutistArchetype(enemyType, level, identifiedClass, allo
             end
 
             if isValid and not selectedArchetypesInCombat[archetype.name] then
-                table.insert(validArchetypes, {archetype = archetype, containsUndead = containsUndead})
+                local archetypeWeight = highestTier and adjustedArchetypeTierWeights[highestTier] or 1
+
+                table.insert(validArchetypes, {
+                    archetype = archetype,
+                    containsUndead = containsUndead,
+                    highestTier = highestTier,
+                    weight = archetypeWeight
+                })
+
+                if highestTier and selectedPoolTierCounts[highestTier] then
+                    selectedPoolTierCounts[highestTier] = selectedPoolTierCounts[highestTier] + 1
+                else
+                    selectedPoolTierCounts.Unknown = selectedPoolTierCounts.Unknown + 1
+                end
             end
         end
 
+
         shuffleArray(validArchetypes)
         if #validArchetypes > 0 then
-            local selectedIndex = Ext.Utils.Random(#validArchetypes)
-            local selectedArchetype = validArchetypes[selectedIndex].archetype
-            local isUndeadApplicable = validArchetypes[selectedIndex].containsUndead
+            local totalWeight = 0
+
+            for _, entry in ipairs(validArchetypes) do
+                totalWeight = totalWeight + entry.weight
+            end
+
+            local selectedEntry = nil
+
+            if totalWeight > 0 then
+                local weightedRoll = Ext.Utils.Random(1000000) / 10000
+                local cumulativeWeight = 0
+
+                for _, entry in ipairs(validArchetypes) do
+                    local normalizedWeight = (entry.weight / totalWeight) * 100
+                    cumulativeWeight = cumulativeWeight + normalizedWeight
+
+                    if weightedRoll <= cumulativeWeight then
+                        selectedEntry = entry
+                        break
+                    end
+                end
+
+                if not selectedEntry then
+                    selectedEntry = validArchetypes[#validArchetypes]
+                end
+
+            else
+                local selectedIndex = Ext.Utils.Random(#validArchetypes)
+                selectedEntry = validArchetypes[selectedIndex]
+            end
+
+            local selectedArchetype = selectedEntry.archetype
+            local isUndeadApplicable = selectedEntry.containsUndead
 
             selectedArchetypesInCombat[selectedArchetype.name] = true
 
@@ -4065,6 +4473,7 @@ local function FilterAndSelectAffixes(target, allowedTiersSet)
     for tier, count in pairs(affixesCountPerTier) do
     end
 
+    -- Final debug output
 
     -- Cache the results in appliedAffixesPerTarget
     appliedAffixesPerTarget[target] = appliedAffixesPerTarget[target] or {}
@@ -4169,11 +4578,17 @@ local function SelectAndApplyAffixes(target, numAffixes, allowedTiersSet)
         Osi.ApplyStatus(target, "MAGE_ARMOR", -1)
     end
 
-    -- **Check for Absolutist BEFORE normal affixes**
+       -- **Check for Absolutist BEFORE normal affixes**
     local absolutistChance = CalculateDynamicAbsolutistChance(adjustedLevel)
     local absolutistRoll = math.random(100)
+    local absolutistSucceeded = absolutistRoll <= absolutistChance
 
-    if absolutistRoll <= absolutistChance and Osi.HasActiveStatus(target, "ABSOLUTIST_STATUS") == 0 then
+    if not absolutistSucceeded and IsBoss(target) then
+        local bossAbsolutistRoll = math.random(100)
+        absolutistSucceeded = bossAbsolutistRoll <= absolutistChance
+    end
+
+    if absolutistSucceeded and Osi.HasActiveStatus(target, "ABSOLUTIST_STATUS") == 0 then
 
         local _, recalculatedAllowedTiersSet = GetAffixDataForLevel(adjustedLevel, target)
         local absolutistArchetype = SelectAbsolutistArchetype(enemyType, adjustedLevel, enemyClass, recalculatedAllowedTiersSet, isUndead)
@@ -4228,22 +4643,171 @@ local function SelectAndApplyAffixes(target, numAffixes, allowedTiersSet)
 
 
     local numAffixApplied = 0
-    for i = 1, numAffixes do
-        if #affixesToUse == 0 then break end
 
-        -- Select a random affix from the pool
-        local affixIndex = Ext.Utils.Random(#affixesToUse)
-        local affix = table.remove(affixesToUse, affixIndex)
+      -- **Build category buckets while preferring combat-unique affixes**
+    if not appliedAffixesPerTarget[target].categoriesUsed then
+        appliedAffixesPerTarget[target].categoriesUsed = {}
+    end
 
-        -- **Ensure appliedAffixes exists before using it**
-        if not appliedAffixesPerTarget[target].appliedAffixes then
-            appliedAffixesPerTarget[target].appliedAffixes = {} -- Ensures appliedAffixes exists before use
+    local categoryBuckets = {
+        Damage = {},
+        Defense = {},
+        Utility = {}
+    }
+
+    for _, affix in ipairs(affixesToUse) do
+        if affix.category and categoryBuckets[affix.category] then
+            table.insert(categoryBuckets[affix.category], affix)
+        end
+    end
+
+
+    -- **Fallback only for categories emptied by combat-wide uniqueness**
+    if affixesToUse ~= filteredAffixes then
+        local emptyCategories = {}
+
+        for category, bucket in pairs(categoryBuckets) do
+            if #bucket == 0 then
+                emptyCategories[category] = true
+            end
         end
 
-        if ApplyAffix(target, affix, 0, false, filteredAffixes) then
-            appliedAffixesPerTarget[target].appliedAffixes[affix.name] = true
-            usedAffixesInCombat[affix.name] = true -- Mark affix as used for this combat
-            numAffixApplied = numAffixApplied + 1
+        for _, affix in ipairs(filteredAffixes) do
+            if affix.category and emptyCategories[affix.category] and categoryBuckets[affix.category] then
+                table.insert(categoryBuckets[affix.category], affix)
+            end
+        end
+
+    end
+
+    -- **Randomize category selection before choosing affixes**
+    local categoryOrder = {"Damage", "Defense", "Utility"}
+    shuffleArray(categoryOrder)
+
+
+    local selectedCategories = {}
+    for _, category in ipairs(categoryOrder) do
+        if #selectedCategories >= numAffixes then
+            break
+        end
+
+        if #categoryBuckets[category] > 0 and not appliedAffixesPerTarget[target].categoriesUsed[category] then
+            table.insert(selectedCategories, category)
+        end
+    end
+
+
+    -- **Get adjusted tier probabilities based on target level and boss status**
+    local adjustedProbabilities = AdjustedTierProbabilities(allowedTiersSet, adjustedLevel, target)
+    local tierOrder = {"Minor", "Medium", "Major", "Massive", "Mythical"}
+
+
+    for _, tier in ipairs(tierOrder) do
+        if adjustedProbabilities[tier] then
+        end
+    end
+
+    for _, category in ipairs(selectedCategories) do
+        local bucket = categoryBuckets[category]
+
+
+        -- **Build tier buckets inside the selected category**
+        local tierBuckets = {
+            Minor = {},
+            Medium = {},
+            Major = {},
+            Massive = {},
+            Mythical = {}
+        }
+
+        for _, affix in ipairs(bucket) do
+            if affix.tier and tierBuckets[affix.tier] then
+                table.insert(tierBuckets[affix.tier], affix)
+            end
+        end
+
+
+        -- **Normalize tier probabilities to tiers available within this selected category**
+        local categoryTierProbabilities = {}
+        local totalCategoryTierWeight = 0
+
+        for _, tier in ipairs(tierOrder) do
+            if adjustedProbabilities[tier] and #tierBuckets[tier] > 0 then
+                categoryTierProbabilities[tier] = adjustedProbabilities[tier]
+                totalCategoryTierWeight = totalCategoryTierWeight + adjustedProbabilities[tier]
+            end
+        end
+
+        if totalCategoryTierWeight > 0 then
+
+            for _, tier in ipairs(tierOrder) do
+                if categoryTierProbabilities[tier] then
+                    categoryTierProbabilities[tier] = (categoryTierProbabilities[tier] / totalCategoryTierWeight) * 100
+                end
+            end
+        else
+        end
+
+        -- **Roll selected tier using locally normalized probabilities**
+        local tierRoll = Ext.Utils.Random(100)
+        local cumulativeTierChance = 0
+        local selectedTier = nil
+
+        if totalCategoryTierWeight > 0 then
+            for _, tier in ipairs(tierOrder) do
+                local probability = categoryTierProbabilities[tier]
+                if probability then
+                    cumulativeTierChance = cumulativeTierChance + probability
+                    if tierRoll <= cumulativeTierChance then
+                        selectedTier = tier
+                        break
+                    end
+                end
+            end
+        end
+
+        if selectedTier then
+        else
+        end
+
+        -- Select and apply an affix from the selected tier/category bucket, with safe retry if needed
+        local candidatePool = {}
+
+        if selectedTier and #tierBuckets[selectedTier] > 0 then
+            for _, candidate in ipairs(tierBuckets[selectedTier]) do
+                table.insert(candidatePool, candidate)
+            end
+        else
+            for _, candidate in ipairs(bucket) do
+                table.insert(candidatePool, candidate)
+            end
+        end
+
+        local affixApplied = false
+        local affix = nil
+
+        while not affixApplied and #candidatePool > 0 do
+            local affixIndex = Ext.Utils.Random(#candidatePool)
+            affix = table.remove(candidatePool, affixIndex)
+
+
+            -- **Ensure appliedAffixes exists before using it**
+            if not appliedAffixesPerTarget[target].appliedAffixes then
+                appliedAffixesPerTarget[target].appliedAffixes = {} -- Ensures appliedAffixes exists before use
+            end
+
+            if ApplyAffix(target, affix, 0, false, filteredAffixes) then
+                appliedAffixesPerTarget[target].appliedAffixes[affix.name] = true
+                appliedAffixesPerTarget[target].categoriesUsed[category] = true -- Mark category as used for this target
+                usedAffixesInCombat[affix.name] = true -- Mark affix as used for this combat
+                numAffixApplied = numAffixApplied + 1
+                affixApplied = true
+
+            else
+            end
+        end
+
+        if not affixApplied then
         end
     end
 
@@ -4297,6 +4861,7 @@ local companionUUIDs = {
     ["S_END_Netherbrain_HitboxProxy_001_49e7f225-6fa9-4f86-b03b-b8282a2bba20"] = true,
     ["S_END_Netherbrain_HitboxProxy_002_238679d4-f051-4b4f-bd50-5809c9e5893a"] = true,
     ["S_END_Netherbrain_HitboxProxy_003_37f2b1cc-992c-4298-aaf3-84e8b6c6fe0a"] = true,
+	["S_END_MindBattleHelper_be50f7cd-c14a-4131-82d3-29337f3a4759"] = true,
     ["S_TUT_Helm_Devil_005_ed103005-fd71-457d-ae6c-39654bbd8f2e"] = true,
     ["S_HAG_Hag_c457d064-83fb-4ec6-b74d-1f30dfafd12d"] = true,
 	["S_UND_KethericCity_AdamantineGolem_2a5997fc-5f2a-4a13-b309-bed16da3b255"] = true,
@@ -4360,6 +4925,14 @@ Ext.Osiris.RegisterListener("Died", 1, "after", function(target)
     if Osi.HasPassive(target, "Mod_Profane_Carnage") == 1 then
         local x, y, z = Osi.GetPosition(target)
         Osi.CreateAt("e165c2e2-bf21-42a4-b71d-15aad19378f9", x, y, z, 0, 1, "")
+    end
+end)
+
+-- Zharakul Drop on Death (Drethek)
+Ext.Osiris.RegisterListener("Died", 1, "after", function(target)
+    if Osi.HasPassive(target, "Mod_Gnoll_Feral_Footing") == 1 then
+        local x, y, z = Osi.GetPosition(target)
+        Osi.CreateAt("dd08a6df-4aa3-42da-9519-fcf65a8a0b42", x, y, z, 0, 1, "")
     end
 end)
 
@@ -4562,12 +5135,8 @@ Ext.Osiris.RegisterListener("EnteredCombat", 2, "after", function(target, combat
                             appliedAffixesPerTarget[target] = { hasBeenProcessed = false }
                         end
 
-                        local adjustedLevel = AdjustTargetLevelForAffixes(target)
-                        local numAffixes, allowedTiersSet = GetAffixDataForLevel(adjustedLevel, target)
-
-                        if numAffixes > 0 then
-                            SelectAndApplyAffixes(target, numAffixes, allowedTiersSet)
-                        end
+                        -- Send target into affix processing. Affix count and tiers are rolled inside SelectAndApplyAffixes.
+                        SelectAndApplyAffixes(target, nil, nil)
 
                         -- Mark as processed only after affix application
                         appliedAffixesPerTarget[target].hasBeenProcessed = true
@@ -4597,12 +5166,8 @@ Ext.Osiris.RegisterListener("EnteredCombat", 2, "after", function(target, combat
                             appliedAffixesPerTarget[target] = { hasBeenProcessed = false }
                         end
 
-                        local adjustedLevel = AdjustTargetLevelForAffixes(target)
-                        local numAffixes, allowedTiersSet = GetAffixDataForLevel(adjustedLevel, target)
-
-                        if numAffixes > 0 then
-                            SelectAndApplyAffixes(target, numAffixes, allowedTiersSet)
-                        end
+                        -- Send target into affix processing. Affix count and tiers are rolled inside SelectAndApplyAffixes.
+                        SelectAndApplyAffixes(target, nil, nil)
 
                         -- Mark as processed only after affix application
                         appliedAffixesPerTarget[target].hasBeenProcessed = true

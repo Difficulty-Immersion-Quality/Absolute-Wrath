@@ -28,6 +28,9 @@
 									<attribute id="Object" type="FixedString" value="MOD_TERROR_SUMMON_LINK_SUMMONER_NEARBY_TECHNICAL_INCUBATOR_TURN_ONE" />
 								</node>
 								<node id="Status">
+									<attribute id="Object" type="FixedString" value="LEGENDARY_RESISTANCE_CROWD_CONTROL" />
+								</node>
+								<node id="Status">
 									<attribute id="Object" type="FixedString" value="MOD_LEGENDARY_STATUS_UNTETHERED_FURY" />
 								</node>
 								<node id="Status">
@@ -126,6 +129,91 @@
 								</node>
 								<node id="Status">
 									<attribute id="Object" type="FixedString" value="MOD_ELYNDRIS_START" />
+								</node>
+								<node id="Status">
+									<attribute id="Object" type="FixedString" value="MOD_SKIP_PROCESSING" />
+								</node>
+							</children>
+						</node>
+					</children>
+				</node>
+				<node id="GameObjects">
+					<attribute id="MapKey" type="FixedString" value="51d784ac-6815-4f65-88d9-0ea3351d6566" />
+					<attribute id="ParentTemplateId" type="FixedString" value="89419ac3-95d1-4c90-9a29-7b6445acb270" />
+					<attribute id="CharacterVisualResourceID" type="FixedString" value="31e01f61-f963-234a-aa9a-cfb289026d98" />
+					<attribute id="Type" type="FixedString" value="character" />
+					<attribute id="DisplayName" type="TranslatedString" handle="4e9a9355-6753-42a2-b9b1-cd9f7dd1058a" version="4" />
+					<attribute id="Race" type="guid" value="0eb594cb-8820-4be6-a58d-8be7a1a98fba" />
+					<attribute id="Icon" type="FixedString" value="31e01f61-f963-234a-aa9a-cfb289026d98-EQP_UmberleePriest_Sickle_Magical_(Icon_Human_Female)" />
+					<attribute id="Name" type="LSString" value="S_LOW_AllandraGrey" />
+					<attribute id="Equipment" type="FixedString" value="EQP_Elyndris_Equipment" />
+					<attribute id="Stats" type="FixedString" value="Mod_Elyndris_Boss" />
+					<attribute id="LevelOverride" type="int32" value="12" />
+					<children>
+						<node id="SkillList">
+							<children>
+								<node id="Skill">
+									<attribute id="Skill" type="FixedString" value="Mod_Shout_Corrupting_cleave" />
+									<attribute id="SpellCastingAbility" type="uint8" value="0" />
+									<attribute id="LearningStrategy" type="uint8" value="0" />
+									<attribute id="ScoreModifier" type="float" value="5" />
+									<attribute id="StartRound" type="int32" value="0" />
+									<attribute id="FallbackStartRound" type="int32" value="-1" />
+									<attribute id="MinimumImpact" type="int32" value="0" />
+									<attribute id="OnlyCastOnSelf" type="bool" value="False" />
+									<attribute id="AIFlags" type="uint16" value="0" />
+								</node>
+								<node id="Skill">
+									<attribute id="Skill" type="FixedString" value="Mod_Elyndris_Teleport" />
+									<attribute id="SpellCastingAbility" type="uint8" value="0" />
+									<attribute id="LearningStrategy" type="uint8" value="0" />
+									<attribute id="ScoreModifier" type="float" value="5" />
+									<attribute id="StartRound" type="int32" value="0" />
+									<attribute id="FallbackStartRound" type="int32" value="-1" />
+									<attribute id="MinimumImpact" type="int32" value="0" />
+									<attribute id="OnlyCastOnSelf" type="bool" value="False" />
+									<attribute id="AIFlags" type="uint16" value="0" />
+								</node>
+								<node id="Skill">
+									<attribute id="Skill" type="FixedString" value="Target_Elyndris_Exalted_Sentencing" />
+									<attribute id="SpellCastingAbility" type="uint8" value="0" />
+									<attribute id="LearningStrategy" type="uint8" value="0" />
+									<attribute id="ScoreModifier" type="float" value="4" />
+									<attribute id="StartRound" type="int32" value="0" />
+									<attribute id="FallbackStartRound" type="int32" value="-1" />
+									<attribute id="MinimumImpact" type="int32" value="0" />
+									<attribute id="OnlyCastOnSelf" type="bool" value="False" />
+									<attribute id="AIFlags" type="uint16" value="0" />
+								</node>
+								<node id="Skill">
+									<attribute id="Skill" type="FixedString" value="Mod_Zone_Elyndris_Beam" />
+									<attribute id="SpellCastingAbility" type="uint8" value="0" />
+									<attribute id="LearningStrategy" type="uint8" value="0" />
+									<attribute id="ScoreModifier" type="float" value="4" />
+									<attribute id="StartRound" type="int32" value="0" />
+									<attribute id="FallbackStartRound" type="int32" value="-1" />
+									<attribute id="MinimumImpact" type="int32" value="0" />
+									<attribute id="OnlyCastOnSelf" type="bool" value="False" />
+									<attribute id="AIFlags" type="uint16" value="0" />
+								</node>
+							</children>
+						</node>
+						<node id="StatusList">
+							<children>
+								<node id="Status">
+									<attribute id="Object" type="FixedString" value="MOD_FROST_BOSS_EFFECT" />
+								</node>
+								<node id="Status">
+									<attribute id="Object" type="FixedString" value="" />
+								</node>
+								<node id="Status">
+									<attribute id="Object" type="FixedString" value="" />
+								</node>
+								<node id="Status">
+									<attribute id="Object" type="FixedString" value="" />
+								</node>
+								<node id="Status">
+									<attribute id="Object" type="FixedString" value="" />
 								</node>
 								<node id="Status">
 									<attribute id="Object" type="FixedString" value="MOD_SKIP_PROCESSING" />
@@ -257,8 +345,38 @@
 					</children>
 				</node>
 				<node id="GameObjects">
-					<attribute id="Description" type="TranslatedString" handle="h9836c60ag8993g46d8gb2e0g5c9ddf49303b" version="1" />
-					<attribute id="DisplayName" type="TranslatedString" handle="h788d91f4g6dfeg4e40g9ed0gd19b1519ccfe" version="2" />
+					<attribute id="Description" type="TranslatedString" handle="8c81e99a-0e26-475c-ba05-b8ddc886fd1b" version="1" />
+					<attribute id="DisplayName" type="TranslatedString" handle="d3290623-80d3-4a30-9b47-8584eefc2525" version="2" />
+					<attribute id="LevelName" type="FixedString" value="" />
+					<attribute id="MapKey" type="FixedString" value="dd08a6df-4aa3-42da-9519-fcf65a8a0b42" />
+					<attribute id="Name" type="LSString" value="WPN_Gnoll_Boss_Shortsword_Player" />
+					<attribute id="ParentTemplateId" type="FixedString" value="3af0f251-36b5-425f-8d2a-f81559a70967" />
+					<attribute id="Stats" type="FixedString" value="WPN_Gnoll_Boss_Shortsword_Player" />
+					<attribute id="Type" type="FixedString" value="item" />
+					<attribute id="_OriginalFileVersion_" type="int64" value="144115207403209023" />
+					<children>
+						<node id="StatusList">
+							<children>
+								<node id="Status">
+									<attribute id="Object" type="FixedString" value="MOD_GNOLL_BOSS_WEAPON_EFFECT" />
+								</node>
+								<node id="Status">
+									<attribute id="Object" type="FixedString" value="MOD_GNOLL_BOSS_WEAPON_EFFECT_2" />
+								</node>
+								<node id="Status">
+									<attribute id="Object" type="FixedString" value="MOD_GNOLL_BOSS_WEAPON_EFFECT_3" />
+								</node>
+								<node id="Status">
+									<attribute id="Object" type="FixedString" value="MOD_GNOLL_BOSS_WEAPON_EFFECT_4" />
+								</node>
+							</children>
+						</node>
+						<node id="Tags" />
+					</children>
+				</node>
+				<node id="GameObjects">
+					<attribute id="Description" type="TranslatedString" handle="8c81e99a-0e26-475c-ba05-b8ddc886fd1b" version="1" />
+					<attribute id="DisplayName" type="TranslatedString" handle="d3290623-80d3-4a30-9b47-8584eefc2525" version="2" />
 					<attribute id="LevelName" type="FixedString" value="" />
 					<attribute id="MapKey" type="FixedString" value="44aa96b3-4db1-4938-932d-238931c0e1f2" />
 					<attribute id="Name" type="LSString" value="WPN_Gnoll_Boss_Shortsword" />
@@ -270,13 +388,13 @@
 						<node id="StatusList">
 							<children>
 								<node id="Status">
-									<attribute id="Object" type="FixedString" value="" />
+									<attribute id="Object" type="FixedString" value="MOD_GNOLL_BOSS_WEAPON_EFFECT" />
 								</node>
 								<node id="Status">
-									<attribute id="Object" type="FixedString" value="" />
+									<attribute id="Object" type="FixedString" value="MOD_GNOLL_BOSS_WEAPON_EFFECT_2" />
 								</node>
 								<node id="Status">
-									<attribute id="Object" type="FixedString" value="" />
+									<attribute id="Object" type="FixedString" value="MOD_GNOLL_BOSS_WEAPON_EFFECT_3" />
 								</node>
 							</children>
 						</node>
@@ -314,7 +432,7 @@
 									<attribute id="MinimumImpact" type="int32" value="0" />
 									<attribute id="OnlyCastOnSelf" type="bool" value="False" />
 									<attribute id="ScoreModifier" type="float" value="1" />
-									<attribute id="Skill" type="FixedString" value="Projectile_Jump_Gnoll" />
+									<attribute id="Skill" type="FixedString" value="Mod_Projectile_Jump_Gnoll" />
 									<attribute id="SpellCastingAbility" type="uint8" value="0" />
 									<attribute id="StartRound" type="int32" value="0" />
 								</node>
@@ -333,7 +451,7 @@
 									<attribute id="Skill" type="FixedString" value="Target_Multiattack_Gnoll_Boss" />
 									<attribute id="SpellCastingAbility" type="uint8" value="0" />
 									<attribute id="LearningStrategy" type="uint8" value="0" />
-									<attribute id="ScoreModifier" type="float" value="3" />
+									<attribute id="ScoreModifier" type="float" value="5" />
 									<attribute id="StartRound" type="int32" value="0" />
 									<attribute id="FallbackStartRound" type="int32" value="-1" />
 									<attribute id="MinimumImpact" type="int32" value="0" />
@@ -348,16 +466,28 @@
 									<attribute id="Object" type="FixedString" value="MOD_SKIP_PROCESSING" />
 								</node>
 								<node id="Status">
-									<attribute id="Object" type="FixedString" value="MOD_GNOLL_FERAL_FOOTING" />
+									<attribute id="Object" type="FixedString" value="MOD_ADAPTIVE_PREDATOR" />
 								</node>
 								<node id="Status">
 									<attribute id="Object" type="FixedString" value="MOD_GNOLL_BOSS_EFFECT" />
+								</node>
+								<node id="Status">
+									<attribute id="Object" type="FixedString" value="MOD_GNOLL_BOSS_EFFECT_2" />
 								</node>
 								<node id="Status">
 									<attribute id="Object" type="FixedString" value="MOD_GNOLL_BOSS_EFFECT_SECONDARY" />
 								</node>
 								<node id="Status">
 									<attribute id="Object" type="FixedString" value="MOD_GNOLL_PREDATOR_AURA" />
+								</node>
+								<node id="Status">
+									<attribute id="Object" type="FixedString" value="MOD_ADAPTIVE_PREDATOR_AURA" />
+								</node>
+								<node id="Status">
+									<attribute id="Object" type="FixedString" value="MOD_ADAPTIVE_ACCURACY_GNOLL" />
+								</node>
+								<node id="Status">
+									<attribute id="Object" type="FixedString" value="LEGENDARY_RESISTANCE_CROWD_CONTROL" />
 								</node>
 							</children>
 						</node>
