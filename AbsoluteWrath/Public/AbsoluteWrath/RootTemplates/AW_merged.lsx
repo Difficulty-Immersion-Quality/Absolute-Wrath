@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <save>
-	<version major="4" minor="0" revision="9" build="328" lslib_meta="v1,bswap_guids" />
+	<version major="4" minor="0" revision="7" build="405" />
 	<region id="Templates">
 		<node id="Templates">
 			<children>
@@ -44,7 +44,7 @@
 									<attribute id="Object" type="FixedString" value="Terror_Boss_Treasures" />
 								</node>
 							</children>
-						</node>
+						</node>						
 						<node id="SkillList">
 							<children>
 								<node id="Skill">
@@ -126,7 +126,7 @@
 									<attribute id="Object" type="FixedString" value="Saint_Boss_Treasures" />
 								</node>
 							</children>
-						</node>
+						</node>							
 						<node id="StatusList">
 							<children>
 								<node id="Status">
@@ -281,7 +281,7 @@
 								</node>
 								<node id="Status">
 									<attribute id="Object" type="FixedString" value="MOD_TERROR_GRENADE_VFX_2" />
-								</node>
+								</node>								
 							</children>
 						</node>
 						<node id="OnUsePeaceActions">
@@ -321,7 +321,7 @@
 									<attribute id="Object" type="FixedString" value="MOD_ELYNDRIS_RADIANT_VFX_2" />
 								</node>
 							</children>
-						</node>
+						</node>					
 						<node id="OnUsePeaceActions">
 							<children>
 								<node id="Action">
@@ -340,7 +340,7 @@
 							</children>
 						</node>
 					</children>
-				</node>
+				</node>				
 				<node id="GameObjects">
 					<attribute id="Description" type="TranslatedString" handle="h4928317bg96b0g4937gbeb2gb64e83f8ddf6" version="1" />
 					<attribute id="DisplayName" type="TranslatedString" handle="hc7d5ea47gc81eg4937g8f72g551de8954362" version="2" />
@@ -624,7 +624,7 @@
 									<attribute id="Object" type="FixedString" value="Gnoll_Boss_Treasures" />
 								</node>
 							</children>
-						</node>
+						</node>							
 						<node id="StatusList">
 							<children>
 								<node id="Status">

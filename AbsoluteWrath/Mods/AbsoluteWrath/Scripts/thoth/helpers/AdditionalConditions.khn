@@ -1,0 +1,86 @@
+local __util = require 'larian.util'
+
+-- ELEMENTAL CLASSIFICATION
+
+function ElementalSequencerFireCheck()
+	return SpellDamageTypeIs(DamageType.Fire)
+		| SpellId('Zone_BreathWeapon_Fire_Cone')
+		| SpellId('Zone_BreathWeapon_Fire_Line')
+		| SpellId('Projectile_ChromaticOrb_Fire_Monk')
+		| SpellId('Target_MAG_Legendary_ImmolatingGaze')
+		| SpellId('Projectile_ScorchingRay_Monk')
+		| SpellId('Projectile_Fireball_Monk')
+		| SpellId('Zone_BurningHands_Monk')
+end
+
+function ElementalSequencerAcidCheck()
+	return SpellDamageTypeIs(DamageType.Acid)
+		| SpellId('Zone_BreathWeapon_Acid')
+		| SpellId('Projectile_ChromaticOrb_Acid_Monk')
+end
+
+function ElementalSequencerRadiantCheck()
+	return SpellDamageTypeIs(DamageType.Radiant)
+		| SpellId('Zone_StarryForm_Dragon_BreathWeapon')
+end
+
+function ElementalSequencerNecroticCheck()
+	return SpellDamageTypeIs(DamageType.Necrotic)
+		| SpellId('Target_HaloOfSpores')
+		| SpellId('Target_SpreadingSpores')
+		| SpellId('Target_SpitefulSuffering')
+end
+
+function ElementalSequencerPoisonCheck()
+	return SpellDamageTypeIs(DamageType.Poison)
+		| SpellId('Zone_BreathWeapon_Poison')
+		| SpellId('Projectile_BlackSporeCloud')
+		| SpellId('Projectile_ChromaticOrb_Poison_Monk')
+end
+
+-- QUALIFYING ELEMENTAL ACTIVATION
+
+-- Used by payload applicators to recognize any supported elemental activation, regardless of which element established the payload.
+
+function ElementalSequencerAnyElementCheck()
+	return ElementalSequencerFireCheck()
+		| ElementalSequencerAcidCheck()
+		| ElementalSequencerRadiantCheck()
+		| ElementalSequencerNecroticCheck()
+		| ElementalSequencerPoisonCheck()
+end
+
+-- SAVE-NEGATES CLASSIFICATION
+
+-- Qualifying abilities that normally deal no damage on a successful save.
+
+function ElementalSequencerSaveNegatesCheck()
+	return SpellId('Target_SacredFlame')
+		| SpellId('Projectile_PoisonSpray')
+		| SpellId('Projectile_AcidSplash')
+		| SpellId('Target_TollTheDead')
+		| SpellId('Target_HaloOfSpores')
+		| SpellId('Target_SpitefulSuffering')
+end
+
+-- Save-negates cantrips whose successful saves still deal half damage when the source has Potent Cantrip.
+
+function ElementalSequencerPotentCantripCheck()
+	return SpellId('Target_SacredFlame')
+		| SpellId('Projectile_PoisonSpray')
+		| SpellId('Projectile_AcidSplash')
+		| SpellId('Target_TollTheDead')
+end
+
+-- EXTENDED SPELL DETECTION
+
+function ElementalSequencerExtendedSpellCheck()
+    return HasPassive('Metamagic_Extended', context.Source)
+        & ExtendedSpellCheck()
+end
+
+-- HEALTH SCALING SPECIFICATION
+
+function AbsoluteWrathLevel8Plus()
+	return ConditionResult(context.Source.Level >= 8)
+end

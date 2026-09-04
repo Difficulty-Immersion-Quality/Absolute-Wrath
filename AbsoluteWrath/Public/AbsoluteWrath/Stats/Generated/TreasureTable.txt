@@ -1,0 +1,25 @@
+new treasuretable "Terror_Boss_Treasures"
+new subtable "-1"
+object category "I_OBJ_TERROR_FEAR_GRENADE",1,0,0,0,0,0,0,0
+new subtable "-1"
+object category "I_OBJ_Potion_Of_Cloud_Giant_Strength",1,0,0,0,0,0,0,0
+new subtable "3,1"
+object category "I_OBJ_BarbedArrow",1,0,0,0,0,0,0,0
+new subtable "2,1"
+object category "I_OBJ_DiamondDark",1,0,0,0,0,0,0,0
+
+new treasuretable "Gnoll_Boss_Treasures"
+new subtable "-1"
+object category "I_OBJ_GNOLL_BLOOD_CONSUME",1,0,0,0,0,0,0,0
+new subtable "4,1"
+object category "I_ALCH_Ingredient_Part_HyenaEar",1,0,0,0,0,0,0,0
+new subtable "2,1"
+object category "I_ALCH_Ingredient_Part_WorgFang",1,0,0,0,0,0,0,0
+
+new treasuretable "Saint_Boss_Treasures"
+new subtable "-1"
+object category "I_OBJ_SAINT_ESSENCE_CONSUME",1,0,0,0,0,0,0,0
+new subtable "-1"
+object category "I_OBJ_Potion_Of_Invulnerability",1,0,0,0,0,0,0,0
+new subtable "-1"
+object category "I_ALCH_Solution_Potion_Rest_Greater",1,0,0,0,0,0,0,0
