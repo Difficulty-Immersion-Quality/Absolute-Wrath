@@ -1735,7 +1735,7 @@
 	<content contentuid="17ab1873-0a89-4d08-b7b8-d3625c3cfe3a" version="2">&lt;LSTag Tooltip="ArmourClass"&gt;Armour Class&lt;/LSTag&gt; increased by 2. Regain Spell Casting Modifier + [1] each turn.</content>
 	<content contentuid="f7856599-e9d2-4188-8d8d-49d851d1ce1e" version="5">Protected by the screams of your enemies.&lt;br&gt;&lt;br&gt;&lt;LSTag Tooltip="ArmourClass"&gt;Armour Class&lt;/LSTag&gt; increased by 3, and attackers take [1] when hit with a melee attack.</content>
 	<content contentuid="44966a0a-c535-4afa-9545-f9eb9e46b36c" version="5">Entity can &lt;LSTag Type="Status" Tooltip="MOD_LOW_RAPHAEL_STUNNED"&gt;Stun&lt;/LSTag&gt; a creature that hits them with Radiant damage.</content>
-	<content contentuid="71209476-2e5f-438e-837d-b1b461a80f44" version="3">After taking Radiant damage, &lt;LSTag Type="Status" Tooltip="LOW_RAPHAEL_STUNNED"&gt;Stun&lt;/LSTag&gt; the attacker.</content>
+	<content contentuid="e138d062-0d25-4edd-8147-4a8e8763567d" version="3">After taking Radiant damage, possibly &lt;LSTag Type="Status" Tooltip="MOD_LOW_RAPHAEL_STUNNED"&gt;Stun&lt;/LSTag&gt; the attacker.</content>
 	<content contentuid="f7da06a2-d433-4809-9f6a-6efd36bb6fd0" version="6">This creature cannot move or act.</content>
 	<content contentuid="86d842de-b67b-4277-a4a3-f44754134ebd" version="2">Entity has &lt;LSTag Tooltip="Advantage"&gt;Advantage&lt;/LSTag&gt; on Concentration checks.</content>
 	<content contentuid="b74499d8-11ef-4906-84a9-245f8beed143" version="1">Crushing Blows</content>
